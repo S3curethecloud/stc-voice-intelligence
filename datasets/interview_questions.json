@@ -1,202 +1,3 @@
-{
-  "dataset": "stc-interview-core",
-  "version": "1.0.0",
-  "authority": "SecureTheCloud",
-  "description": "Deterministic interview question dataset for voice-driven intent matching and anchor recall.",
-  "questions": [
-    {
-      "id": "Q1",
-      "intent": "cloud computing definition",
-      "level": "L1",
-      "domain": "cloud-foundations",
-      "triggers": [
-        "what is cloud computing",
-        "define cloud computing",
-        "explain cloud computing"
-      ],
-      "opening": "Cloud computing delivers IT resources over the internet.",
-      "anchors": [
-        "on-demand",
-        "scalability",
-        "pay-as-you-go",
-        "internet-based"
-      ],
-      "closing": "It replaces fixed infrastructure with flexible, scalable services."
-    },
-    {
-      "id": "Q2",
-      "intent": "cloud service models",
-      "level": "L1",
-      "domain": "cloud-foundations",
-      "triggers": [
-        "cloud service models",
-        "iaas paas saas",
-        "types of cloud services"
-      ],
-      "opening": "Cloud services are delivered in layered service models.",
-      "anchors": [
-        "IaaS",
-        "PaaS",
-        "SaaS",
-        "responsibility split"
-      ],
-      "closing": "Each model shifts responsibility between provider and customer."
-    },
-    {
-      "id": "Q3",
-      "intent": "shared responsibility model",
-      "level": "L1",
-      "domain": "cloud-security",
-      "triggers": [
-        "shared responsibility model",
-        "who is responsible for security",
-        "cloud responsibility split"
-      ],
-      "opening": "Cloud security responsibilities are shared between the provider and the customer.",
-      "anchors": [
-        "provider secures cloud",
-        "customer secures workloads",
-        "service dependent",
-        "misunderstanding risk"
-      ],
-      "closing": "Most cloud security gaps come from misunderstanding this split."
-    },
-    {
-      "id": "Q4",
-      "intent": "identity first security architecture",
-      "level": "L2",
-      "domain": "cloud-security",
-      "triggers": [
-        "identity first",
-        "how do you approach cloud security",
-        "security architecture approach"
-      ],
-      "opening": "I start cloud security architecture with identity, not infrastructure.",
-      "anchors": [
-        "least privilege",
-        "guardrails",
-        "shared responsibility",
-        "automation"
-      ],
-      "closing": "Identity decisions shape every other security control."
-    },
-    {
-      "id": "Q5",
-      "intent": "least privilege design",
-      "level": "L2",
-      "domain": "iam",
-      "triggers": [
-        "least privilege",
-        "design least privilege",
-        "access control best practices"
-      ],
-      "opening": "Least privilege means access matches tasks, not titles.",
-      "anchors": [
-        "task-based access",
-        "scoped permissions",
-        "time-bound access",
-        "access reviews"
-      ],
-      "closing": "Excess access becomes latent risk over time."
-    },
-    {
-      "id": "Q6",
-      "intent": "identity as perimeter",
-      "level": "L2",
-      "domain": "zero-trust",
-      "triggers": [
-        "identity is the new perimeter",
-        "what is the new perimeter",
-        "zero trust identity"
-      ],
-      "opening": "Identity is the new perimeter in modern cloud environments.",
-      "anchors": [
-        "users",
-        "workloads",
-        "apis",
-        "authentication everywhere"
-      ],
-      "closing": "Every access decision begins with identity."
-    },
-    {
-      "id": "Q7",
-      "intent": "multi cloud security challenge",
-      "level": "L2",
-      "domain": "multi-cloud",
-      "triggers": [
-        "why is multi cloud hard",
-        "multi cloud security challenges",
-        "securing multiple clouds"
-      ],
-      "opening": "Multi-cloud security is hard because control planes differ.",
-      "anchors": [
-        "iam differences",
-        "tool sprawl",
-        "governance gaps",
-        "visibility"
-      ],
-      "closing": "Consistency, not tooling, is the hardest problem."
-    },
-    {
-      "id": "Q8",
-      "intent": "centralized logging strategy",
-      "level": "L2",
-      "domain": "logging-detection",
-      "triggers": [
-        "logging strategy",
-        "centralized logging",
-        "cloud logs"
-      ],
-      "opening": "My logging strategy is to log broadly and alert narrowly.",
-      "anchors": [
-        "centralization",
-        "normalization",
-        "retention",
-        "correlation"
-      ],
-      "closing": "Logs must be usable during incidents."
-    },
-    {
-      "id": "Q9",
-      "intent": "incident response first action",
-      "level": "L3",
-      "domain": "incident-response",
-      "triggers": [
-        "first action during incident",
-        "cloud breach response",
-        "incident response steps"
-      ],
-      "opening": "The first action in a cloud incident is containment.",
-      "anchors": [
-        "revoke access",
-        "isolate resources",
-        "preserve logs",
-        "communicate"
-      ],
-      "closing": "Speed reduces blast radius."
-    },
-    {
-      "id": "Q10",
-      "intent": "encryption strategy",
-      "level": "L1",
-      "domain": "data-security",
-      "triggers": [
-        "encryption strategy",
-        "how do you encrypt data",
-        "data encryption"
-      ],
-      "opening": "Data should be encrypted by default with deliberate key management.",
-      "anchors": [
-        "at rest",
-        "in transit",
-        "KMS",
-        "key ownership"
-      ],
-      "closing": "Control of keys equals control of data."
-    }
-  ]
-}
-
 ,
 {
   "id": "Q11",
@@ -472,9 +273,7 @@
     "reporting"
   ],
   "closing": "Tags improve governance."
-}
-
-,
+},
 {
   "id": "Q26",
   "intent": "azure storage definition",
@@ -691,9 +490,7 @@
   ],
   "closing": "Archive is not instant."
 },
-{
-
-,
+{,
 {
   "id": "Q26",
   "intent": "azure storage account overview",
@@ -1143,9 +940,7 @@
     "monitoring"
   ],
   "closing": "Design decisions compound over time."
-}
-
-,
+},
 {
   "id": "Q26",
   "intent": "azure storage account overview",
@@ -1595,9 +1390,7 @@
     "monitoring"
   ],
   "closing": "Design decisions compound over time."
-}
-
-,
+},
 {
   "id": "Q76",
   "intent": "azure virtual machine overview",
@@ -2961,9 +2754,7 @@
     "evolution"
   ],
   "closing": "Compute models coexist by use case."
-}
-
-,
+},
 {
   "id": "Q126",
   "intent": "azure vnet overview",
@@ -3863,9 +3654,7 @@
     "observability"
   ],
   "closing": "Identity increasingly defines connectivity."
-}
-
-,
+},
 {
   "id": "Q176",
   "intent": "entra id overview",
@@ -4369,9 +4158,7 @@
     "automation"
   ],
   "closing": "Identity will continue to replace perimeter."
-}
-
-,
+},
 {
   "id": "Q226",
   "intent": "aws cloud overview",
@@ -4857,10 +4644,7 @@
     "automation"
   ],
   "closing": "Security becomes more proactive."
-}
-
-
-,
+},
 {
   "id": "Q253",
   "intent": "ec2 overview",
@@ -5400,9 +5184,7 @@
     "evolution"
   ],
   "closing": "Compute models coexist by use case."
-}
-
-,
+},
 {
   "id": "Q283",
   "intent": "vpc overview",
@@ -5702,9 +5484,7 @@
   "opening": "AWS networking is shifting toward private, identity-aware access.",
   "anchors": ["privatelink", "zero trust", "automation", "observability"],
   "closing": "Identity increasingly defines connectivity."
-}
-
-,
+},
 {
   "id": "Q313",
   "intent": "s3 overview",
@@ -6014,9 +5794,7 @@
   "opening": "AWS storage is evolving toward automation and intelligent tiering.",
   "anchors": ["policy driven", "immutability", "analytics", "cost efficiency"],
   "closing": "Storage becomes more autonomous."
-}
-
-,
+},
 {
   "id": "Q344",
   "intent": "iam evaluation logic",
@@ -6286,5 +6064,204 @@
   "opening": "AWS identity is moving toward short-lived, automated access.",
   "anchors": ["passwordless", "abac", "zero trust", "automation"],
   "closing": "Identity becomes more dynamic."
+},
+{
+  "dataset": "stc-interview-core",
+  "version": "1.0.0",
+  "authority": "SecureTheCloud",
+  "description": "Deterministic interview question dataset for voice-driven intent matching and anchor recall.",
+  "questions": [
+    {
+      "id": "Q1",
+      "intent": "cloud computing definition",
+      "level": "L1",
+      "domain": "cloud-foundations",
+      "triggers": [
+        "what is cloud computing",
+        "define cloud computing",
+        "explain cloud computing"
+      ],
+      "opening": "Cloud computing delivers IT resources over the internet.",
+      "anchors": [
+        "on-demand",
+        "scalability",
+        "pay-as-you-go",
+        "internet-based"
+      ],
+      "closing": "It replaces fixed infrastructure with flexible, scalable services."
+    },
+    {
+      "id": "Q2",
+      "intent": "cloud service models",
+      "level": "L1",
+      "domain": "cloud-foundations",
+      "triggers": [
+        "cloud service models",
+        "iaas paas saas",
+        "types of cloud services"
+      ],
+      "opening": "Cloud services are delivered in layered service models.",
+      "anchors": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "responsibility split"
+      ],
+      "closing": "Each model shifts responsibility between provider and customer."
+    },
+    {
+      "id": "Q3",
+      "intent": "shared responsibility model",
+      "level": "L1",
+      "domain": "cloud-security",
+      "triggers": [
+        "shared responsibility model",
+        "who is responsible for security",
+        "cloud responsibility split"
+      ],
+      "opening": "Cloud security responsibilities are shared between the provider and the customer.",
+      "anchors": [
+        "provider secures cloud",
+        "customer secures workloads",
+        "service dependent",
+        "misunderstanding risk"
+      ],
+      "closing": "Most cloud security gaps come from misunderstanding this split."
+    },
+    {
+      "id": "Q4",
+      "intent": "identity first security architecture",
+      "level": "L2",
+      "domain": "cloud-security",
+      "triggers": [
+        "identity first",
+        "how do you approach cloud security",
+        "security architecture approach"
+      ],
+      "opening": "I start cloud security architecture with identity, not infrastructure.",
+      "anchors": [
+        "least privilege",
+        "guardrails",
+        "shared responsibility",
+        "automation"
+      ],
+      "closing": "Identity decisions shape every other security control."
+    },
+    {
+      "id": "Q5",
+      "intent": "least privilege design",
+      "level": "L2",
+      "domain": "iam",
+      "triggers": [
+        "least privilege",
+        "design least privilege",
+        "access control best practices"
+      ],
+      "opening": "Least privilege means access matches tasks, not titles.",
+      "anchors": [
+        "task-based access",
+        "scoped permissions",
+        "time-bound access",
+        "access reviews"
+      ],
+      "closing": "Excess access becomes latent risk over time."
+    },
+    {
+      "id": "Q6",
+      "intent": "identity as perimeter",
+      "level": "L2",
+      "domain": "zero-trust",
+      "triggers": [
+        "identity is the new perimeter",
+        "what is the new perimeter",
+        "zero trust identity"
+      ],
+      "opening": "Identity is the new perimeter in modern cloud environments.",
+      "anchors": [
+        "users",
+        "workloads",
+        "apis",
+        "authentication everywhere"
+      ],
+      "closing": "Every access decision begins with identity."
+    },
+    {
+      "id": "Q7",
+      "intent": "multi cloud security challenge",
+      "level": "L2",
+      "domain": "multi-cloud",
+      "triggers": [
+        "why is multi cloud hard",
+        "multi cloud security challenges",
+        "securing multiple clouds"
+      ],
+      "opening": "Multi-cloud security is hard because control planes differ.",
+      "anchors": [
+        "iam differences",
+        "tool sprawl",
+        "governance gaps",
+        "visibility"
+      ],
+      "closing": "Consistency, not tooling, is the hardest problem."
+    },
+    {
+      "id": "Q8",
+      "intent": "centralized logging strategy",
+      "level": "L2",
+      "domain": "logging-detection",
+      "triggers": [
+        "logging strategy",
+        "centralized logging",
+        "cloud logs"
+      ],
+      "opening": "My logging strategy is to log broadly and alert narrowly.",
+      "anchors": [
+        "centralization",
+        "normalization",
+        "retention",
+        "correlation"
+      ],
+      "closing": "Logs must be usable during incidents."
+    },
+    {
+      "id": "Q9",
+      "intent": "incident response first action",
+      "level": "L3",
+      "domain": "incident-response",
+      "triggers": [
+        "first action during incident",
+        "cloud breach response",
+        "incident response steps"
+      ],
+      "opening": "The first action in a cloud incident is containment.",
+      "anchors": [
+        "revoke access",
+        "isolate resources",
+        "preserve logs",
+        "communicate"
+      ],
+      "closing": "Speed reduces blast radius."
+    },
+    {
+      "id": "Q10",
+      "intent": "encryption strategy",
+      "level": "L1",
+      "domain": "data-security",
+      "triggers": [
+        "encryption strategy",
+        "how do you encrypt data",
+        "data encryption"
+      ],
+      "opening": "Data should be encrypted by default with deliberate key management.",
+      "anchors": [
+        "at rest",
+        "in transit",
+        "KMS",
+        "key ownership"
+      ],
+      "closing": "Control of keys equals control of data."
+     ]
+    }
+  ]
 }
 
