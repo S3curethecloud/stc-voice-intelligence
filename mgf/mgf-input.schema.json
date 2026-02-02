@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "STC Voice Intelligence Input",
+  "type": "object",
+  "required": ["timestamp", "source"],
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Time the audio or text input was received"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["audio", "text"],
+      "description": "Indicates whether input is audio or text"
+    },
+    "audio": {
+      "type": "object",
+      "description": "Audio payload when source is audio",
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["pcm16", "wav"]
+        },
+        "sample_rate": {
+          "type": "integer"
+        },
+        "channels": {
+          "type": "integer"
+        },
+        "data": {
+          "type": "string",
+          "description": "Base64-encoded audio buffer"
+        }
+      }
+    },
+    "text": {
+      "type": "string",
+      "description": "Pre-transcribed text input"
+    }
+  }
+}

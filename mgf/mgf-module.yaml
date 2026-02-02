@@ -1,0 +1,60 @@
+module:
+  id: stc.voice.intelligence
+  name: STC Voice Intelligence Engine
+  description: >
+    Real-time, deterministic voice-driven intelligence module.
+    Converts live audio into structured intent matches using
+    curated SecureTheCloud datasets. Designed for interview
+    copilot, SOC narration, and architecture walkthroughs.
+
+  owner: SecureTheCloud
+  version: 0.1.0
+  maturity: experimental
+  execution_model: external
+  determinism: strict
+
+capabilities:
+  - speech_to_text
+  - question_detection
+  - intent_matching
+  - anchor_rendering
+
+inputs:
+  audio_stream:
+    description: >
+      Live audio stream containing one or more speakers.
+      Typically includes interviewer and candidate voices.
+    formats:
+      - pcm16
+      - wav
+    channels:
+      - mono
+      - stereo
+
+  text_stream:
+    description: >
+      Optional pre-transcribed text stream for integration
+      scenarios where STC AI provides upstream transcription.
+    encoding: utf-8
+
+outputs:
+  intent_match:
+    description: >
+      Deterministic intent match derived strictly from
+      curated datasets.
+    schema: mgf-output.schema.json
+
+constraints:
+  - no_llm_generation
+  - dataset_only
+  - no_external_network_calls
+
+integration:
+  mode: external
+  transports:
+    - http
+    - websocket
+
+lifecycle:
+  hot_reload: false
+  stateful: false

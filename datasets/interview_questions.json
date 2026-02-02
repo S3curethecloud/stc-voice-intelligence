@@ -1,0 +1,6290 @@
+{
+  "dataset": "stc-interview-core",
+  "version": "1.0.0",
+  "authority": "SecureTheCloud",
+  "description": "Deterministic interview question dataset for voice-driven intent matching and anchor recall.",
+  "questions": [
+    {
+      "id": "Q1",
+      "intent": "cloud computing definition",
+      "level": "L1",
+      "domain": "cloud-foundations",
+      "triggers": [
+        "what is cloud computing",
+        "define cloud computing",
+        "explain cloud computing"
+      ],
+      "opening": "Cloud computing delivers IT resources over the internet.",
+      "anchors": [
+        "on-demand",
+        "scalability",
+        "pay-as-you-go",
+        "internet-based"
+      ],
+      "closing": "It replaces fixed infrastructure with flexible, scalable services."
+    },
+    {
+      "id": "Q2",
+      "intent": "cloud service models",
+      "level": "L1",
+      "domain": "cloud-foundations",
+      "triggers": [
+        "cloud service models",
+        "iaas paas saas",
+        "types of cloud services"
+      ],
+      "opening": "Cloud services are delivered in layered service models.",
+      "anchors": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "responsibility split"
+      ],
+      "closing": "Each model shifts responsibility between provider and customer."
+    },
+    {
+      "id": "Q3",
+      "intent": "shared responsibility model",
+      "level": "L1",
+      "domain": "cloud-security",
+      "triggers": [
+        "shared responsibility model",
+        "who is responsible for security",
+        "cloud responsibility split"
+      ],
+      "opening": "Cloud security responsibilities are shared between the provider and the customer.",
+      "anchors": [
+        "provider secures cloud",
+        "customer secures workloads",
+        "service dependent",
+        "misunderstanding risk"
+      ],
+      "closing": "Most cloud security gaps come from misunderstanding this split."
+    },
+    {
+      "id": "Q4",
+      "intent": "identity first security architecture",
+      "level": "L2",
+      "domain": "cloud-security",
+      "triggers": [
+        "identity first",
+        "how do you approach cloud security",
+        "security architecture approach"
+      ],
+      "opening": "I start cloud security architecture with identity, not infrastructure.",
+      "anchors": [
+        "least privilege",
+        "guardrails",
+        "shared responsibility",
+        "automation"
+      ],
+      "closing": "Identity decisions shape every other security control."
+    },
+    {
+      "id": "Q5",
+      "intent": "least privilege design",
+      "level": "L2",
+      "domain": "iam",
+      "triggers": [
+        "least privilege",
+        "design least privilege",
+        "access control best practices"
+      ],
+      "opening": "Least privilege means access matches tasks, not titles.",
+      "anchors": [
+        "task-based access",
+        "scoped permissions",
+        "time-bound access",
+        "access reviews"
+      ],
+      "closing": "Excess access becomes latent risk over time."
+    },
+    {
+      "id": "Q6",
+      "intent": "identity as perimeter",
+      "level": "L2",
+      "domain": "zero-trust",
+      "triggers": [
+        "identity is the new perimeter",
+        "what is the new perimeter",
+        "zero trust identity"
+      ],
+      "opening": "Identity is the new perimeter in modern cloud environments.",
+      "anchors": [
+        "users",
+        "workloads",
+        "apis",
+        "authentication everywhere"
+      ],
+      "closing": "Every access decision begins with identity."
+    },
+    {
+      "id": "Q7",
+      "intent": "multi cloud security challenge",
+      "level": "L2",
+      "domain": "multi-cloud",
+      "triggers": [
+        "why is multi cloud hard",
+        "multi cloud security challenges",
+        "securing multiple clouds"
+      ],
+      "opening": "Multi-cloud security is hard because control planes differ.",
+      "anchors": [
+        "iam differences",
+        "tool sprawl",
+        "governance gaps",
+        "visibility"
+      ],
+      "closing": "Consistency, not tooling, is the hardest problem."
+    },
+    {
+      "id": "Q8",
+      "intent": "centralized logging strategy",
+      "level": "L2",
+      "domain": "logging-detection",
+      "triggers": [
+        "logging strategy",
+        "centralized logging",
+        "cloud logs"
+      ],
+      "opening": "My logging strategy is to log broadly and alert narrowly.",
+      "anchors": [
+        "centralization",
+        "normalization",
+        "retention",
+        "correlation"
+      ],
+      "closing": "Logs must be usable during incidents."
+    },
+    {
+      "id": "Q9",
+      "intent": "incident response first action",
+      "level": "L3",
+      "domain": "incident-response",
+      "triggers": [
+        "first action during incident",
+        "cloud breach response",
+        "incident response steps"
+      ],
+      "opening": "The first action in a cloud incident is containment.",
+      "anchors": [
+        "revoke access",
+        "isolate resources",
+        "preserve logs",
+        "communicate"
+      ],
+      "closing": "Speed reduces blast radius."
+    },
+    {
+      "id": "Q10",
+      "intent": "encryption strategy",
+      "level": "L1",
+      "domain": "data-security",
+      "triggers": [
+        "encryption strategy",
+        "how do you encrypt data",
+        "data encryption"
+      ],
+      "opening": "Data should be encrypted by default with deliberate key management.",
+      "anchors": [
+        "at rest",
+        "in transit",
+        "KMS",
+        "key ownership"
+      ],
+      "closing": "Control of keys equals control of data."
+    }
+  ]
+}
+
+,
+{
+  "id": "Q11",
+  "intent": "capex vs opex",
+  "level": "L1",
+  "domain": "cloud-economics",
+  "triggers": [
+    "capex vs opex",
+    "capital vs operational expenditure",
+    "cloud cost model"
+  ],
+  "opening": "They represent different spending models.",
+  "anchors": [
+    "CapEx: upfront",
+    "OpEx: ongoing",
+    "flexibility",
+    "scalability"
+  ],
+  "closing": "Cloud favors OpEx."
+},
+{
+  "id": "Q12",
+  "intent": "cloud deployment models",
+  "level": "L1",
+  "domain": "cloud-foundations",
+  "triggers": [
+    "cloud deployment models",
+    "types of cloud deployment",
+    "public private hybrid cloud"
+  ],
+  "opening": "Deployment defines ownership and access.",
+  "anchors": [
+    "public",
+    "private",
+    "hybrid",
+    "community"
+  ],
+  "closing": "Each fits different needs."
+},
+{
+  "id": "Q13",
+  "intent": "community cloud definition",
+  "level": "L1",
+  "domain": "cloud-foundations",
+  "triggers": [
+    "what is community cloud",
+    "community cloud definition"
+  ],
+  "opening": "A cloud shared by similar organizations.",
+  "anchors": [
+    "shared compliance",
+    "shared cost",
+    "common purpose",
+    "limited access"
+  ],
+  "closing": "It balances control and scale."
+},
+{
+  "id": "Q14",
+  "intent": "azure global infrastructure",
+  "level": "L1",
+  "domain": "azure-foundations",
+  "triggers": [
+    "azure datacenter architecture",
+    "azure global infrastructure",
+    "azure regions and datacenters"
+  ],
+  "opening": "Azure is built on global physical infrastructure.",
+  "anchors": [
+    "regions",
+    "datacenters",
+    "networking",
+    "redundancy"
+  ],
+  "closing": "Architecture supports resilience."
+},
+{
+  "id": "Q15",
+  "intent": "datacenter pdu tor",
+  "level": "L1",
+  "domain": "datacenter-foundations",
+  "triggers": [
+    "pdu and tor",
+    "datacenter pdu tor",
+    "what is pdu tor"
+  ],
+  "opening": "They are datacenter hardware components.",
+  "anchors": [
+    "PDU: power",
+    "TOR: networking",
+    "racks",
+    "redundancy"
+  ],
+  "closing": "They support physical reliability."
+},
+{
+  "id": "Q16",
+  "intent": "azure deployment methods",
+  "level": "L1",
+  "domain": "azure-governance",
+  "triggers": [
+    "ways to deploy azure resources",
+    "azure deployment methods",
+    "azure portal arm cli"
+  ],
+  "opening": "Azure supports multiple deployment methods.",
+  "anchors": [
+    "Azure Portal",
+    "ARM templates",
+    "CLI",
+    "PowerShell"
+  ],
+  "closing": "Automation scales deployments."
+},
+{
+  "id": "Q17",
+  "intent": "azure subscription types",
+  "level": "L1",
+  "domain": "azure-governance",
+  "triggers": [
+    "azure subscription types",
+    "types of azure subscriptions"
+  ],
+  "opening": "Subscriptions define billing and limits.",
+  "anchors": [
+    "free",
+    "pay-as-you-go",
+    "enterprise",
+    "CSP"
+  ],
+  "closing": "Subscriptions control cost boundaries."
+},
+{
+  "id": "Q18",
+  "intent": "azure support plans",
+  "level": "L1",
+  "domain": "azure-governance",
+  "triggers": [
+    "azure support plans",
+    "azure technical support types"
+  ],
+  "opening": "Azure provides tiered support plans.",
+  "anchors": [
+    "basic",
+    "developer",
+    "standard",
+    "premier"
+  ],
+  "closing": "Higher tiers mean faster response."
+},
+{
+  "id": "Q19",
+  "intent": "azure premier support",
+  "level": "L2",
+  "domain": "azure-governance",
+  "triggers": [
+    "why premier support",
+    "azure premier support benefits"
+  ],
+  "opening": "For mission-critical workloads.",
+  "anchors": [
+    "dedicated TAM",
+    "faster SLA",
+    "proactive support",
+    "enterprise scale"
+  ],
+  "closing": "It reduces operational risk."
+},
+{
+  "id": "Q20",
+  "intent": "azure cloud advantages",
+  "level": "L1",
+  "domain": "azure-foundations",
+  "triggers": [
+    "advantages of azure",
+    "azure cloud benefits"
+  ],
+  "opening": "Azure offers flexibility and scale.",
+  "anchors": [
+    "scalability",
+    "availability",
+    "cost efficiency",
+    "global reach"
+  ],
+  "closing": "Cloud enables agility."
+},
+{
+  "id": "Q21",
+  "intent": "arm vs classic deployment",
+  "level": "L1",
+  "domain": "azure-governance",
+  "triggers": [
+    "classic vs arm",
+    "azure arm deployment"
+  ],
+  "opening": "ARM modernized Azure resource management.",
+  "anchors": [
+    "resource groups",
+    "declarative model",
+    "RBAC",
+    "tagging"
+  ],
+  "closing": "ARM is the standard."
+},
+{
+  "id": "Q22",
+  "intent": "azure resource examples",
+  "level": "L1",
+  "domain": "azure-foundations",
+  "triggers": [
+    "examples of azure resources",
+    "azure resource types"
+  ],
+  "opening": "Resources are manageable Azure services.",
+  "anchors": [
+    "virtual machines",
+    "storage accounts",
+    "networks",
+    "databases"
+  ],
+  "closing": "Resources live inside resource groups."
+},
+{
+  "id": "Q23",
+  "intent": "azure resource group",
+  "level": "L1",
+  "domain": "azure-governance",
+  "triggers": [
+    "what is a resource group",
+    "azure resource group"
+  ],
+  "opening": "A logical container for resources.",
+  "anchors": [
+    "lifecycle",
+    "management",
+    "access control",
+    "grouping"
+  ],
+  "closing": "It simplifies management."
+},
+{
+  "id": "Q24",
+  "intent": "azure resource provider",
+  "level": "L1",
+  "domain": "azure-governance",
+  "triggers": [
+    "resource provider namespace",
+    "azure resource provider"
+  ],
+  "opening": "It defines resource types in Azure.",
+  "anchors": [
+    "Microsoft.Compute",
+    "Microsoft.Storage",
+    "Microsoft.Network",
+    "registration"
+  ],
+  "closing": "Providers must be registered."
+},
+{
+  "id": "Q25",
+  "intent": "azure tagging",
+  "level": "L1",
+  "domain": "azure-governance",
+  "triggers": [
+    "what is azure tag",
+    "azure tagging"
+  ],
+  "opening": "Tags organize Azure resources.",
+  "anchors": [
+    "key-value",
+    "cost tracking",
+    "management",
+    "reporting"
+  ],
+  "closing": "Tags improve governance."
+}
+
+,
+{
+  "id": "Q26",
+  "intent": "azure storage definition",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is azure storage",
+    "azure storage services"
+  ],
+  "opening": "Azure Storage provides durable cloud storage services.",
+  "anchors": [
+    "scalable",
+    "durable",
+    "secure",
+    "managed"
+  ],
+  "closing": "It supports multiple data types."
+},
+{
+  "id": "Q27",
+  "intent": "create storage account",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "create storage account",
+    "how do you create a storage account"
+  ],
+  "opening": "Storage accounts are created at subscription scope.",
+  "anchors": [
+    "Azure Portal",
+    "resource group",
+    "region",
+    "redundancy"
+  ],
+  "closing": "Configuration defines capabilities."
+},
+{
+  "id": "Q28",
+  "intent": "azure storage services",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "types of storage services",
+    "azure storage services"
+  ],
+  "opening": "Azure Storage offers multiple service types.",
+  "anchors": [
+    "Blob",
+    "File",
+    "Queue",
+    "Table"
+  ],
+  "closing": "Each serves a different purpose."
+},
+{
+  "id": "Q29",
+  "intent": "blob storage definition",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is blob storage",
+    "azure blob storage"
+  ],
+  "opening": "Blob storage stores unstructured data.",
+  "anchors": [
+    "objects",
+    "files",
+    "media",
+    "backups"
+  ],
+  "closing": "It’s optimized for scale."
+},
+{
+  "id": "Q30",
+  "intent": "blob container definition",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is a container",
+    "blob container"
+  ],
+  "opening": "Containers organize blobs.",
+  "anchors": [
+    "logical grouping",
+    "access control",
+    "namespace",
+    "blobs"
+  ],
+  "closing": "Containers sit inside storage accounts."
+},
+{
+  "id": "Q31",
+  "intent": "blob types",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "types of blob",
+    "blob types in azure"
+  ],
+  "opening": "Azure supports multiple blob types.",
+  "anchors": [
+    "Block Blob",
+    "Page Blob",
+    "Append Blob",
+    "use cases"
+  ],
+  "closing": "Type depends on workload."
+},
+{
+  "id": "Q32",
+  "intent": "blob access levels",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "blob access levels",
+    "container access levels"
+  ],
+  "opening": "Access levels control blob visibility.",
+  "anchors": [
+    "private",
+    "blob",
+    "container",
+    "anonymous"
+  ],
+  "closing": "Private is default."
+},
+{
+  "id": "Q33",
+  "intent": "page blob",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is page blob",
+    "page blob usage"
+  ],
+  "opening": "Page blobs support random read and write operations.",
+  "anchors": [
+    "fixed size",
+    "VHD",
+    "disks",
+    "512-byte pages"
+  ],
+  "closing": "Used for virtual disks."
+},
+{
+  "id": "Q34",
+  "intent": "block blob",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is block blob",
+    "block blob default"
+  ],
+  "opening": "Block blobs store large unstructured data.",
+  "anchors": [
+    "blocks",
+    "default type",
+    "large objects",
+    "streaming"
+  ],
+  "closing": "Most common blob type."
+},
+{
+  "id": "Q35",
+  "intent": "append blob",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is append blob",
+    "append blob use case"
+  ],
+  "opening": "Append blobs are optimized for write operations.",
+  "anchors": [
+    "append-only",
+    "logs",
+    "diagnostics",
+    "sequential"
+  ],
+  "closing": "Ideal for logging."
+},
+{
+  "id": "Q36",
+  "intent": "blob access tiers",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "blob access tier",
+    "hot cool archive"
+  ],
+  "opening": "Access tiers optimize storage cost.",
+  "anchors": [
+    "Hot",
+    "Cool",
+    "Archive",
+    "pricing"
+  ],
+  "closing": "Tier impacts access cost."
+},
+{
+  "id": "Q37",
+  "intent": "rehydration",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is rehydration",
+    "archive rehydration"
+  ],
+  "opening": "Rehydration restores archived blobs.",
+  "anchors": [
+    "archive tier",
+    "restore",
+    "latency",
+    "cost"
+  ],
+  "closing": "Archive is not instant."
+},
+{
+
+,
+{
+  "id": "Q26",
+  "intent": "azure storage account overview",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is an azure storage account",
+    "azure storage account overview"
+  ],
+  "opening": "An Azure Storage account provides a unique namespace for data storage services.",
+  "anchors": [
+    "blob",
+    "file",
+    "queue",
+    "table"
+  ],
+  "closing": "It is the foundation for all Azure storage services."
+},
+{
+  "id": "Q27",
+  "intent": "azure blob storage",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is blob storage",
+    "azure blob storage"
+  ],
+  "opening": "Azure Blob Storage is used to store unstructured data.",
+  "anchors": [
+    "objects",
+    "scalability",
+    "http access",
+    "cost tiers"
+  ],
+  "closing": "It’s ideal for images, backups, and logs."
+},
+{
+  "id": "Q28",
+  "intent": "azure storage redundancy options",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "azure storage redundancy",
+    "lrs zrs grs ra-grs"
+  ],
+  "opening": "Azure Storage supports multiple redundancy options.",
+  "anchors": [
+    "LRS",
+    "ZRS",
+    "GRS",
+    "RA-GRS"
+  ],
+  "closing": "Redundancy determines durability and availability."
+},
+{
+  "id": "Q29",
+  "intent": "lrs vs grs",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "lrs vs grs",
+    "difference between lrs and grs"
+  ],
+  "opening": "LRS replicates data within a single datacenter, while GRS replicates across regions.",
+  "anchors": [
+    "single region",
+    "paired region",
+    "durability",
+    "cost tradeoff"
+  ],
+  "closing": "GRS improves resilience at higher cost."
+},
+{
+  "id": "Q30",
+  "intent": "azure blob access tiers",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "blob access tiers",
+    "hot cool archive"
+  ],
+  "opening": "Blob storage offers multiple access tiers based on usage.",
+  "anchors": [
+    "hot",
+    "cool",
+    "archive",
+    "cost optimization"
+  ],
+  "closing": "Tiering balances performance and cost."
+},
+{
+  "id": "Q31",
+  "intent": "azure storage security basics",
+  "level": "L1",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "how do you secure azure storage",
+    "azure storage security"
+  ],
+  "opening": "Azure Storage security starts with identity and network controls.",
+  "anchors": [
+    "Entra ID",
+    "RBAC",
+    "private endpoints",
+    "firewalls"
+  ],
+  "closing": "Identity-based access is preferred over keys."
+},
+{
+  "id": "Q32",
+  "intent": "shared access signature sas",
+  "level": "L1",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "what is sas",
+    "shared access signature"
+  ],
+  "opening": "A Shared Access Signature grants limited access to storage resources.",
+  "anchors": [
+    "time-bound",
+    "scoped permissions",
+    "temporary access",
+    "token-based"
+  ],
+  "closing": "SAS should be tightly scoped and short-lived."
+},
+{
+  "id": "Q33",
+  "intent": "storage account keys risk",
+  "level": "L2",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "storage account keys",
+    "risks of storage keys"
+  ],
+  "opening": "Storage account keys provide full access and carry high risk.",
+  "anchors": [
+    "root access",
+    "rotation",
+    "audit limitations",
+    "avoid where possible"
+  ],
+  "closing": "Keys should be replaced with identity-based access."
+},
+{
+  "id": "Q34",
+  "intent": "azure storage encryption",
+  "level": "L1",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "azure storage encryption",
+    "storage encryption at rest"
+  ],
+  "opening": "Azure Storage encrypts data at rest by default.",
+  "anchors": [
+    "service-managed keys",
+    "customer-managed keys",
+    "Azure Key Vault",
+    "compliance"
+  ],
+  "closing": "Key ownership determines control."
+},
+{
+  "id": "Q35",
+  "intent": "customer managed keys storage",
+  "level": "L2",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "customer managed keys",
+    "cmk azure storage"
+  ],
+  "opening": "Customer-managed keys allow organizations to control encryption keys.",
+  "anchors": [
+    "key vault",
+    "key rotation",
+    "revocation",
+    "audit"
+  ],
+  "closing": "CMKs support higher compliance requirements."
+},
+{
+  "id": "Q36",
+  "intent": "azure storage firewall",
+  "level": "L1",
+  "domain": "azure-storage-networking",
+  "triggers": [
+    "azure storage firewall",
+    "restrict storage access"
+  ],
+  "opening": "Storage firewalls restrict access by network location.",
+  "anchors": [
+    "ip rules",
+    "virtual networks",
+    "default deny",
+    "exceptions"
+  ],
+  "closing": "Network controls reduce exposure."
+},
+{
+  "id": "Q37",
+  "intent": "private endpoints for storage",
+  "level": "L2",
+  "domain": "azure-storage-networking",
+  "triggers": [
+    "private endpoint storage",
+    "private link azure storage"
+  ],
+  "opening": "Private endpoints provide private access to storage services.",
+  "anchors": [
+    "private ip",
+    "no public exposure",
+    "vnet integration",
+    "zero trust"
+  ],
+  "closing": "They eliminate public network dependency."
+},
+{
+  "id": "Q38",
+  "intent": "azure file storage",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "azure file storage",
+    "azure files"
+  ],
+  "opening": "Azure Files provides fully managed file shares in the cloud.",
+  "anchors": [
+    "smb",
+    "nfs",
+    "lift and shift",
+    "managed service"
+  ],
+  "closing": "It supports legacy and cloud-native workloads."
+},
+{
+  "id": "Q39",
+  "intent": "azure storage monitoring",
+  "level": "L2",
+  "domain": "azure-storage-monitoring",
+  "triggers": [
+    "monitor azure storage",
+    "storage logging metrics"
+  ],
+  "opening": "Monitoring Azure Storage relies on metrics and logs.",
+  "anchors": [
+    "Azure Monitor",
+    "diagnostic logs",
+    "access logs",
+    "alerts"
+  ],
+  "closing": "Visibility is key to detecting misuse."
+},
+{
+  "id": "Q40",
+  "intent": "storage account soft delete",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "soft delete azure storage",
+    "blob soft delete"
+  ],
+  "opening": "Soft delete protects data from accidental deletion.",
+  "anchors": [
+    "retention window",
+    "recovery",
+    "ransomware protection",
+    "safety net"
+  ],
+  "closing": "It adds resilience against human error."
+},
+{
+  "id": "Q41",
+  "intent": "immutability policies",
+  "level": "L2",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "immutability policy",
+    "immutable blob storage"
+  ],
+  "opening": "Immutability policies prevent data modification or deletion.",
+  "anchors": [
+    "WORM",
+    "compliance",
+    "retention",
+    "legal hold"
+  ],
+  "closing": "They are critical for regulated workloads."
+},
+{
+  "id": "Q42",
+  "intent": "azure storage cost optimization",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "optimize storage cost",
+    "azure storage pricing"
+  ],
+  "opening": "Storage cost optimization focuses on tiering and lifecycle management.",
+  "anchors": [
+    "access tiers",
+    "lifecycle rules",
+    "archival",
+    "monitoring"
+  ],
+  "closing": "Unused data should move to cheaper tiers."
+},
+{
+  "id": "Q43",
+  "intent": "lifecycle management rules",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "lifecycle management rules",
+    "blob lifecycle policy"
+  ],
+  "opening": "Lifecycle rules automate data movement and deletion.",
+  "anchors": [
+    "transition",
+    "retention",
+    "automation",
+    "cost control"
+  ],
+  "closing": "Automation prevents manual cleanup."
+},
+{
+  "id": "Q44",
+  "intent": "storage account types",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "storage account types",
+    "general purpose v2"
+  ],
+  "opening": "Azure supports different storage account types.",
+  "anchors": [
+    "general purpose v2",
+    "blob storage",
+    "file storage",
+    "legacy types"
+  ],
+  "closing": "GPv2 is the recommended default."
+},
+{
+  "id": "Q45",
+  "intent": "data exfiltration risks storage",
+  "level": "L2",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "data exfiltration storage",
+    "prevent storage data leaks"
+  ],
+  "opening": "Data exfiltration risk comes from overexposed storage.",
+  "anchors": [
+    "public access",
+    "keys leakage",
+    "network controls",
+    "monitoring"
+  ],
+  "closing": "Exposure is the primary risk driver."
+},
+{
+  "id": "Q46",
+  "intent": "azure storage public access",
+  "level": "L1",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "public blob access",
+    "disable public access storage"
+  ],
+  "opening": "Public access allows anonymous reads of blob data.",
+  "anchors": [
+    "anonymous access",
+    "account-level control",
+    "container level",
+    "risk"
+  ],
+  "closing": "Public access should be disabled by default."
+},
+{
+  "id": "Q47",
+  "intent": "azure storage backup strategy",
+  "level": "L2",
+  "domain": "azure-storage",
+  "triggers": [
+    "storage backup strategy",
+    "azure backup storage"
+  ],
+  "opening": "Backup strategies depend on recovery objectives.",
+  "anchors": [
+    "snapshots",
+    "replication",
+    "soft delete",
+    "geo redundancy"
+  ],
+  "closing": "Backups complement durability."
+},
+{
+  "id": "Q48",
+  "intent": "azure storage compliance",
+  "level": "L2",
+  "domain": "azure-storage-compliance",
+  "triggers": [
+    "storage compliance",
+    "azure storage compliance"
+  ],
+  "opening": "Azure Storage supports multiple compliance standards.",
+  "anchors": [
+    "encryption",
+    "immutability",
+    "logging",
+    "data residency"
+  ],
+  "closing": "Controls map to regulatory requirements."
+},
+{
+  "id": "Q49",
+  "intent": "storage account migration",
+  "level": "L2",
+  "domain": "azure-storage",
+  "triggers": [
+    "migrate storage account",
+    "storage migration azure"
+  ],
+  "opening": "Storage migrations require careful planning.",
+  "anchors": [
+    "data transfer",
+    "downtime",
+    "consistency",
+    "validation"
+  ],
+  "closing": "Migration risk increases with data volume."
+},
+{
+  "id": "Q50",
+  "intent": "azure storage design best practices",
+  "level": "L2",
+  "domain": "azure-storage",
+  "triggers": [
+    "storage design best practices",
+    "azure storage architecture"
+  ],
+  "opening": "Good storage design balances security, cost, and availability.",
+  "anchors": [
+    "identity first",
+    "network isolation",
+    "redundancy",
+    "monitoring"
+  ],
+  "closing": "Design decisions compound over time."
+}
+
+,
+{
+  "id": "Q26",
+  "intent": "azure storage account overview",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is an azure storage account",
+    "azure storage account overview"
+  ],
+  "opening": "An Azure Storage account provides a unique namespace for data storage services.",
+  "anchors": [
+    "blob",
+    "file",
+    "queue",
+    "table"
+  ],
+  "closing": "It is the foundation for all Azure storage services."
+},
+{
+  "id": "Q27",
+  "intent": "azure blob storage",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "what is blob storage",
+    "azure blob storage"
+  ],
+  "opening": "Azure Blob Storage is used to store unstructured data.",
+  "anchors": [
+    "objects",
+    "scalability",
+    "http access",
+    "cost tiers"
+  ],
+  "closing": "It’s ideal for images, backups, and logs."
+},
+{
+  "id": "Q28",
+  "intent": "azure storage redundancy options",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "azure storage redundancy",
+    "lrs zrs grs ra-grs"
+  ],
+  "opening": "Azure Storage supports multiple redundancy options.",
+  "anchors": [
+    "LRS",
+    "ZRS",
+    "GRS",
+    "RA-GRS"
+  ],
+  "closing": "Redundancy determines durability and availability."
+},
+{
+  "id": "Q29",
+  "intent": "lrs vs grs",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "lrs vs grs",
+    "difference between lrs and grs"
+  ],
+  "opening": "LRS replicates data within a single datacenter, while GRS replicates across regions.",
+  "anchors": [
+    "single region",
+    "paired region",
+    "durability",
+    "cost tradeoff"
+  ],
+  "closing": "GRS improves resilience at higher cost."
+},
+{
+  "id": "Q30",
+  "intent": "azure blob access tiers",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "blob access tiers",
+    "hot cool archive"
+  ],
+  "opening": "Blob storage offers multiple access tiers based on usage.",
+  "anchors": [
+    "hot",
+    "cool",
+    "archive",
+    "cost optimization"
+  ],
+  "closing": "Tiering balances performance and cost."
+},
+{
+  "id": "Q31",
+  "intent": "azure storage security basics",
+  "level": "L1",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "how do you secure azure storage",
+    "azure storage security"
+  ],
+  "opening": "Azure Storage security starts with identity and network controls.",
+  "anchors": [
+    "Entra ID",
+    "RBAC",
+    "private endpoints",
+    "firewalls"
+  ],
+  "closing": "Identity-based access is preferred over keys."
+},
+{
+  "id": "Q32",
+  "intent": "shared access signature sas",
+  "level": "L1",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "what is sas",
+    "shared access signature"
+  ],
+  "opening": "A Shared Access Signature grants limited access to storage resources.",
+  "anchors": [
+    "time-bound",
+    "scoped permissions",
+    "temporary access",
+    "token-based"
+  ],
+  "closing": "SAS should be tightly scoped and short-lived."
+},
+{
+  "id": "Q33",
+  "intent": "storage account keys risk",
+  "level": "L2",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "storage account keys",
+    "risks of storage keys"
+  ],
+  "opening": "Storage account keys provide full access and carry high risk.",
+  "anchors": [
+    "root access",
+    "rotation",
+    "audit limitations",
+    "avoid where possible"
+  ],
+  "closing": "Keys should be replaced with identity-based access."
+},
+{
+  "id": "Q34",
+  "intent": "azure storage encryption",
+  "level": "L1",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "azure storage encryption",
+    "storage encryption at rest"
+  ],
+  "opening": "Azure Storage encrypts data at rest by default.",
+  "anchors": [
+    "service-managed keys",
+    "customer-managed keys",
+    "Azure Key Vault",
+    "compliance"
+  ],
+  "closing": "Key ownership determines control."
+},
+{
+  "id": "Q35",
+  "intent": "customer managed keys storage",
+  "level": "L2",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "customer managed keys",
+    "cmk azure storage"
+  ],
+  "opening": "Customer-managed keys allow organizations to control encryption keys.",
+  "anchors": [
+    "key vault",
+    "key rotation",
+    "revocation",
+    "audit"
+  ],
+  "closing": "CMKs support higher compliance requirements."
+},
+{
+  "id": "Q36",
+  "intent": "azure storage firewall",
+  "level": "L1",
+  "domain": "azure-storage-networking",
+  "triggers": [
+    "azure storage firewall",
+    "restrict storage access"
+  ],
+  "opening": "Storage firewalls restrict access by network location.",
+  "anchors": [
+    "ip rules",
+    "virtual networks",
+    "default deny",
+    "exceptions"
+  ],
+  "closing": "Network controls reduce exposure."
+},
+{
+  "id": "Q37",
+  "intent": "private endpoints for storage",
+  "level": "L2",
+  "domain": "azure-storage-networking",
+  "triggers": [
+    "private endpoint storage",
+    "private link azure storage"
+  ],
+  "opening": "Private endpoints provide private access to storage services.",
+  "anchors": [
+    "private ip",
+    "no public exposure",
+    "vnet integration",
+    "zero trust"
+  ],
+  "closing": "They eliminate public network dependency."
+},
+{
+  "id": "Q38",
+  "intent": "azure file storage",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "azure file storage",
+    "azure files"
+  ],
+  "opening": "Azure Files provides fully managed file shares in the cloud.",
+  "anchors": [
+    "smb",
+    "nfs",
+    "lift and shift",
+    "managed service"
+  ],
+  "closing": "It supports legacy and cloud-native workloads."
+},
+{
+  "id": "Q39",
+  "intent": "azure storage monitoring",
+  "level": "L2",
+  "domain": "azure-storage-monitoring",
+  "triggers": [
+    "monitor azure storage",
+    "storage logging metrics"
+  ],
+  "opening": "Monitoring Azure Storage relies on metrics and logs.",
+  "anchors": [
+    "Azure Monitor",
+    "diagnostic logs",
+    "access logs",
+    "alerts"
+  ],
+  "closing": "Visibility is key to detecting misuse."
+},
+{
+  "id": "Q40",
+  "intent": "storage account soft delete",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "soft delete azure storage",
+    "blob soft delete"
+  ],
+  "opening": "Soft delete protects data from accidental deletion.",
+  "anchors": [
+    "retention window",
+    "recovery",
+    "ransomware protection",
+    "safety net"
+  ],
+  "closing": "It adds resilience against human error."
+},
+{
+  "id": "Q41",
+  "intent": "immutability policies",
+  "level": "L2",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "immutability policy",
+    "immutable blob storage"
+  ],
+  "opening": "Immutability policies prevent data modification or deletion.",
+  "anchors": [
+    "WORM",
+    "compliance",
+    "retention",
+    "legal hold"
+  ],
+  "closing": "They are critical for regulated workloads."
+},
+{
+  "id": "Q42",
+  "intent": "azure storage cost optimization",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "optimize storage cost",
+    "azure storage pricing"
+  ],
+  "opening": "Storage cost optimization focuses on tiering and lifecycle management.",
+  "anchors": [
+    "access tiers",
+    "lifecycle rules",
+    "archival",
+    "monitoring"
+  ],
+  "closing": "Unused data should move to cheaper tiers."
+},
+{
+  "id": "Q43",
+  "intent": "lifecycle management rules",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "lifecycle management rules",
+    "blob lifecycle policy"
+  ],
+  "opening": "Lifecycle rules automate data movement and deletion.",
+  "anchors": [
+    "transition",
+    "retention",
+    "automation",
+    "cost control"
+  ],
+  "closing": "Automation prevents manual cleanup."
+},
+{
+  "id": "Q44",
+  "intent": "storage account types",
+  "level": "L1",
+  "domain": "azure-storage",
+  "triggers": [
+    "storage account types",
+    "general purpose v2"
+  ],
+  "opening": "Azure supports different storage account types.",
+  "anchors": [
+    "general purpose v2",
+    "blob storage",
+    "file storage",
+    "legacy types"
+  ],
+  "closing": "GPv2 is the recommended default."
+},
+{
+  "id": "Q45",
+  "intent": "data exfiltration risks storage",
+  "level": "L2",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "data exfiltration storage",
+    "prevent storage data leaks"
+  ],
+  "opening": "Data exfiltration risk comes from overexposed storage.",
+  "anchors": [
+    "public access",
+    "keys leakage",
+    "network controls",
+    "monitoring"
+  ],
+  "closing": "Exposure is the primary risk driver."
+},
+{
+  "id": "Q46",
+  "intent": "azure storage public access",
+  "level": "L1",
+  "domain": "azure-storage-security",
+  "triggers": [
+    "public blob access",
+    "disable public access storage"
+  ],
+  "opening": "Public access allows anonymous reads of blob data.",
+  "anchors": [
+    "anonymous access",
+    "account-level control",
+    "container level",
+    "risk"
+  ],
+  "closing": "Public access should be disabled by default."
+},
+{
+  "id": "Q47",
+  "intent": "azure storage backup strategy",
+  "level": "L2",
+  "domain": "azure-storage",
+  "triggers": [
+    "storage backup strategy",
+    "azure backup storage"
+  ],
+  "opening": "Backup strategies depend on recovery objectives.",
+  "anchors": [
+    "snapshots",
+    "replication",
+    "soft delete",
+    "geo redundancy"
+  ],
+  "closing": "Backups complement durability."
+},
+{
+  "id": "Q48",
+  "intent": "azure storage compliance",
+  "level": "L2",
+  "domain": "azure-storage-compliance",
+  "triggers": [
+    "storage compliance",
+    "azure storage compliance"
+  ],
+  "opening": "Azure Storage supports multiple compliance standards.",
+  "anchors": [
+    "encryption",
+    "immutability",
+    "logging",
+    "data residency"
+  ],
+  "closing": "Controls map to regulatory requirements."
+},
+{
+  "id": "Q49",
+  "intent": "storage account migration",
+  "level": "L2",
+  "domain": "azure-storage",
+  "triggers": [
+    "migrate storage account",
+    "storage migration azure"
+  ],
+  "opening": "Storage migrations require careful planning.",
+  "anchors": [
+    "data transfer",
+    "downtime",
+    "consistency",
+    "validation"
+  ],
+  "closing": "Migration risk increases with data volume."
+},
+{
+  "id": "Q50",
+  "intent": "azure storage design best practices",
+  "level": "L2",
+  "domain": "azure-storage",
+  "triggers": [
+    "storage design best practices",
+    "azure storage architecture"
+  ],
+  "opening": "Good storage design balances security, cost, and availability.",
+  "anchors": [
+    "identity first",
+    "network isolation",
+    "redundancy",
+    "monitoring"
+  ],
+  "closing": "Design decisions compound over time."
+}
+
+,
+{
+  "id": "Q76",
+  "intent": "azure virtual machine overview",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "what is an azure virtual machine",
+    "azure vm overview"
+  ],
+  "opening": "Azure Virtual Machines provide scalable compute resources on demand.",
+  "anchors": [
+    "iaas",
+    "full control",
+    "os management",
+    "scalability"
+  ],
+  "closing": "VMs offer flexibility at the cost of operational responsibility."
+},
+{
+  "id": "Q77",
+  "intent": "when to use azure vms",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "when to use azure vm",
+    "vm vs paas"
+  ],
+  "opening": "Azure VMs are best when you need full OS-level control.",
+  "anchors": [
+    "custom software",
+    "legacy workloads",
+    "special configurations",
+    "migration scenarios"
+  ],
+  "closing": "Control increases responsibility."
+},
+{
+  "id": "Q78",
+  "intent": "azure vm sizing",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "azure vm sizes",
+    "vm sizing strategy"
+  ],
+  "opening": "VM sizing aligns compute resources to workload needs.",
+  "anchors": [
+    "cpu",
+    "memory",
+    "disk throughput",
+    "cost tradeoff"
+  ],
+  "closing": "Over-sizing increases cost without benefit."
+},
+{
+  "id": "Q79",
+  "intent": "azure vm availability options",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "availability sets",
+    "availability zones",
+    "vm high availability"
+  ],
+  "opening": "Azure provides multiple availability options for VMs.",
+  "anchors": [
+    "availability sets",
+    "availability zones",
+    "fault domains",
+    "update domains"
+  ],
+  "closing": "Availability choices affect resilience."
+},
+{
+  "id": "Q80",
+  "intent": "availability set vs zone",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "availability set vs availability zone",
+    "azure availability comparison"
+  ],
+  "opening": "Availability sets protect within a datacenter, zones protect across datacenters.",
+  "anchors": [
+    "single datacenter",
+    "zone isolation",
+    "resilience",
+    "cost"
+  ],
+  "closing": "Zones offer stronger fault isolation."
+},
+{
+  "id": "Q81",
+  "intent": "vm scale sets",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm scale sets",
+    "azure autoscaling vm"
+  ],
+  "opening": "VM Scale Sets manage and scale identical VM instances.",
+  "anchors": [
+    "autoscaling",
+    "load balancing",
+    "uniform instances",
+    "elasticity"
+  ],
+  "closing": "They simplify large VM fleets."
+},
+{
+  "id": "Q82",
+  "intent": "azure vm image sources",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "azure vm images",
+    "custom vm image"
+  ],
+  "opening": "VMs can be created from marketplace or custom images.",
+  "anchors": [
+    "marketplace",
+    "custom image",
+    "golden image",
+    "consistency"
+  ],
+  "closing": "Images define the VM baseline."
+},
+{
+  "id": "Q83",
+  "intent": "azure vm disk types",
+  "level": "L1",
+  "domain": "azure-compute-storage",
+  "triggers": [
+    "azure vm disk types",
+    "os disk data disk"
+  ],
+  "opening": "Azure VMs support multiple disk types.",
+  "anchors": [
+    "os disk",
+    "data disk",
+    "temporary disk",
+    "managed disks"
+  ],
+  "closing": "Disk choice impacts performance."
+},
+{
+  "id": "Q84",
+  "intent": "azure managed disks",
+  "level": "L1",
+  "domain": "azure-compute-storage",
+  "triggers": [
+    "managed disks",
+    "azure disk management"
+  ],
+  "opening": "Managed disks abstract storage account management.",
+  "anchors": [
+    "simplified management",
+    "scalability",
+    "availability",
+    "security"
+  ],
+  "closing": "They reduce operational overhead."
+},
+{
+  "id": "Q85",
+  "intent": "vm disk encryption",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "vm disk encryption",
+    "azure disk encryption"
+  ],
+  "opening": "VM disks should be encrypted at rest.",
+  "anchors": [
+    "platform-managed keys",
+    "customer-managed keys",
+    "key vault",
+    "compliance"
+  ],
+  "closing": "Encryption protects data if disks are compromised."
+},
+{
+  "id": "Q86",
+  "intent": "secure vm access",
+  "level": "L1",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "secure vm access",
+    "how do you access azure vm"
+  ],
+  "opening": "VM access should avoid public exposure.",
+  "anchors": [
+    "private ip",
+    "bastion",
+    "just-in-time access",
+    "identity-based access"
+  ],
+  "closing": "Direct public access increases risk."
+},
+{
+  "id": "Q87",
+  "intent": "azure bastion",
+  "level": "L1",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "azure bastion",
+    "bastion host azure"
+  ],
+  "opening": "Azure Bastion provides secure RDP and SSH access without public IPs.",
+  "anchors": [
+    "browser-based access",
+    "no public exposure",
+    "managed service",
+    "auditability"
+  ],
+  "closing": "It reduces attack surface."
+},
+{
+  "id": "Q88",
+  "intent": "just in time vm access",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "just in time vm access",
+    "jit access azure"
+  ],
+  "opening": "Just-in-time access limits VM management ports exposure.",
+  "anchors": [
+    "time-bound access",
+    "approval",
+    "reduced exposure",
+    "monitoring"
+  ],
+  "closing": "JIT reduces attack windows."
+},
+{
+  "id": "Q89",
+  "intent": "vm patching strategy",
+  "level": "L2",
+  "domain": "azure-compute-operations",
+  "triggers": [
+    "vm patching",
+    "os update strategy"
+  ],
+  "opening": "VM patching should be automated and scheduled.",
+  "anchors": [
+    "update management",
+    "maintenance windows",
+    "testing",
+    "automation"
+  ],
+  "closing": "Unpatched systems are common entry points."
+},
+{
+  "id": "Q90",
+  "intent": "azure vm monitoring",
+  "level": "L1",
+  "domain": "azure-compute-monitoring",
+  "triggers": [
+    "monitor azure vm",
+    "vm monitoring"
+  ],
+  "opening": "VM monitoring focuses on health and performance.",
+  "anchors": [
+    "metrics",
+    "logs",
+    "alerts",
+    "agent-based monitoring"
+  ],
+  "closing": "Monitoring enables proactive response."
+},
+{
+  "id": "Q91",
+  "intent": "vm backup and recovery",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm backup",
+    "azure vm recovery"
+  ],
+  "opening": "VM backups protect against data loss and corruption.",
+  "anchors": [
+    "azure backup",
+    "snapshots",
+    "retention",
+    "restore testing"
+  ],
+  "closing": "Backups support recovery objectives."
+},
+{
+  "id": "Q92",
+  "intent": "vm migration strategy",
+  "level": "L2",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm migration",
+    "lift and shift azure"
+  ],
+  "opening": "VM migrations require planning around dependencies and downtime.",
+  "anchors": [
+    "assessment",
+    "replication",
+    "cutover",
+    "validation"
+  ],
+  "closing": "Migration risk increases with complexity."
+},
+{
+  "id": "Q93",
+  "intent": "vm cost optimization",
+  "level": "L1",
+  "domain": "azure-compute-cost",
+  "triggers": [
+    "vm cost optimization",
+    "reduce vm cost azure"
+  ],
+  "opening": "VM cost optimization aligns usage to demand.",
+  "anchors": [
+    "right sizing",
+    "reserved instances",
+    "auto shutdown",
+    "monitoring"
+  ],
+  "closing": "Idle compute wastes budget."
+},
+{
+  "id": "Q94",
+  "intent": "reserved instances",
+  "level": "L1",
+  "domain": "azure-compute-cost",
+  "triggers": [
+    "reserved instances",
+    "azure vm reservation"
+  ],
+  "opening": "Reserved instances provide discounted pricing for committed usage.",
+  "anchors": [
+    "one year",
+    "three year",
+    "cost savings",
+    "commitment"
+  ],
+  "closing": "They trade flexibility for savings."
+},
+{
+  "id": "Q95",
+  "intent": "spot vms",
+  "level": "L1",
+  "domain": "azure-compute-cost",
+  "triggers": [
+    "spot vm",
+    "azure spot instances"
+  ],
+  "opening": "Spot VMs use excess capacity at lower cost.",
+  "anchors": [
+    "interruptible",
+    "low cost",
+    "non-critical workloads",
+    "risk tradeoff"
+  ],
+  "closing": "They suit fault-tolerant workloads."
+},
+{
+  "id": "Q96",
+  "intent": "vm security baseline",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "vm security baseline",
+    "secure vm configuration"
+  ],
+  "opening": "VM security baselines enforce consistent configuration.",
+  "anchors": [
+    "hardening",
+    "policies",
+    "automation",
+    "compliance"
+  ],
+  "closing": "Baselines reduce drift."
+},
+{
+  "id": "Q97",
+  "intent": "azure vm extensions",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm extensions",
+    "azure vm agents"
+  ],
+  "opening": "VM extensions automate post-deployment configuration.",
+  "anchors": [
+    "agents",
+    "automation",
+    "configuration",
+    "monitoring"
+  ],
+  "closing": "Extensions reduce manual setup."
+},
+{
+  "id": "Q98",
+  "intent": "custom script extension",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "custom script extension",
+    "run scripts on vm"
+  ],
+  "opening": "Custom Script Extensions run scripts during or after VM deployment.",
+  "anchors": [
+    "automation",
+    "bootstrapping",
+    "configuration",
+    "idempotence"
+  ],
+  "closing": "Scripts should be repeatable and secure."
+},
+{
+  "id": "Q99",
+  "intent": "vm network security",
+  "level": "L1",
+  "domain": "azure-compute-networking",
+  "triggers": [
+    "vm network security",
+    "secure vm networking"
+  ],
+  "opening": "VM network security controls inbound and outbound traffic.",
+  "anchors": [
+    "nsg",
+    "least exposure",
+    "segmentation",
+    "monitoring"
+  ],
+  "closing": "Network rules enforce isolation."
+},
+{
+  "id": "Q100",
+  "intent": "nsg vs firewall",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "nsg vs firewall",
+    "azure network security controls"
+  ],
+  "opening": "NSGs filter traffic at the subnet or NIC level, firewalls provide centralized control.",
+  "anchors": [
+    "layer 4",
+    "centralized inspection",
+    "policy",
+    "scalability"
+  ],
+  "closing": "They serve different purposes."
+},
+{
+  "id": "Q101",
+  "intent": "vm identity",
+  "level": "L2",
+  "domain": "azure-compute-identity",
+  "triggers": [
+    "managed identity for vm",
+    "vm identity azure"
+  ],
+  "opening": "Managed identities prov
+
+,
+{
+  "id": "Q76",
+  "intent": "azure virtual machine overview",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "what is an azure virtual machine",
+    "azure vm overview"
+  ],
+  "opening": "Azure Virtual Machines provide scalable compute resources on demand.",
+  "anchors": [
+    "iaas",
+    "full control",
+    "os management",
+    "scalability"
+  ],
+  "closing": "VMs offer flexibility at the cost of operational responsibility."
+},
+{
+  "id": "Q77",
+  "intent": "when to use azure vms",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "when to use azure vm",
+    "vm vs paas"
+  ],
+  "opening": "Azure VMs are best when you need full OS-level control.",
+  "anchors": [
+    "custom software",
+    "legacy workloads",
+    "special configurations",
+    "migration scenarios"
+  ],
+  "closing": "Control increases responsibility."
+},
+{
+  "id": "Q78",
+  "intent": "azure vm sizing",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "azure vm sizes",
+    "vm sizing strategy"
+  ],
+  "opening": "VM sizing aligns compute resources to workload needs.",
+  "anchors": [
+    "cpu",
+    "memory",
+    "disk throughput",
+    "cost tradeoff"
+  ],
+  "closing": "Over-sizing increases cost without benefit."
+},
+{
+  "id": "Q79",
+  "intent": "azure vm availability options",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "availability sets",
+    "availability zones",
+    "vm high availability"
+  ],
+  "opening": "Azure provides multiple availability options for VMs.",
+  "anchors": [
+    "availability sets",
+    "availability zones",
+    "fault domains",
+    "update domains"
+  ],
+  "closing": "Availability choices affect resilience."
+},
+{
+  "id": "Q80",
+  "intent": "availability set vs zone",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "availability set vs availability zone",
+    "azure availability comparison"
+  ],
+  "opening": "Availability sets protect within a datacenter, zones protect across datacenters.",
+  "anchors": [
+    "single datacenter",
+    "zone isolation",
+    "resilience",
+    "cost"
+  ],
+  "closing": "Zones offer stronger fault isolation."
+},
+{
+  "id": "Q81",
+  "intent": "vm scale sets",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm scale sets",
+    "azure autoscaling vm"
+  ],
+  "opening": "VM Scale Sets manage and scale identical VM instances.",
+  "anchors": [
+    "autoscaling",
+    "load balancing",
+    "uniform instances",
+    "elasticity"
+  ],
+  "closing": "They simplify large VM fleets."
+},
+{
+  "id": "Q82",
+  "intent": "azure vm image sources",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "azure vm images",
+    "custom vm image"
+  ],
+  "opening": "VMs can be created from marketplace or custom images.",
+  "anchors": [
+    "marketplace",
+    "custom image",
+    "golden image",
+    "consistency"
+  ],
+  "closing": "Images define the VM baseline."
+},
+{
+  "id": "Q83",
+  "intent": "azure vm disk types",
+  "level": "L1",
+  "domain": "azure-compute-storage",
+  "triggers": [
+    "azure vm disk types",
+    "os disk data disk"
+  ],
+  "opening": "Azure VMs support multiple disk types.",
+  "anchors": [
+    "os disk",
+    "data disk",
+    "temporary disk",
+    "managed disks"
+  ],
+  "closing": "Disk choice impacts performance."
+},
+{
+  "id": "Q84",
+  "intent": "azure managed disks",
+  "level": "L1",
+  "domain": "azure-compute-storage",
+  "triggers": [
+    "managed disks",
+    "azure disk management"
+  ],
+  "opening": "Managed disks abstract storage account management.",
+  "anchors": [
+    "simplified management",
+    "scalability",
+    "availability",
+    "security"
+  ],
+  "closing": "They reduce operational overhead."
+},
+{
+  "id": "Q85",
+  "intent": "vm disk encryption",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "vm disk encryption",
+    "azure disk encryption"
+  ],
+  "opening": "VM disks should be encrypted at rest.",
+  "anchors": [
+    "platform-managed keys",
+    "customer-managed keys",
+    "key vault",
+    "compliance"
+  ],
+  "closing": "Encryption protects data if disks are compromised."
+},
+{
+  "id": "Q86",
+  "intent": "secure vm access",
+  "level": "L1",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "secure vm access",
+    "how do you access azure vm"
+  ],
+  "opening": "VM access should avoid public exposure.",
+  "anchors": [
+    "private ip",
+    "bastion",
+    "just-in-time access",
+    "identity-based access"
+  ],
+  "closing": "Direct public access increases risk."
+},
+{
+  "id": "Q87",
+  "intent": "azure bastion",
+  "level": "L1",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "azure bastion",
+    "bastion host azure"
+  ],
+  "opening": "Azure Bastion provides secure RDP and SSH access without public IPs.",
+  "anchors": [
+    "browser-based access",
+    "no public exposure",
+    "managed service",
+    "auditability"
+  ],
+  "closing": "It reduces attack surface."
+},
+{
+  "id": "Q88",
+  "intent": "just in time vm access",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "just in time vm access",
+    "jit access azure"
+  ],
+  "opening": "Just-in-time access limits VM management ports exposure.",
+  "anchors": [
+    "time-bound access",
+    "approval",
+    "reduced exposure",
+    "monitoring"
+  ],
+  "closing": "JIT reduces attack windows."
+},
+{
+  "id": "Q89",
+  "intent": "vm patching strategy",
+  "level": "L2",
+  "domain": "azure-compute-operations",
+  "triggers": [
+    "vm patching",
+    "os update strategy"
+  ],
+  "opening": "VM patching should be automated and scheduled.",
+  "anchors": [
+    "update management",
+    "maintenance windows",
+    "testing",
+    "automation"
+  ],
+  "closing": "Unpatched systems are common entry points."
+},
+{
+  "id": "Q90",
+  "intent": "azure vm monitoring",
+  "level": "L1",
+  "domain": "azure-compute-monitoring",
+  "triggers": [
+    "monitor azure vm",
+    "vm monitoring"
+  ],
+  "opening": "VM monitoring focuses on health and performance.",
+  "anchors": [
+    "metrics",
+    "logs",
+    "alerts",
+    "agent-based monitoring"
+  ],
+  "closing": "Monitoring enables proactive response."
+},
+{
+  "id": "Q91",
+  "intent": "vm backup and recovery",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm backup",
+    "azure vm recovery"
+  ],
+  "opening": "VM backups protect against data loss and corruption.",
+  "anchors": [
+    "azure backup",
+    "snapshots",
+    "retention",
+    "restore testing"
+  ],
+  "closing": "Backups support recovery objectives."
+},
+{
+  "id": "Q92",
+  "intent": "vm migration strategy",
+  "level": "L2",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm migration",
+    "lift and shift azure"
+  ],
+  "opening": "VM migrations require planning around dependencies and downtime.",
+  "anchors": [
+    "assessment",
+    "replication",
+    "cutover",
+    "validation"
+  ],
+  "closing": "Migration risk increases with complexity."
+},
+{
+  "id": "Q93",
+  "intent": "vm cost optimization",
+  "level": "L1",
+  "domain": "azure-compute-cost",
+  "triggers": [
+    "vm cost optimization",
+    "reduce vm cost azure"
+  ],
+  "opening": "VM cost optimization aligns usage to demand.",
+  "anchors": [
+    "right sizing",
+    "reserved instances",
+    "auto shutdown",
+    "monitoring"
+  ],
+  "closing": "Idle compute wastes budget."
+},
+{
+  "id": "Q94",
+  "intent": "reserved instances",
+  "level": "L1",
+  "domain": "azure-compute-cost",
+  "triggers": [
+    "reserved instances",
+    "azure vm reservation"
+  ],
+  "opening": "Reserved instances provide discounted pricing for committed usage.",
+  "anchors": [
+    "one year",
+    "three year",
+    "cost savings",
+    "commitment"
+  ],
+  "closing": "They trade flexibility for savings."
+},
+{
+  "id": "Q95",
+  "intent": "spot vms",
+  "level": "L1",
+  "domain": "azure-compute-cost",
+  "triggers": [
+    "spot vm",
+    "azure spot instances"
+  ],
+  "opening": "Spot VMs use excess capacity at lower cost.",
+  "anchors": [
+    "interruptible",
+    "low cost",
+    "non-critical workloads",
+    "risk tradeoff"
+  ],
+  "closing": "They suit fault-tolerant workloads."
+},
+{
+  "id": "Q96",
+  "intent": "vm security baseline",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "vm security baseline",
+    "secure vm configuration"
+  ],
+  "opening": "VM security baselines enforce consistent configuration.",
+  "anchors": [
+    "hardening",
+    "policies",
+    "automation",
+    "compliance"
+  ],
+  "closing": "Baselines reduce drift."
+},
+{
+  "id": "Q97",
+  "intent": "azure vm extensions",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm extensions",
+    "azure vm agents"
+  ],
+  "opening": "VM extensions automate post-deployment configuration.",
+  "anchors": [
+    "agents",
+    "automation",
+    "configuration",
+    "monitoring"
+  ],
+  "closing": "Extensions reduce manual setup."
+},
+{
+  "id": "Q98",
+  "intent": "custom script extension",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "custom script extension",
+    "run scripts on vm"
+  ],
+  "opening": "Custom Script Extensions run scripts during or after VM deployment.",
+  "anchors": [
+    "automation",
+    "bootstrapping",
+    "configuration",
+    "idempotence"
+  ],
+  "closing": "Scripts should be repeatable and secure."
+},
+{
+  "id": "Q99",
+  "intent": "vm network security",
+  "level": "L1",
+  "domain": "azure-compute-networking",
+  "triggers": [
+    "vm network security",
+    "secure vm networking"
+  ],
+  "opening": "VM network security controls inbound and outbound traffic.",
+  "anchors": [
+    "nsg",
+    "least exposure",
+    "segmentation",
+    "monitoring"
+  ],
+  "closing": "Network rules enforce isolation."
+},
+{
+  "id": "Q100",
+  "intent": "nsg vs firewall",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "nsg vs firewall",
+    "azure network security controls"
+  ],
+  "opening": "NSGs filter traffic at the subnet or NIC level, firewalls provide centralized control.",
+  "anchors": [
+    "layer 4",
+    "centralized inspection",
+    "policy",
+    "scalability"
+  ],
+  "closing": "They serve different purposes."
+},
+{
+  "id": "Q101",
+  "intent": "vm identity",
+  "level": "L2",
+  "domain": "azure-compute-identity",
+  "triggers": [
+    "managed identity for vm",
+    "vm identity azure"
+  ],
+  "opening": "Managed identities provide secure identity for VMs.",
+  "anchors": [
+    "no secrets",
+    "entra id",
+    "role assignment",
+    "automation"
+  ],
+  "closing": "Identity replaces credentials."
+},
+{
+  "id": "Q102",
+  "intent": "system vs user managed identity",
+  "level": "L1",
+  "domain": "azure-compute-identity",
+  "triggers": [
+    "system vs user managed identity",
+    "managed identity types"
+  ],
+  "opening": "Azure supports system-assigned and user-assigned managed identities.",
+  "anchors": [
+    "lifecycle",
+    "scope",
+    "reuse",
+    "management"
+  ],
+  "closing": "Choice depends on reuse needs."
+},
+{
+  "id": "Q103",
+  "intent": "vm access logging",
+  "level": "L2",
+  "domain": "azure-compute-monitoring",
+  "triggers": [
+    "vm access logging",
+    "log vm access"
+  ],
+  "opening": "Access logging provides visibility into VM activity.",
+  "anchors": [
+    "auth logs",
+    "session tracking",
+    "alerts",
+    "forensics"
+  ],
+  "closing": "Logs explain incidents."
+},
+{
+  "id": "Q104",
+  "intent": "vm scale and resilience design",
+  "level": "L2",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm resilience",
+    "design for vm scale"
+  ],
+  "opening": "Resilient VM design assumes failure.",
+  "anchors": [
+    "redundancy",
+    "autoscaling",
+    "stateless design",
+    "health probes"
+  ],
+  "closing": "Failure tolerance improves uptime."
+},
+{
+  "id": "Q105",
+  "intent": "vm decommissioning",
+  "level": "L2",
+  "domain": "azure-compute-operations",
+  "triggers": [
+    "vm decommissioning",
+    "remove unused vms"
+  ],
+  "opening": "VM decommissioning should follow a controlled lifecycle.",
+  "anchors": [
+    "data cleanup",
+    "identity removal",
+    "resource deletion",
+    "cost reduction"
+  ],
+  "closing": "Unused VMs increase risk."
+},
+{
+  "id": "Q106",
+  "intent": "vm security monitoring",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "vm security monitoring",
+    "monitor vm threats"
+  ],
+  "opening": "Security monitoring detects threats against VMs.",
+  "anchors": [
+    "defender for cloud",
+    "alerts",
+    "anomaly detection",
+    "response"
+  ],
+  "closing": "Detection complements prevention."
+},
+{
+  "id": "Q107",
+  "intent": "vm hardening",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "vm hardening",
+    "secure vm os"
+  ],
+  "opening": "VM hardening reduces attack surface.",
+  "anchors": [
+    "disable unused services",
+    "patching",
+    "least privilege",
+    "baseline configs"
+  ],
+  "closing": "Hardening should be automated."
+},
+{
+  "id": "Q108",
+  "intent": "vm os choice",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "windows vs linux vm",
+    "vm os choice"
+  ],
+  "opening": "OS choice impacts security and operations.",
+  "anchors": [
+    "workload requirements",
+    "patching",
+    "tooling",
+    "skills"
+  ],
+  "closing": "Choose based on workload fit."
+},
+{
+  "id": "Q109",
+  "intent": "vm startup security",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "secure vm startup",
+    "boot security azure"
+  ],
+  "opening": "Secure startup protects VM boot integrity.",
+  "anchors": [
+    "secure boot",
+    "trusted launch",
+    "rootkit protection",
+    "integrity"
+  ],
+  "closing": "Boot integrity prevents low-level attacks."
+},
+{
+  "id": "Q110",
+  "intent": "trusted launch",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "trusted launch",
+    "secure boot azure vm"
+  ],
+  "opening": "Trusted Launch enhances VM security at boot.",
+  "anchors": [
+    "secure boot",
+    "vTPM",
+    "kernel integrity",
+    "defense in depth"
+  ],
+  "closing": "It protects against advanced threats."
+},
+{
+  "id": "Q111",
+  "intent": "vm automation",
+  "level": "L1",
+  "domain": "azure-compute-automation",
+  "triggers": [
+    "automate vm deployment",
+    "vm automation"
+  ],
+  "opening": "VM automation reduces manual effort and errors.",
+  "anchors": [
+    "arm",
+    "bicep",
+    "terraform",
+    "pipelines"
+  ],
+  "closing": "Automation improves consistency."
+},
+{
+  "id": "Q112",
+  "intent": "vm golden images",
+  "level": "L2",
+  "domain": "azure-compute",
+  "triggers": [
+    "golden image",
+    "vm image pipeline"
+  ],
+  "opening": "Golden images standardize VM deployments.",
+  "anchors": [
+    "hardening",
+    "patching",
+    "testing",
+    "consistency"
+  ],
+  "closing": "Images reduce configuration drift."
+},
+{
+  "id": "Q113",
+  "intent": "vm drift detection",
+  "level": "L2",
+  "domain": "azure-compute-operations",
+  "triggers": [
+    "vm configuration drift",
+    "detect vm drift"
+  ],
+  "opening": "Drift detection identifies deviation from baselines.",
+  "anchors": [
+    "policy",
+    "monitoring",
+    "automation",
+    "remediation"
+  ],
+  "closing": "Drift signals risk."
+},
+{
+  "id": "Q114",
+  "intent": "vm logging strategy",
+  "level": "L1",
+  "domain": "azure-compute-monitoring",
+  "triggers": [
+    "vm logging strategy",
+    "log vm activity"
+  ],
+  "opening": "VM logging captures system and security events.",
+  "anchors": [
+    "os logs",
+    "security events",
+    "centralization",
+    "retention"
+  ],
+  "closing": "Logs support investigation."
+},
+{
+  "id": "Q115",
+  "intent": "vm isolation strategy",
+  "level": "L2",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm isolation",
+    "isolate workloads azure"
+  ],
+  "opening": "VM isolation limits blast radius.",
+  "anchors": [
+    "separate subnets",
+    "separate subscriptions",
+    "nsgs",
+    "least privilege"
+  ],
+  "closing": "Isolation reduces impact."
+},
+{
+  "id": "Q116",
+  "intent": "vm scale limitations",
+  "level": "L2",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm scaling limits",
+    "azure vm quotas"
+  ],
+  "opening": "VM scaling is limited by quotas and design.",
+  "anchors": [
+    "subscription limits",
+    "region capacity",
+    "planning",
+    "requests"
+  ],
+  "closing": "Limits should be planned early."
+},
+{
+  "id": "Q117",
+  "intent": "vm failure scenarios",
+  "level": "L2",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm failure scenarios",
+    "vm outages"
+  ],
+  "opening": "VMs can fail due to hardware or configuration issues.",
+  "anchors": [
+    "host failure",
+    "os crash",
+    "network issues",
+    "resilience design"
+  ],
+  "closing": "Failure should be expected."
+},
+{
+  "id": "Q118",
+  "intent": "vm scaling strategy",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "vm scaling strategy",
+    "scale azure vm"
+  ],
+  "opening": "Scaling strategies depend on workload behavior.",
+  "anchors": [
+    "horizontal scaling",
+    "vertical scaling",
+    "autoscale rules",
+    "metrics"
+  ],
+  "closing": "Automation enables elasticity."
+},
+{
+  "id": "Q119",
+  "intent": "vm access anti patterns",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "vm access anti patterns",
+    "vm security mistakes"
+  ],
+  "opening": "Common VM access mistakes increase risk.",
+  "anchors": [
+    "public rdp",
+    "shared credentials",
+    "no logging",
+    "permanent access"
+  ],
+  "closing": "Mistakes scale quickly."
+},
+{
+  "id": "Q120",
+  "intent": "vm lifecycle management",
+  "level": "L2",
+  "domain": "azure-compute-operations",
+  "triggers": [
+    "vm lifecycle",
+    "manage vm lifecycle"
+  ],
+  "opening": "VM lifecycle management spans creation to deletion.",
+  "anchors": [
+    "provisioning",
+    "patching",
+    "monitoring",
+    "decommissioning"
+  ],
+  "closing": "Lifecycle discipline reduces risk."
+},
+{
+  "id": "Q121",
+  "intent": "vm security posture management",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "vm security posture",
+    "secure vm posture"
+  ],
+  "opening": "Security posture management ensures continuous compliance.",
+  "anchors": [
+    "policy",
+    "baseline",
+    "alerts",
+    "remediation"
+  ],
+  "closing": "Posture drifts without oversight."
+},
+{
+  "id": "Q122",
+  "intent": "vm threat detection",
+  "level": "L2",
+  "domain": "azure-compute-security",
+  "triggers": [
+    "detect vm threats",
+    "vm threat detection"
+  ],
+  "opening": "Threat detection identifies malicious VM activity.",
+  "anchors": [
+    "behavior analysis",
+    "alerts",
+    "response",
+    "telemetry"
+  ],
+  "closing": "Detection complements prevention."
+},
+{
+  "id": "Q123",
+  "intent": "vm recovery objectives",
+  "level": "L1",
+  "domain": "azure-compute",
+  "triggers": [
+    "rto rpo vm",
+    "vm recovery objectives"
+  ],
+  "opening": "Recovery objectives define acceptable downtime and data loss.",
+  "anchors": [
+    "rto",
+    "rpo",
+    "backup strategy",
+    "resilience"
+  ],
+  "closing": "Objectives guide design."
+},
+{
+  "id": "Q124",
+  "intent": "vm automation risks",
+  "level": "L2",
+  "domain": "azure-compute-automation",
+  "triggers": [
+    "vm automation risks",
+    "automation security risk"
+  ],
+  "opening": "Automation introduces both efficiency and risk.",
+  "anchors": [
+    "permissions",
+    "testing",
+    "guardrails",
+    "monitoring"
+  ],
+  "closing": "Automation needs control."
+},
+{
+  "id": "Q125",
+  "intent": "future of vm compute",
+  "level": "L3",
+  "domain": "azure-compute",
+  "triggers": [
+    "future of vm compute",
+    "vm vs containers serverless"
+  ],
+  "opening": "VMs will coexist with containers and serverless.",
+  "anchors": [
+    "legacy support",
+    "hybrid workloads",
+    "control needs",
+    "evolution"
+  ],
+  "closing": "Compute models coexist by use case."
+}
+
+,
+{
+  "id": "Q126",
+  "intent": "azure vnet overview",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "what is an azure vnet",
+    "azure vnet overview"
+  ],
+  "opening": "An Azure Virtual Network provides isolated networking for Azure resources.",
+  "anchors": [
+    "private address space",
+    "isolation",
+    "subnets",
+    "control"
+  ],
+  "closing": "VNets are the foundation of Azure networking."
+},
+{
+  "id": "Q127",
+  "intent": "vnet address planning",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "vnet address planning",
+    "ip addressing azure"
+  ],
+  "opening": "VNet address planning defines IP ranges for scalability.",
+  "anchors": [
+    "cidr",
+    "future growth",
+    "avoid overlap",
+    "routing"
+  ],
+  "closing": "Poor planning limits expansion."
+},
+{
+  "id": "Q128",
+  "intent": "azure subnet design",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "azure subnet design",
+    "subnets in vnet"
+  ],
+  "opening": "Subnets segment workloads within a VNet.",
+  "anchors": [
+    "segmentation",
+    "blast radius",
+    "security boundaries",
+    "routing"
+  ],
+  "closing": "Subnets enable layered control."
+},
+{
+  "id": "Q129",
+  "intent": "nsg overview",
+  "level": "L1",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "what is an nsg",
+    "network security group"
+  ],
+  "opening": "Network Security Groups filter traffic at the subnet or NIC level.",
+  "anchors": [
+    "inbound rules",
+    "outbound rules",
+    "priority",
+    "layer 4"
+  ],
+  "closing": "NSGs enforce basic traffic control."
+},
+{
+  "id": "Q130",
+  "intent": "nsg best practices",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "nsg best practices",
+    "secure nsg rules"
+  ],
+  "opening": "Effective NSGs follow least exposure principles.",
+  "anchors": [
+    "deny by default",
+    "specific rules",
+    "no wide ranges",
+    "documentation"
+  ],
+  "closing": "Simple rules are safer."
+},
+{
+  "id": "Q131",
+  "intent": "azure firewall overview",
+  "level": "L1",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "azure firewall",
+    "what is azure firewall"
+  ],
+  "opening": "Azure Firewall provides centralized, stateful network security.",
+  "anchors": [
+    "layer 7",
+    "central inspection",
+    "logging",
+    "scalability"
+  ],
+  "closing": "Firewalls add visibility and control."
+},
+{
+  "id": "Q132",
+  "intent": "nsg vs azure firewall",
+  "level": "L1",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "nsg vs firewall",
+    "azure nsg firewall difference"
+  ],
+  "opening": "NSGs filter traffic locally, firewalls inspect traffic centrally.",
+  "anchors": [
+    "layer 4 vs layer 7",
+    "distributed vs centralized",
+    "cost",
+    "use cases"
+  ],
+  "closing": "They are complementary controls."
+},
+{
+  "id": "Q133",
+  "intent": "user defined routes",
+  "level": "L2",
+  "domain": "azure-networking",
+  "triggers": [
+    "user defined routes",
+    "udr azure"
+  ],
+  "opening": "User Defined Routes control traffic flow within Azure.",
+  "anchors": [
+    "next hop",
+    "firewall routing",
+    "inspection",
+    "egress control"
+  ],
+  "closing": "Routing shapes security."
+},
+{
+  "id": "Q134",
+  "intent": "azure private endpoint",
+  "level": "L1",
+  "domain": "azure-networking-private",
+  "triggers": [
+    "private endpoint",
+    "azure private link"
+  ],
+  "opening": "Private Endpoints provide private access to PaaS services.",
+  "anchors": [
+    "private ip",
+    "no public exposure",
+    "zero trust",
+    "vnet integration"
+  ],
+  "closing": "They remove public network dependency."
+},
+{
+  "id": "Q135",
+  "intent": "private link vs service endpoint",
+  "level": "L1",
+  "domain": "azure-networking-private",
+  "triggers": [
+    "private link vs service endpoint",
+    "azure service endpoints"
+  ],
+  "opening": "Private Link uses private IPs, service endpoints secure public endpoints.",
+  "anchors": [
+    "private ip",
+    "public backbone",
+    "security posture",
+    "use cases"
+  ],
+  "closing": "Private Link offers stronger isolation."
+},
+{
+  "id": "Q136",
+  "intent": "azure dns overview",
+  "level": "L1",
+  "domain": "azure-networking-dns",
+  "triggers": [
+    "azure dns",
+    "dns in azure"
+  ],
+  "opening": "DNS enables name resolution for Azure resources.",
+  "anchors": [
+    "name resolution",
+    "private dns zones",
+    "integration",
+    "reliability"
+  ],
+  "closing": "DNS underpins connectivity."
+},
+{
+  "id": "Q137",
+  "intent": "private dns zones",
+  "level": "L2",
+  "domain": "azure-networking-dns",
+  "triggers": [
+    "private dns zone",
+    "azure private dns"
+  ],
+  "opening": "Private DNS Zones enable internal name resolution.",
+  "anchors": [
+    "vnet linking",
+    "private endpoints",
+    "name isolation",
+    "automation"
+  ],
+  "closing": "They are essential for Private Link."
+},
+{
+  "id": "Q138",
+  "intent": "azure load balancer",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "azure load balancer",
+    "layer 4 load balancer"
+  ],
+  "opening": "Azure Load Balancer distributes traffic at layer 4.",
+  "anchors": [
+    "tcp",
+    "udp",
+    "health probes",
+    "high availability"
+  ],
+  "closing": "It supports resilient architectures."
+},
+{
+  "id": "Q139",
+  "intent": "application gateway",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "application gateway",
+    "azure application gateway"
+  ],
+  "opening": "Application Gateway provides layer 7 traffic management.",
+  "anchors": [
+    "http routing",
+    "ssl termination",
+    "waf",
+    "inspection"
+  ],
+  "closing": "It enables intelligent routing."
+},
+{
+  "id": "Q140",
+  "intent": "waf usage",
+  "level": "L1",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "web application firewall",
+    "waf azure"
+  ],
+  "opening": "A WAF protects web apps from common attacks.",
+  "anchors": [
+    "owasp",
+    "layer 7 protection",
+    "rulesets",
+    "visibility"
+  ],
+  "closing": "WAF reduces application risk."
+},
+{
+  "id": "Q141",
+  "intent": "azure nat gateway",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "nat gateway",
+    "azure outbound connectivity"
+  ],
+  "opening": "NAT Gateway provides scalable outbound connectivity.",
+  "anchors": [
+    "egress control",
+    "static ip",
+    "scale",
+    "reliability"
+  ],
+  "closing": "It simplifies outbound design."
+},
+{
+  "id": "Q142",
+  "intent": "egress traffic control",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "control egress traffic",
+    "azure outbound filtering"
+  ],
+  "opening": "Egress control limits where resources can communicate.",
+  "anchors": [
+    "firewall",
+    "udr",
+    "deny by default",
+    "monitoring"
+  ],
+  "closing": "Outbound traffic matters as much as inbound."
+},
+{
+  "id": "Q143",
+  "intent": "azure peering",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "vnet peering",
+    "azure peering"
+  ],
+  "opening": "VNet peering connects virtual networks privately.",
+  "anchors": [
+    "low latency",
+    "private traffic",
+    "no gateways",
+    "scalability"
+  ],
+  "closing": "Peering simplifies network topology."
+},
+{
+  "id": "Q144",
+  "intent": "hub and spoke architecture",
+  "level": "L2",
+  "domain": "azure-networking-architecture",
+  "triggers": [
+    "hub and spoke",
+    "azure network architecture"
+  ],
+  "opening": "Hub-and-spoke centralizes shared services.",
+  "anchors": [
+    "firewall hub",
+    "shared services",
+    "isolation",
+    "governance"
+  ],
+  "closing": "It improves control at scale."
+},
+{
+  "id": "Q145",
+  "intent": "azure expressroute",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "expressroute",
+    "private connectivity azure"
+  ],
+  "opening": "ExpressRoute provides private connectivity to Azure.",
+  "anchors": [
+    "private circuit",
+    "low latency",
+    "high reliability",
+    "hybrid"
+  ],
+  "closing": "It bypasses the public internet."
+},
+{
+  "id": "Q146",
+  "intent": "vpn gateway",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "vpn gateway",
+    "site to site vpn azure"
+  ],
+  "opening": "VPN Gateway enables encrypted connectivity over the internet.",
+  "anchors": [
+    "ipsec",
+    "site to site",
+    "point to site",
+    "encryption"
+  ],
+  "closing": "VPNs are flexible but internet-dependent."
+},
+{
+  "id": "Q147",
+  "intent": "expressroute vs vpn",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "expressroute vs vpn",
+    "private vs vpn connectivity"
+  ],
+  "opening": "ExpressRoute offers private connectivity, VPN uses the internet.",
+  "anchors": [
+    "latency",
+    "cost",
+    "security",
+    "availability"
+  ],
+  "closing": "Choice depends on requirements."
+},
+{
+  "id": "Q148",
+  "intent": "network segmentation strategy",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "network segmentation",
+    "segmentation strategy azure"
+  ],
+  "opening": "Segmentation limits lateral movement.",
+  "anchors": [
+    "subnets",
+    "nsgs",
+    "firewalls",
+    "isolation"
+  ],
+  "closing": "Segmentation reduces blast radius."
+},
+{
+  "id": "Q149",
+  "intent": "zero trust networking",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "zero trust networking",
+    "identity based networking"
+  ],
+  "opening": "Zero Trust networking removes implicit network trust.",
+  "anchors": [
+    "identity enforcement",
+    "private access",
+    "no flat networks",
+    "monitoring"
+  ],
+  "closing": "Identity replaces location."
+},
+{
+  "id": "Q150",
+  "intent": "network logging",
+  "level": "L1",
+  "domain": "azure-networking-monitoring",
+  "triggers": [
+    "network logging",
+    "azure network logs"
+  ],
+  "opening": "Network logs provide visibility into traffic patterns.",
+  "anchors": [
+    "flow logs",
+    "firewall logs",
+    "diagnostics",
+    "retention"
+  ],
+  "closing": "Logs support investigation."
+},
+{
+  "id": "Q151",
+  "intent": "network watcher",
+  "level": "L1",
+  "domain": "azure-networking-monitoring",
+  "triggers": [
+    "network watcher",
+    "azure network watcher"
+  ],
+  "opening": "Network Watcher provides network diagnostics.",
+  "anchors": [
+    "connection troubleshoot",
+    "flow logs",
+    "topology",
+    "visibility"
+  ],
+  "closing": "It aids troubleshooting."
+},
+{
+  "id": "Q152",
+  "intent": "traffic inspection strategy",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "traffic inspection",
+    "inspect network traffic azure"
+  ],
+  "opening": "Traffic inspection identifies malicious activity.",
+  "anchors": [
+    "firewalls",
+    "ids ips",
+    "logging",
+    "correlation"
+  ],
+  "closing": "Inspection improves detection."
+},
+{
+  "id": "Q153",
+  "intent": "network anti patterns",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "network anti patterns",
+    "common networking mistakes"
+  ],
+  "opening": "Common networking mistakes increase risk.",
+  "anchors": [
+    "flat networks",
+    "open nsgs",
+    "no egress control",
+    "no logging"
+  ],
+  "closing": "Mistakes scale quickly."
+},
+{
+  "id": "Q154",
+  "intent": "dns resolution issues",
+  "level": "L2",
+  "domain": "azure-networking-dns",
+  "triggers": [
+    "dns resolution issues",
+    "private endpoint dns problems"
+  ],
+  "opening": "DNS issues often arise with private endpoints.",
+  "anchors": [
+    "private dns zones",
+    "vnet links",
+    "records",
+    "troubleshooting"
+  ],
+  "closing": "DNS is often the hidden dependency."
+},
+{
+  "id": "Q155",
+  "intent": "network resilience design",
+  "level": "L2",
+  "domain": "azure-networking-architecture",
+  "triggers": [
+    "network resilience",
+    "design resilient networks"
+  ],
+  "opening": "Resilient network design assumes failure.",
+  "anchors": [
+    "zones",
+    "redundancy",
+    "health probes",
+    "monitoring"
+  ],
+  "closing": "Resilience requires planning."
+},
+{
+  "id": "Q156",
+  "intent": "hybrid networking",
+  "level": "L2",
+  "domain": "azure-networking",
+  "triggers": [
+    "hybrid networking",
+    "on premises connectivity azure"
+  ],
+  "opening": "Hybrid networking connects on-premises to Azure.",
+  "anchors": [
+    "vpn",
+    "expressroute",
+    "routing",
+    "security"
+  ],
+  "closing": "Hybrid adds complexity."
+},
+{
+  "id": "Q157",
+  "intent": "network cost optimization",
+  "level": "L1",
+  "domain": "azure-networking",
+  "triggers": [
+    "network cost optimization",
+    "azure networking cost"
+  ],
+  "opening": "Network costs grow with traffic and complexity.",
+  "anchors": [
+    "egress charges",
+    "design efficiency",
+    "consolidation",
+    "monitoring"
+  ],
+  "closing": "Design affects cost."
+},
+{
+  "id": "Q158",
+  "intent": "private endpoint security considerations",
+  "level": "L2",
+  "domain": "azure-networking-private",
+  "triggers": [
+    "private endpoint security",
+    "secure private link"
+  ],
+  "opening": "Private endpoints still require identity and access controls.",
+  "anchors": [
+    "rbac",
+    "dns",
+    "nsgs",
+    "monitoring"
+  ],
+  "closing": "Private does not mean unrestricted."
+},
+{
+  "id": "Q159",
+  "intent": "network troubleshooting approach",
+  "level": "L2",
+  "domain": "azure-networking",
+  "triggers": [
+    "network troubleshooting",
+    "debug azure networking"
+  ],
+  "opening": "Troubleshooting starts with visibility.",
+  "anchors": [
+    "logs",
+    "dns checks",
+    "routes",
+    "connectivity tests"
+  ],
+  "closing": "Methodical analysis reduces downtime."
+},
+{
+  "id": "Q160",
+  "intent": "azure service endpoints security",
+  "level": "L2",
+  "domain": "azure-networking-private",
+  "triggers": [
+    "service endpoints security",
+    "secure service endpoints"
+  ],
+  "opening": "Service endpoints secure public services via Azure backbone.",
+  "anchors": [
+    "restricted access",
+    "public endpoint",
+    "policy",
+    "use cases"
+  ],
+  "closing": "They are less isolated than Private Link."
+},
+{
+  "id": "Q161",
+  "intent": "network governance",
+  "level": "L2",
+  "domain": "azure-networking-governance",
+  "triggers": [
+    "network governance",
+    "azure network governance"
+  ],
+  "opening": "Network governance enforces standards and consistency.",
+  "anchors": [
+    "policies",
+    "naming",
+    "address management",
+    "automation"
+  ],
+  "closing": "Governance prevents sprawl."
+},
+{
+  "id": "Q162",
+  "intent": "egress filtering patterns",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "egress filtering",
+    "outbound filtering azure"
+  ],
+  "opening": "Egress filtering restricts outbound destinations.",
+  "anchors": [
+    "firewall rules",
+    "fqdn tags",
+    "deny by default",
+    "logging"
+  ],
+  "closing": "Outbound control limits exfiltration."
+},
+{
+  "id": "Q163",
+  "intent": "azure network security posture",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "network security posture",
+    "secure network posture"
+  ],
+  "opening": "Network posture reflects configuration and enforcement.",
+  "anchors": [
+    "exposure",
+    "segmentation",
+    "inspection",
+    "monitoring"
+  ],
+  "closing": "Posture must be measured continuously."
+},
+{
+  "id": "Q164",
+  "intent": "private link scaling considerations",
+  "level": "L2",
+  "domain": "azure-networking-private",
+  "triggers": [
+    "private link scaling",
+    "scale private endpoints"
+  ],
+  "opening": "Private Link scaling requires DNS and IP planning.",
+  "anchors": [
+    "ip consumption",
+    "dns management",
+    "automation",
+    "limits"
+  ],
+  "closing": "Scale planning avoids rework."
+},
+{
+  "id": "Q165",
+  "intent": "network identity integration",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "identity based networking",
+    "network identity integration"
+  ],
+  "opening": "Identity integration strengthens network controls.",
+  "anchors": [
+    "entra id",
+    "rbac",
+    "policy",
+    "zero trust"
+  ],
+  "closing": "Identity complements networking."
+},
+{
+  "id": "Q166",
+  "intent": "vnet peering security",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "vnet peering security",
+    "secure peering"
+  ],
+  "opening": "Peering security requires explicit controls.",
+  "anchors": [
+    "route tables",
+    "nsgs",
+    "firewalls",
+    "no transitive trust"
+  ],
+  "closing": "Peering does not imply trust."
+},
+{
+  "id": "Q167",
+  "intent": "network blast radius",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "network blast radius",
+    "limit lateral movement"
+  ],
+  "opening": "Blast radius defines potential network impact.",
+  "anchors": [
+    "segmentation",
+    "isolation",
+    "least privilege",
+    "design"
+  ],
+  "closing": "Smaller blast radius limits damage."
+},
+{
+  "id": "Q168",
+  "intent": "azure network automation",
+  "level": "L1",
+  "domain": "azure-networking-automation",
+  "triggers": [
+    "network automation",
+    "automate azure networking"
+  ],
+  "opening": "Automation enforces consistent network design.",
+  "anchors": [
+    "iac",
+    "policies",
+    "pipelines",
+    "validation"
+  ],
+  "closing": "Automation reduces errors."
+},
+{
+  "id": "Q169",
+  "intent": "network change management",
+  "level": "L2",
+  "domain": "azure-networking-operations",
+  "triggers": [
+    "network change management",
+    "manage network changes"
+  ],
+  "opening": "Network changes require controlled processes.",
+  "anchors": [
+    "review",
+    "testing",
+    "rollback",
+    "documentation"
+  ],
+  "closing": "Changes can have wide impact."
+},
+{
+  "id": "Q170",
+  "intent": "network isolation patterns",
+  "level": "L2",
+  "domain": "azure-networking-architecture",
+  "triggers": [
+    "network isolation patterns",
+    "isolate workloads network"
+  ],
+  "opening": "Isolation patterns reduce trust between workloads.",
+  "anchors": [
+    "separate vnets",
+    "subnets",
+    "firewalls",
+    "identity"
+  ],
+  "closing": "Isolation is foundational."
+},
+{
+  "id": "Q171",
+  "intent": "azure networking anti patterns",
+  "level": "L2",
+  "domain": "azure-networking-security",
+  "triggers": [
+    "azure networking anti patterns",
+    "bad network design"
+  ],
+  "opening": "Anti-patterns create invisible risk.",
+  "anchors": [
+    "flat networks",
+    "open routes",
+    "no inspection",
+    "no monitoring"
+  ],
+  "closing": "Anti-patterns scale poorly."
+},
+{
+  "id": "Q172",
+  "intent": "network observability",
+  "level": "L2",
+  "domain": "azure-networking-monitoring",
+  "triggers": [
+    "network observability",
+    "observe network traffic"
+  ],
+  "opening": "Observability combines metrics, logs, and context.",
+  "anchors": [
+    "flow logs",
+    "firewall logs",
+    "correlation",
+    "visibility"
+  ],
+  "closing": "Visibility enables response."
+},
+{
+  "id": "Q173",
+  "intent": "secure hybrid routing",
+  "level": "L2",
+  "domain": "azure-networking",
+  "triggers": [
+    "secure hybrid routing",
+    "hybrid route security"
+  ],
+  "opening": "Hybrid routing must be explicit and monitored.",
+  "anchors": [
+    "route tables",
+    "inspection",
+    "segmentation",
+    "logging"
+  ],
+  "closing": "Implicit routing creates risk."
+},
+{
+  "id": "Q174",
+  "intent": "network scale limits",
+  "level": "L2",
+  "domain": "azure-networking",
+  "triggers": [
+    "network scale limits",
+    "azure vnet limits"
+  ],
+  "opening": "Azure networking has documented limits.",
+  "anchors": [
+    "subnets",
+    "routes",
+    "peerings",
+    "planning"
+  ],
+  "closing": "Limits should be planned early."
+},
+{
+  "id": "Q175",
+  "intent": "future of cloud networking",
+  "level": "L3",
+  "domain": "azure-networking",
+  "triggers": [
+    "future of cloud networking",
+    "networking trends"
+  ],
+  "opening": "Cloud networking is shifting toward identity-aware controls.",
+  "anchors": [
+    "private access",
+    "zero trust",
+    "automation",
+    "observability"
+  ],
+  "closing": "Identity increasingly defines connectivity."
+}
+
+,
+{
+  "id": "Q176",
+  "intent": "entra id overview",
+  "level": "L1",
+  "domain": "azure-identity",
+  "triggers": [
+    "what is entra id",
+    "azure active directory overview"
+  ],
+  "opening": "Microsoft Entra ID is Azure’s cloud identity and access management service.",
+  "anchors": [
+    "identity provider",
+    "authentication",
+    "authorization",
+    "cloud native"
+  ],
+  "closing": "It is the control plane for access in Azure."
+},
+{
+  "id": "Q177",
+  "intent": "identity as control plane",
+  "level": "L2",
+  "domain": "azure-identity",
+  "triggers": [
+    "identity as control plane",
+    "why identity first"
+  ],
+  "opening": "Identity is the primary control plane in cloud security.",
+  "anchors": [
+    "users",
+    "workloads",
+    "apis",
+    "policy decisions"
+  ],
+  "closing": "All access decisions start with identity."
+},
+{
+  "id": "Q178",
+  "intent": "entra tenants and directories",
+  "level": "L1",
+  "domain": "azure-identity",
+  "triggers": [
+    "entra tenant",
+    "azure ad directory"
+  ],
+  "opening": "An Entra tenant represents an isolated identity boundary.",
+  "anchors": [
+    "directory",
+    "identity boundary",
+    "isolation",
+    "governance"
+  ],
+  "closing": "Tenants define trust scope."
+},
+{
+  "id": "Q179",
+  "intent": "users groups roles",
+  "level": "L1",
+  "domain": "azure-identity",
+  "triggers": [
+    "users groups roles",
+    "entra id objects"
+  ],
+  "opening": "Entra ID manages users, groups, and roles.",
+  "anchors": [
+    "principals",
+    "group based access",
+    "role assignment",
+    "lifecycle"
+  ],
+  "closing": "Groups simplify access management."
+},
+{
+  "id": "Q180",
+  "intent": "azure rbac overview",
+  "level": "L1",
+  "domain": "azure-identity",
+  "triggers": [
+    "azure rbac",
+    "role based access control azure"
+  ],
+  "opening": "Azure RBAC controls access to Azure resources.",
+  "anchors": [
+    "roles",
+    "scope",
+    "assignments",
+    "least privilege"
+  ],
+  "closing": "RBAC governs resource access."
+},
+{
+  "id": "Q181",
+  "intent": "built in vs custom roles",
+  "level": "L2",
+  "domain": "azure-identity",
+  "triggers": [
+    "built in vs custom roles",
+    "azure custom roles"
+  ],
+  "opening": "Built-in roles cover common needs; custom roles address gaps.",
+  "anchors": [
+    "reuse",
+    "least privilege",
+    "maintenance",
+    "complexity"
+  ],
+  "closing": "Custom roles should be used sparingly."
+},
+{
+  "id": "Q182",
+  "intent": "scope inheritance",
+  "level": "L1",
+  "domain": "azure-identity",
+  "triggers": [
+    "rbac scope inheritance",
+    "management group subscription resource"
+  ],
+  "opening": "RBAC assignments inherit down the resource hierarchy.",
+  "anchors": [
+    "management group",
+    "subscription",
+    "resource group",
+    "resource"
+  ],
+  "closing": "Higher scope increases blast radius."
+},
+{
+  "id": "Q183",
+  "intent": "management groups",
+  "level": "L1",
+  "domain": "azure-governance-identity",
+  "triggers": [
+    "management groups",
+    "azure governance hierarchy"
+  ],
+  "opening": "Management Groups organize subscriptions for governance.",
+  "anchors": [
+    "policy inheritance",
+    "rbac",
+    "scale",
+    "consistency"
+  ],
+  "closing": "They enable enterprise control."
+},
+{
+  "id": "Q184",
+  "intent": "conditional access overview",
+  "level": "L1",
+  "domain": "azure-identity-conditional-access",
+  "triggers": [
+    "conditional access",
+    "what is conditional access"
+  ],
+  "opening": "Conditional Access enforces access based on context.",
+  "anchors": [
+    "who",
+    "what",
+    "where",
+    "risk"
+  ],
+  "closing": "Context replaces static trust."
+},
+{
+  "id": "Q185",
+  "intent": "common conditional access signals",
+  "level": "L2",
+  "domain": "azure-identity-conditional-access",
+  "triggers": [
+    "conditional access signals",
+    "ca conditions"
+  ],
+  "opening": "Conditional Access evaluates risk signals.",
+  "anchors": [
+    "user risk",
+    "sign-in risk",
+    "location",
+    "device posture"
+  ],
+  "closing": "Signals drive enforcement."
+},
+{
+  "id": "Q186",
+  "intent": "mfa strategy",
+  "level": "L1",
+  "domain": "azure-identity",
+  "triggers": [
+    "mfa strategy",
+    "multi factor authentication"
+  ],
+  "opening": "MFA is the strongest baseline identity control.",
+  "anchors": [
+    "phishing resistance",
+    "coverage",
+    "exceptions",
+    "user experience"
+  ],
+  "closing": "MFA blocks most attacks."
+},
+{
+  "id": "Q187",
+  "intent": "phishing resistant mfa",
+  "level": "L2",
+  "domain": "azure-identity",
+  "triggers": [
+    "phishing resistant mfa",
+    "fido2 passwordless"
+  ],
+  "opening": "Phishing-resistant MFA prevents credential replay.",
+  "anchors": [
+    "fido2",
+    "certificate based auth",
+    "passwordless",
+    "hardware keys"
+  ],
+  "closing": "It raises the attacker cost."
+},
+{
+  "id": "Q188",
+  "intent": "device compliance",
+  "level": "L2",
+  "domain": "azure-identity-conditional-access",
+  "triggers": [
+    "device compliance",
+    "entra device posture"
+  ],
+  "opening": "Device compliance adds posture context to access decisions.",
+  "anchors": [
+    "intune",
+    "compliance state",
+    "risk scoring",
+    "policy"
+  ],
+  "closing": "Devices influence trust."
+},
+{
+  "id": "Q189",
+  "intent": "privileged identity management",
+  "level": "L1",
+  "domain": "azure-identity-pim",
+  "triggers": [
+    "pim",
+    "privileged identity management"
+  ],
+  "opening": "PIM provides just-in-time privileged access.",
+  "anchors": [
+    "time bound",
+    "approval",
+    "audit",
+    "least privilege"
+  ],
+  "closing": "Standing access is risky."
+},
+{
+  "id": "Q190",
+  "intent": "eligible vs active roles",
+  "level": "L1",
+  "domain": "azure-identity-pim",
+  "triggers": [
+    "eligible vs active roles",
+    "pim role states"
+  ],
+  "opening": "Eligible roles require activation; active roles are always on.",
+  "anchors": [
+    "just in time",
+    "approval",
+    "time limits",
+    "audit"
+  ],
+  "closing": "Eligibility reduces exposure."
+},
+{
+  "id": "Q191",
+  "intent": "pim approval workflows",
+  "level": "L2",
+  "domain": "azure-identity-pim",
+  "triggers": [
+    "pim approval",
+    "privileged access workflow"
+  ],
+  "opening": "PIM approvals add friction for high-risk access.",
+  "anchors": [
+    "approvers",
+    "justification",
+    "notifications",
+    "audit logs"
+  ],
+  "closing": "Friction is intentional."
+},
+{
+  "id": "Q192",
+  "intent": "break glass accounts",
+  "level": "L2",
+  "domain": "azure-identity",
+  "triggers": [
+    "break glass account",
+    "emergency access account"
+  ],
+  "opening": "Break-glass accounts provide emergency access.",
+  "anchors": [
+    "offline credentials",
+    "no ca policies",
+    "monitoring",
+    "rare use"
+  ],
+  "closing": "They are for emergencies only."
+},
+{
+  "id": "Q193",
+  "intent": "service principals and app registrations",
+  "level": "L1",
+  "domain": "azure-identity-workload",
+  "triggers": [
+    "service principal",
+    "app registration"
+  ],
+  "opening": "Service principals represent applications in Entra ID.",
+  "anchors": [
+    "application identity",
+    "permissions",
+    "secrets or certs",
+    "automation"
+  ],
+  "closing": "Workloads need identities too."
+},
+{
+  "id": "Q194",
+  "intent": "managed identity",
+  "level": "L1",
+  "domain": "azure-identity-workload",
+  "triggers": [
+    "managed identity",
+    "workload identity azure"
+  ],
+  "opening": "Managed identities eliminate credential management.",
+  "anchors": [
+    "no secrets",
+    "automatic rotation",
+    "entra integration",
+    "least privilege"
+  ],
+  "closing": "They are preferred for workloads."
+},
+{
+  "id": "Q195",
+  "intent": "conditional access anti patterns",
+  "level": "L2",
+  "domain": "azure-identity-conditional-access",
+  "triggers": [
+    "conditional access mistakes",
+    "ca anti patterns"
+  ],
+  "opening": "Poor Conditional Access design creates lockouts or gaps.",
+  "anchors": [
+    "overly broad rules",
+    "missing exclusions",
+    "no testing",
+    "complexity"
+  ],
+  "closing": "Simplicity reduces failure."
+},
+{
+  "id": "Q196",
+  "intent": "identity logging",
+  "level": "L1",
+  "domain": "azure-identity-monitoring",
+  "triggers": [
+    "identity logs",
+    "entra sign in logs"
+  ],
+  "opening": "Identity logs reveal authentication and authorization events.",
+  "anchors": [
+    "sign in logs",
+    "audit logs",
+    "risk events",
+    "forensics"
+  ],
+  "closing": "Identity logs explain incidents."
+},
+{
+  "id": "Q197",
+  "intent": "identity protection",
+  "level": "L2",
+  "domain": "azure-identity",
+  "triggers": [
+    "identity protection",
+    "entra identity protection"
+  ],
+  "opening": "Identity Protection detects risky users and sign-ins.",
+  "anchors": [
+    "risk scoring",
+    "automated response",
+    "mfa enforcement",
+    "telemetry"
+  ],
+  "closing": "Risk-driven response improves security."
+},
+{
+  "id": "Q198",
+  "intent": "cross tenant access",
+  "level": "L2",
+  "domain": "azure-identity",
+  "triggers": [
+    "cross tenant access",
+    "b2b collaboration"
+  ],
+  "opening": "Cross-tenant access controls external collaboration.",
+  "anchors": [
+    "trust settings",
+    "restrictions",
+    "monitoring",
+    "governance"
+  ],
+  "closing": "External access must be controlled."
+},
+{
+  "id": "Q199",
+  "intent": "identity governance",
+  "level": "L2",
+  "domain": "azure-identity-governance",
+  "triggers": [
+    "identity governance",
+    "access reviews"
+  ],
+  "opening": "Identity governance ensures access remains appropriate.",
+  "anchors": [
+    "access reviews",
+    "lifecycle",
+    "entitlement management",
+    "automation"
+  ],
+  "closing": "Access must expire."
+},
+{
+  "id": "Q200",
+  "intent": "identity first zero trust",
+  "level": "L3",
+  "domain": "azure-identity",
+  "triggers": [
+    "identity first zero trust",
+    "zero trust identity"
+  ],
+  "opening": "Zero Trust starts with identity verification.",
+  "anchors": [
+    "never trust",
+    "always verify",
+    "context",
+    "continuous evaluation"
+  ],
+  "closing": "Identity defines trust."
+},
+{
+  "id": "Q201",
+  "intent": "identity blast radius",
+  "level": "L2",
+  "domain": "azure-identity",
+  "triggers": [
+    "identity blast radius",
+    "limit identity impact"
+  ],
+  "opening": "Identity blast radius reflects scope of compromised access.",
+  "anchors": [
+    "role scope",
+    "just in time",
+    "segmentation",
+    "governance"
+  ],
+  "closing": "Smaller scopes reduce damage."
+},
+{
+  "id": "Q202",
+  "intent": "identity anti patterns",
+  "level": "L2",
+  "domain": "azure-identity",
+  "triggers": [
+    "identity anti patterns",
+    "common identity mistakes"
+  ],
+  "opening": "Identity anti-patterns create systemic risk.",
+  "anchors": [
+    "global admins",
+    "no mfa",
+    "shared accounts",
+    "permanent access"
+  ],
+  "closing": "Mistakes scale fast."
+},
+{
+  "id": "Q203",
+  "intent": "future of cloud identity",
+  "level": "L3",
+  "domain": "azure-identity",
+  "triggers": [
+    "future of cloud identity",
+    "identity trends"
+  ],
+  "opening": "Cloud identity is moving toward passwordless and continuous verification.",
+  "anchors": [
+    "passwordless",
+    "phishing resistance",
+    "risk based access",
+    "automation"
+  ],
+  "closing": "Identity will continue to replace perimeter."
+}
+
+,
+{
+  "id": "Q226",
+  "intent": "aws cloud overview",
+  "level": "L1",
+  "domain": "aws-foundations",
+  "triggers": [
+    "what is aws",
+    "aws cloud overview"
+  ],
+  "opening": "AWS is a public cloud platform offering on-demand infrastructure and services.",
+  "anchors": [
+    "iaas",
+    "paas",
+    "global infrastructure",
+    "on demand"
+  ],
+  "closing": "AWS provides scalable building blocks."
+},
+{
+  "id": "Q227",
+  "intent": "aws global infrastructure",
+  "level": "L1",
+  "domain": "aws-foundations",
+  "triggers": [
+    "aws regions and availability zones",
+    "aws global infrastructure"
+  ],
+  "opening": "AWS infrastructure is organized into regions and availability zones.",
+  "anchors": [
+    "regions",
+    "availability zones",
+    "edge locations",
+    "fault isolation"
+  ],
+  "closing": "Geography enables resilience."
+},
+{
+  "id": "Q228",
+  "intent": "aws shared responsibility model",
+  "level": "L1",
+  "domain": "aws-governance",
+  "triggers": [
+    "shared responsibility model",
+    "aws security responsibility"
+  ],
+  "opening": "AWS uses a shared responsibility model for security.",
+  "anchors": [
+    "security of the cloud",
+    "security in the cloud",
+    "customer responsibility",
+    "provider responsibility"
+  ],
+  "closing": "Understanding boundaries prevents gaps."
+},
+{
+  "id": "Q229",
+  "intent": "aws account structure",
+  "level": "L1",
+  "domain": "aws-governance",
+  "triggers": [
+    "aws account",
+    "aws account structure"
+  ],
+  "opening": "An AWS account is an isolated security and billing boundary.",
+  "anchors": [
+    "root account",
+    "iam",
+    "billing",
+    "isolation"
+  ],
+  "closing": "Accounts define trust boundaries."
+},
+{
+  "id": "Q230",
+  "intent": "aws organizations",
+  "level": "L1",
+  "domain": "aws-governance",
+  "triggers": [
+    "aws organizations",
+    "multi account strategy"
+  ],
+  "opening": "AWS Organizations centrally manages multiple accounts.",
+  "anchors": [
+    "organizational units",
+    "service control policies",
+    "governance",
+    "scale"
+  ],
+  "closing": "Organizations enable enterprise governance."
+},
+{
+  "id": "Q231",
+  "intent": "service control policies",
+  "level": "L1",
+  "domain": "aws-governance",
+  "triggers": [
+    "service control policies",
+    "scp aws"
+  ],
+  "opening": "SCPs define guardrails for AWS accounts.",
+  "anchors": [
+    "deny by default",
+    "maximum permissions",
+    "account boundaries",
+    "governance"
+  ],
+  "closing": "SCPs limit blast radius."
+},
+{
+  "id": "Q232",
+  "intent": "aws iam overview",
+  "level": "L1",
+  "domain": "aws-identity",
+  "triggers": [
+    "aws iam",
+    "identity and access management aws"
+  ],
+  "opening": "IAM controls authentication and authorization in AWS.",
+  "anchors": [
+    "users",
+    "roles",
+    "policies",
+    "least privilege"
+  ],
+  "closing": "IAM is foundational to AWS security."
+},
+{
+  "id": "Q233",
+  "intent": "iam users vs roles",
+  "level": "L1",
+  "domain": "aws-identity",
+  "triggers": [
+    "iam users vs roles",
+    "difference between user and role"
+  ],
+  "opening": "IAM users represent people, roles represent assumed permissions.",
+  "anchors": [
+    "long term identity",
+    "temporary credentials",
+    "sts",
+    "best practice"
+  ],
+  "closing": "Roles are preferred for workloads."
+},
+{
+  "id": "Q234",
+  "intent": "iam policies",
+  "level": "L1",
+  "domain": "aws-identity",
+  "triggers": [
+    "iam policy",
+    "aws policy structure"
+  ],
+  "opening": "IAM policies define permissions using JSON.",
+  "anchors": [
+    "effect",
+    "action",
+    "resource",
+    "conditions"
+  ],
+  "closing": "Policies should be scoped tightly."
+},
+{
+  "id": "Q235",
+  "intent": "identity federation aws",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": [
+    "aws federation",
+    "federated access aws"
+  ],
+  "opening": "Federation enables external identities to access AWS.",
+  "anchors": [
+    "saml",
+    "oidc",
+    "sts",
+    "temporary access"
+  ],
+  "closing": "Federation avoids long-lived credentials."
+},
+{
+  "id": "Q236",
+  "intent": "aws root account security",
+  "level": "L1",
+  "domain": "aws-identity",
+  "triggers": [
+    "root account security",
+    "secure aws root"
+  ],
+  "opening": "The root account has unrestricted access.",
+  "anchors": [
+    "mfa",
+    "no daily use",
+    "credential protection",
+    "monitoring"
+  ],
+  "closing": "Root access must be protected."
+},
+{
+  "id": "Q237",
+  "intent": "aws mfa strategy",
+  "level": "L1",
+  "domain": "aws-identity",
+  "triggers": [
+    "aws mfa",
+    "multi factor authentication aws"
+  ],
+  "opening": "MFA strengthens authentication for AWS identities.",
+  "anchors": [
+    "virtual mfa",
+    "hardware keys",
+    "coverage",
+    "risk reduction"
+  ],
+  "closing": "MFA blocks most credential attacks."
+},
+{
+  "id": "Q238",
+  "intent": "iam permission boundaries",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": [
+    "permission boundaries",
+    "iam boundaries"
+  ],
+  "opening": "Permission boundaries limit maximum permissions for IAM entities.",
+  "anchors": [
+    "guardrails",
+    "delegation",
+    "least privilege",
+    "control"
+  ],
+  "closing": "They prevent privilege escalation."
+},
+{
+  "id": "Q239",
+  "intent": "aws sts",
+  "level": "L1",
+  "domain": "aws-identity",
+  "triggers": [
+    "aws sts",
+    "security token service"
+  ],
+  "opening": "STS issues temporary security credentials.",
+  "anchors": [
+    "assume role",
+    "temporary credentials",
+    "federation",
+    "rotation"
+  ],
+  "closing": "STS underpins secure access."
+},
+{
+  "id": "Q240",
+  "intent": "aws logging overview",
+  "level": "L1",
+  "domain": "aws-security-monitoring",
+  "triggers": [
+    "aws logging",
+    "cloudtrail cloudwatch"
+  ],
+  "opening": "AWS provides native logging services for visibility.",
+  "anchors": [
+    "cloudtrail",
+    "cloudwatch",
+    "vpc flow logs",
+    "centralization"
+  ],
+  "closing": "Logs enable detection and response."
+},
+{
+  "id": "Q241",
+  "intent": "aws cloudtrail",
+  "level": "L1",
+  "domain": "aws-security-monitoring",
+  "triggers": [
+    "cloudtrail",
+    "aws api logging"
+  ],
+  "opening": "CloudTrail records API activity across AWS.",
+  "anchors": [
+    "management events",
+    "data events",
+    "audit",
+    "forensics"
+  ],
+  "closing": "It is critical for investigations."
+},
+{
+  "id": "Q242",
+  "intent": "aws guardrails strategy",
+  "level": "L2",
+  "domain": "aws-governance",
+  "triggers": [
+    "aws guardrails",
+    "prevent misconfiguration aws"
+  ],
+  "opening": "Guardrails prevent unsafe actions at scale.",
+  "anchors": [
+    "scp",
+    "iam",
+    "config",
+    "automation"
+  ],
+  "closing": "Prevention reduces incidents."
+},
+{
+  "id": "Q243",
+  "intent": "aws config",
+  "level": "L1",
+  "domain": "aws-security-monitoring",
+  "triggers": [
+    "aws config",
+    "resource configuration tracking"
+  ],
+  "opening": "AWS Config tracks resource configuration changes.",
+  "anchors": [
+    "compliance",
+    "rules",
+    "drift detection",
+    "history"
+  ],
+  "closing": "Config supports governance."
+},
+{
+  "id": "Q244",
+  "intent": "aws kms overview",
+  "level": "L1",
+  "domain": "aws-crypto",
+  "triggers": [
+    "aws kms",
+    "key management service"
+  ],
+  "opening": "KMS manages encryption keys for AWS services.",
+  "anchors": [
+    "customer managed keys",
+    "service managed keys",
+    "policies",
+    "audit"
+  ],
+  "closing": "Key control affects trust."
+},
+{
+  "id": "Q245",
+  "intent": "kms key policies",
+  "level": "L2",
+  "domain": "aws-crypto",
+  "triggers": [
+    "kms key policy",
+    "key policy vs iam"
+  ],
+  "opening": "Key policies control access to KMS keys.",
+  "anchors": [
+    "resource policy",
+    "account boundary",
+    "least privilege",
+    "separation"
+  ],
+  "closing": "Key policies are authoritative."
+},
+{
+  "id": "Q246",
+  "intent": "aws encryption strategy",
+  "level": "L1",
+  "domain": "aws-crypto",
+  "triggers": [
+    "aws encryption",
+    "encryption at rest and in transit"
+  ],
+  "opening": "AWS encryption covers data at rest and in transit.",
+  "anchors": [
+    "tls",
+    "kms",
+    "service integration",
+    "compliance"
+  ],
+  "closing": "Encryption is a baseline control."
+},
+{
+  "id": "Q247",
+  "intent": "aws s3 security basics",
+  "level": "L1",
+  "domain": "aws-storage-security",
+  "triggers": [
+    "s3 security",
+    "secure s3 bucket"
+  ],
+  "opening": "S3 security combines identity, policy, and encryption.",
+  "anchors": [
+    "bucket policy",
+    "iam",
+    "block public access",
+    "encryption"
+  ],
+  "closing": "Public exposure is the main risk."
+},
+{
+  "id": "Q248",
+  "intent": "s3 bucket policy vs iam",
+  "level": "L1",
+  "domain": "aws-storage-security",
+  "triggers": [
+    "bucket policy vs iam",
+    "s3 access control"
+  ],
+  "opening": "Bucket policies apply at the resource level, IAM applies at the identity level.",
+  "anchors": [
+    "resource based",
+    "identity based",
+    "evaluation logic",
+    "use cases"
+  ],
+  "closing": "Both can grant access."
+},
+{
+  "id": "Q249",
+  "intent": "aws networking overview",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": [
+    "aws networking",
+    "vpc overview"
+  ],
+  "opening": "AWS networking is built around the VPC.",
+  "anchors": [
+    "isolation",
+    "subnets",
+    "routing",
+    "security"
+  ],
+  "closing": "VPCs define network boundaries."
+},
+{
+  "id": "Q250",
+  "intent": "aws zero trust foundations",
+  "level": "L2",
+  "domain": "aws-security-architecture",
+  "triggers": [
+    "aws zero trust",
+    "zero trust aws"
+  ],
+  "opening": "Zero Trust in AWS emphasizes identity and least privilege.",
+  "anchors": [
+    "iam",
+    "private networking",
+    "logging",
+    "continuous verification"
+  ],
+  "closing": "Identity replaces perimeter."
+},
+{
+  "id": "Q251",
+  "intent": "aws security anti patterns",
+  "level": "L2",
+  "domain": "aws-security-architecture",
+  "triggers": [
+    "aws security anti patterns",
+    "common aws security mistakes"
+  ],
+  "opening": "Security anti-patterns create systemic risk.",
+  "anchors": [
+    "shared accounts",
+    "no mfa",
+    "wide policies",
+    "no logging"
+  ],
+  "closing": "Mistakes compound at scale."
+},
+{
+  "id": "Q252",
+  "intent": "future of aws security",
+  "level": "L3",
+  "domain": "aws-security-architecture",
+  "triggers": [
+    "future of aws security",
+    "aws security trends"
+  ],
+  "opening": "AWS security is moving toward automation and identity-centric controls.",
+  "anchors": [
+    "policy as code",
+    "zero trust",
+    "continuous monitoring",
+    "automation"
+  ],
+  "closing": "Security becomes more proactive."
+}
+
+
+,
+{
+  "id": "Q253",
+  "intent": "ec2 overview",
+  "level": "L1",
+  "domain": "aws-compute",
+  "triggers": [
+    "what is ec2",
+    "ec2 overview"
+  ],
+  "opening": "Amazon EC2 provides resizable compute capacity in the cloud.",
+  "anchors": [
+    "iaas",
+    "instances",
+    "full os control",
+    "scalability"
+  ],
+  "closing": "EC2 offers flexibility with operational responsibility."
+},
+{
+  "id": "Q254",
+  "intent": "ec2 instance families",
+  "level": "L1",
+  "domain": "aws-compute",
+  "triggers": [
+    "ec2 instance families",
+    "instance types ec2"
+  ],
+  "opening": "EC2 instance families are optimized for different workloads.",
+  "anchors": [
+    "general purpose",
+    "compute optimized",
+    "memory optimized",
+    "storage optimized"
+  ],
+  "closing": "Family choice impacts performance and cost."
+},
+{
+  "id": "Q255",
+  "intent": "when to use ec2",
+  "level": "L1",
+  "domain": "aws-compute",
+  "triggers": [
+    "when to use ec2",
+    "ec2 vs managed services"
+  ],
+  "opening": "EC2 is used when you need OS-level control or custom software.",
+  "anchors": [
+    "legacy apps",
+    "custom agents",
+    "migration",
+    "control needs"
+  ],
+  "closing": "Control increases management effort."
+},
+{
+  "id": "Q256",
+  "intent": "ec2 pricing models",
+  "level": "L1",
+  "domain": "aws-compute-cost",
+  "triggers": [
+    "ec2 pricing",
+    "on demand reserved spot"
+  ],
+  "opening": "EC2 offers multiple pricing models.",
+  "anchors": [
+    "on demand",
+    "reserved instances",
+    "spot instances",
+    "savings plans"
+  ],
+  "closing": "Pricing choice affects flexibility and cost."
+},
+{
+  "id": "Q257",
+  "intent": "ami usage",
+  "level": "L1",
+  "domain": "aws-compute",
+  "triggers": [
+    "ami",
+    "amazon machine image"
+  ],
+  "opening": "AMIs define the software configuration for EC2 instances.",
+  "anchors": [
+    "os",
+    "packages",
+    "configuration",
+    "versioning"
+  ],
+  "closing": "AMIs standardize deployments."
+},
+{
+  "id": "Q258",
+  "intent": "golden ami pipeline",
+  "level": "L2",
+  "domain": "aws-compute",
+  "triggers": [
+    "golden ami",
+    "ami pipeline"
+  ],
+  "opening": "Golden AMIs provide a hardened, reusable base image.",
+  "anchors": [
+    "patching",
+    "hardening",
+    "testing",
+    "automation"
+  ],
+  "closing": "Images reduce configuration drift."
+},
+{
+  "id": "Q259",
+  "intent": "ec2 storage options",
+  "level": "L1",
+  "domain": "aws-compute-storage",
+  "triggers": [
+    "ec2 storage",
+    "ebs instance store"
+  ],
+  "opening": "EC2 supports multiple storage options.",
+  "anchors": [
+    "ebs",
+    "instance store",
+    "durability",
+    "performance"
+  ],
+  "closing": "Storage choice impacts resilience."
+},
+{
+  "id": "Q260",
+  "intent": "ebs encryption",
+  "level": "L1",
+  "domain": "aws-crypto",
+  "triggers": [
+    "ebs encryption",
+    "encrypt ebs volumes"
+  ],
+  "opening": "EBS volumes should be encrypted at rest.",
+  "anchors": [
+    "kms",
+    "default encryption",
+    "snapshots",
+    "compliance"
+  ],
+  "closing": "Encryption protects data on disk."
+},
+{
+  "id": "Q261",
+  "intent": "ec2 networking basics",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": [
+    "ec2 networking",
+    "security group ec2"
+  ],
+  "opening": "EC2 networking is controlled through VPC constructs.",
+  "anchors": [
+    "subnets",
+    "security groups",
+    "route tables",
+    "isolation"
+  ],
+  "closing": "Networking defines exposure."
+},
+{
+  "id": "Q262",
+  "intent": "security groups vs nacls",
+  "level": "L1",
+  "domain": "aws-networking-security",
+  "triggers": [
+    "security groups vs nacls",
+    "sg vs nacl"
+  ],
+  "opening": "Security groups are stateful, NACLs are stateless.",
+  "anchors": [
+    "instance level",
+    "subnet level",
+    "stateful",
+    "stateless"
+  ],
+  "closing": "They serve different layers."
+},
+{
+  "id": "Q263",
+  "intent": "ec2 access patterns",
+  "level": "L1",
+  "domain": "aws-compute-security",
+  "triggers": [
+    "access ec2",
+    "ssh rdp ec2"
+  ],
+  "opening": "EC2 access should avoid public exposure.",
+  "anchors": [
+    "private ip",
+    "bastion",
+    "ssm session manager",
+    "identity based access"
+  ],
+  "closing": "Public access increases risk."
+},
+{
+  "id": "Q264",
+  "intent": "ssm session manager",
+  "level": "L1",
+  "domain": "aws-compute-security",
+  "triggers": [
+    "ssm session manager",
+    "aws ssm access ec2"
+  ],
+  "opening": "SSM Session Manager provides secure shell access without inbound ports.",
+  "anchors": [
+    "no ssh",
+    "iam auth",
+    "logging",
+    "auditability"
+  ],
+  "closing": "It reduces attack surface."
+},
+{
+  "id": "Q265",
+  "intent": "bastion host pattern",
+  "level": "L1",
+  "domain": "aws-compute-security",
+  "triggers": [
+    "bastion host",
+    "jump box aws"
+  ],
+  "opening": "A bastion host centralizes administrative access.",
+  "anchors": [
+    "controlled entry",
+    "hardened host",
+    "monitoring",
+    "temporary access"
+  ],
+  "closing": "Bastions must be tightly secured."
+},
+{
+  "id": "Q266",
+  "intent": "autoscaling group",
+  "level": "L1",
+  "domain": "aws-compute",
+  "triggers": [
+    "autoscaling group",
+    "asg aws"
+  ],
+  "opening": "Auto Scaling Groups manage EC2 fleet size automatically.",
+  "anchors": [
+    "scaling policies",
+    "health checks",
+    "elasticity",
+    "resilience"
+  ],
+  "closing": "ASGs improve availability."
+},
+{
+  "id": "Q267",
+  "intent": "asg scaling policies",
+  "level": "L1",
+  "domain": "aws-compute",
+  "triggers": [
+    "asg scaling policies",
+    "scale ec2 automatically"
+  ],
+  "opening": "Scaling policies define when to add or remove instances.",
+  "anchors": [
+    "target tracking",
+    "step scaling",
+    "metrics",
+    "automation"
+  ],
+  "closing": "Policies align capacity to demand."
+},
+{
+  "id": "Q268",
+  "intent": "launch templates",
+  "level": "L1",
+  "domain": "aws-compute",
+  "triggers": [
+    "launch template",
+    "ec2 launch configuration"
+  ],
+  "opening": "Launch templates define EC2 configuration for scaling.",
+  "anchors": [
+    "ami",
+    "instance type",
+    "iam role",
+    "user data"
+  ],
+  "closing": "Templates standardize launches."
+},
+{
+  "id": "Q269",
+  "intent": "alb overview",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": [
+    "application load balancer",
+    "alb aws"
+  ],
+  "opening": "Application Load Balancers distribute HTTP and HTTPS traffic.",
+  "anchors": [
+    "layer 7",
+    "routing rules",
+    "ssl termination",
+    "health checks"
+  ],
+  "closing": "ALBs enable intelligent routing."
+},
+{
+  "id": "Q270",
+  "intent": "alb vs nlb",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": [
+    "alb vs nlb",
+    "application vs network load balancer"
+  ],
+  "opening": "ALBs operate at layer 7, NLBs at layer 4.",
+  "anchors": [
+    "http awareness",
+    "performance",
+    "use cases",
+    "protocols"
+  ],
+  "closing": "Choice depends on traffic needs."
+},
+{
+  "id": "Q271",
+  "intent": "target groups",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": [
+    "target groups",
+    "alb target group"
+  ],
+  "opening": "Target groups define where load balancers send traffic.",
+  "anchors": [
+    "instances",
+    "ip targets",
+    "health checks",
+    "routing"
+  ],
+  "closing": "They decouple routing from compute."
+},
+{
+  "id": "Q272",
+  "intent": "ec2 monitoring",
+  "level": "L1",
+  "domain": "aws-security-monitoring",
+  "triggers": [
+    "monitor ec2",
+    "cloudwatch ec2"
+  ],
+  "opening": "EC2 monitoring relies on CloudWatch metrics and logs.",
+  "anchors": [
+    "cpu",
+    "memory",
+    "logs",
+    "alerts"
+  ],
+  "closing": "Monitoring enables proactive response."
+},
+{
+  "id": "Q273",
+  "intent": "ec2 patching strategy",
+  "level": "L2",
+  "domain": "aws-compute-operations",
+  "triggers": [
+    "ec2 patching",
+    "patch ec2 instances"
+  ],
+  "opening": "EC2 patching should be automated and scheduled.",
+  "anchors": [
+    "ssm patch manager",
+    "maintenance windows",
+    "testing",
+    "automation"
+  ],
+  "closing": "Unpatched systems increase risk."
+},
+{
+  "id": "Q274",
+  "intent": "ec2 backup strategy",
+  "level": "L1",
+  "domain": "aws-compute",
+  "triggers": [
+    "ec2 backup",
+    "backup ec2 instances"
+  ],
+  "opening": "EC2 backups rely on EBS snapshots and automation.",
+  "anchors": [
+    "snapshots",
+    "retention",
+    "testing",
+    "recovery"
+  ],
+  "closing": "Backups support recovery objectives."
+},
+{
+  "id": "Q275",
+  "intent": "ec2 security posture",
+  "level": "L2",
+  "domain": "aws-compute-security",
+  "triggers": [
+    "ec2 security posture",
+    "secure ec2 configuration"
+  ],
+  "opening": "Security posture reflects configuration and access controls.",
+  "anchors": [
+    "least privilege",
+    "network isolation",
+    "monitoring",
+    "hardening"
+  ],
+  "closing": "Posture must be continuously assessed."
+},
+{
+  "id": "Q276",
+  "intent": "ec2 anti patterns",
+  "level": "L2",
+  "domain": "aws-compute-security",
+  "triggers": [
+    "ec2 anti patterns",
+    "ec2 security mistakes"
+  ],
+  "opening": "EC2 anti-patterns increase attack surface.",
+  "anchors": [
+    "public ssh",
+    "shared keys",
+    "wide security groups",
+    "no logging"
+  ],
+  "closing": "Mistakes scale quickly."
+},
+{
+  "id": "Q277",
+  "intent": "asg failure handling",
+  "level": "L2",
+  "domain": "aws-compute",
+  "triggers": [
+    "asg failure handling",
+    "ec2 instance failure"
+  ],
+  "opening": "ASGs replace unhealthy instances automatically.",
+  "anchors": [
+    "health checks",
+    "replacement",
+    "stateless design",
+    "resilience"
+  ],
+  "closing": "Automation improves uptime."
+},
+{
+  "id": "Q278",
+  "intent": "compute cost optimization",
+  "level": "L1",
+  "domain": "aws-compute-cost",
+  "triggers": [
+    "optimize ec2 cost",
+    "reduce compute cost aws"
+  ],
+  "opening": "Compute cost optimization aligns capacity with demand.",
+  "anchors": [
+    "right sizing",
+    "savings plans",
+    "spot usage",
+    "auto scaling"
+  ],
+  "closing": "Idle compute wastes budget."
+},
+{
+  "id": "Q279",
+  "intent": "iam roles for ec2",
+  "level": "L1",
+  "domain": "aws-identity",
+  "triggers": [
+    "iam role for ec2",
+    "instance profile"
+  ],
+  "opening": "IAM roles provide EC2 instances with AWS permissions.",
+  "anchors": [
+    "instance profile",
+    "temporary credentials",
+    "least privilege",
+    "no secrets"
+  ],
+  "closing": "Roles replace embedded keys."
+},
+{
+  "id": "Q280",
+  "intent": "ec2 logging strategy",
+  "level": "L1",
+  "domain": "aws-security-monitoring",
+  "triggers": [
+    "ec2 logging",
+    "log ec2 activity"
+  ],
+  "opening": "EC2 logging captures system and security events.",
+  "anchors": [
+    "cloudwatch logs",
+    "ssm logs",
+    "os logs",
+    "centralization"
+  ],
+  "closing": "Logs support investigation."
+},
+{
+  "id": "Q281",
+  "intent": "compute resilience design",
+  "level": "L2",
+  "domain": "aws-compute",
+  "triggers": [
+    "compute resilience",
+    "design resilient ec2"
+  ],
+  "opening": "Resilient compute design assumes failure.",
+  "anchors": [
+    "multi az",
+    "autoscaling",
+    "statelessness",
+    "health checks"
+  ],
+  "closing": "Failure tolerance improves availability."
+},
+{
+  "id": "Q282",
+  "intent": "future of aws compute",
+  "level": "L3",
+  "domain": "aws-compute",
+  "triggers": [
+    "future of aws compute",
+    "ec2 vs containers serverless"
+  ],
+  "opening": "AWS compute will continue to mix EC2, containers, and serverless.",
+  "anchors": [
+    "legacy support",
+    "control needs",
+    "cost efficiency",
+    "evolution"
+  ],
+  "closing": "Compute models coexist by use case."
+}
+
+,
+{
+  "id": "Q283",
+  "intent": "vpc overview",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["what is a vpc", "aws vpc overview"],
+  "opening": "A VPC is an isolated virtual network in AWS.",
+  "anchors": ["cidr", "isolation", "subnets", "routing"],
+  "closing": "VPCs define network trust boundaries."
+},
+{
+  "id": "Q284",
+  "intent": "vpc cidr planning",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["vpc cidr planning", "ip planning aws"],
+  "opening": "CIDR planning ensures scalability and avoids overlap.",
+  "anchors": ["address space", "growth", "overlap avoidance", "routing"],
+  "closing": "Poor planning limits expansion."
+},
+{
+  "id": "Q285",
+  "intent": "subnets public private",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["public vs private subnet", "aws subnets"],
+  "opening": "Subnets segment workloads within a VPC.",
+  "anchors": ["route tables", "internet gateway", "nat gateway", "isolation"],
+  "closing": "Subnet design controls exposure."
+},
+{
+  "id": "Q286",
+  "intent": "internet gateway",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["internet gateway", "igw aws"],
+  "opening": "An Internet Gateway enables internet access for a VPC.",
+  "anchors": ["public routing", "ipv4", "ipv6", "exposure"],
+  "closing": "IGWs enable inbound and outbound access."
+},
+{
+  "id": "Q287",
+  "intent": "nat gateway",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["nat gateway", "private subnet internet access"],
+  "opening": "NAT Gateways provide outbound internet access for private subnets.",
+  "anchors": ["egress only", "managed service", "scalability", "availability"],
+  "closing": "They reduce inbound exposure."
+},
+{
+  "id": "Q288",
+  "intent": "route tables",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["route tables", "aws routing"],
+  "opening": "Route tables control traffic flow in a VPC.",
+  "anchors": ["destination", "target", "igw", "nat"],
+  "closing": "Routing shapes connectivity."
+},
+{
+  "id": "Q289",
+  "intent": "security groups overview",
+  "level": "L1",
+  "domain": "aws-networking-security",
+  "triggers": ["security groups", "sg aws"],
+  "opening": "Security Groups act as virtual firewalls for instances.",
+  "anchors": ["stateful", "allow rules", "instance level", "least privilege"],
+  "closing": "SGs control instance exposure."
+},
+{
+  "id": "Q290",
+  "intent": "nacls overview",
+  "level": "L1",
+  "domain": "aws-networking-security",
+  "triggers": ["nacls", "network access control list"],
+  "opening": "NACLs provide stateless subnet-level filtering.",
+  "anchors": ["stateless", "allow and deny", "subnet scope", "ordering"],
+  "closing": "They add coarse-grained control."
+},
+{
+  "id": "Q291",
+  "intent": "sg vs nacl",
+  "level": "L1",
+  "domain": "aws-networking-security",
+  "triggers": ["sg vs nacl", "security group vs nacl"],
+  "opening": "SGs are stateful; NACLs are stateless.",
+  "anchors": ["instance vs subnet", "statefulness", "use cases", "defense in depth"],
+  "closing": "They complement each other."
+},
+{
+  "id": "Q292",
+  "intent": "vpc flow logs",
+  "level": "L1",
+  "domain": "aws-networking-monitoring",
+  "triggers": ["vpc flow logs", "network logs aws"],
+  "opening": "VPC Flow Logs capture IP traffic metadata.",
+  "anchors": ["accept reject", "eni", "subnet", "visibility"],
+  "closing": "They aid troubleshooting and forensics."
+},
+{
+  "id": "Q293",
+  "intent": "network segmentation",
+  "level": "L2",
+  "domain": "aws-networking-security",
+  "triggers": ["network segmentation aws", "segment vpc"],
+  "opening": "Segmentation limits lateral movement.",
+  "anchors": ["subnets", "sgs", "nacls", "least privilege"],
+  "closing": "Smaller blast radius reduces risk."
+},
+{
+  "id": "Q294",
+  "intent": "vpc peering",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["vpc peering", "connect vpcs"],
+  "opening": "VPC peering connects VPCs privately.",
+  "anchors": ["non transitive", "routing", "security", "latency"],
+  "closing": "Peering simplifies connectivity."
+},
+{
+  "id": "Q295",
+  "intent": "transit gateway",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["transit gateway", "tgw aws"],
+  "opening": "Transit Gateway centralizes network connectivity.",
+  "anchors": ["hub and spoke", "scalability", "routing", "hybrid"],
+  "closing": "It simplifies large networks."
+},
+{
+  "id": "Q296",
+  "intent": "hybrid connectivity",
+  "level": "L2",
+  "domain": "aws-networking",
+  "triggers": ["hybrid connectivity aws", "on premises aws"],
+  "opening": "Hybrid connectivity links on-premises to AWS.",
+  "anchors": ["vpn", "direct connect", "routing", "security"],
+  "closing": "Hybrid adds complexity."
+},
+{
+  "id": "Q297",
+  "intent": "direct connect",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["direct connect", "dx aws"],
+  "opening": "Direct Connect provides private connectivity to AWS.",
+  "anchors": ["dedicated circuit", "latency", "throughput", "reliability"],
+  "closing": "It bypasses the public internet."
+},
+{
+  "id": "Q298",
+  "intent": "vpn vs direct connect",
+  "level": "L1",
+  "domain": "aws-networking",
+  "triggers": ["vpn vs direct connect", "dx vs vpn"],
+  "opening": "VPN uses the internet; Direct Connect uses private circuits.",
+  "anchors": ["cost", "latency", "security", "availability"],
+  "closing": "Choice depends on requirements."
+},
+{
+  "id": "Q299",
+  "intent": "aws private link",
+  "level": "L1",
+  "domain": "aws-networking-private",
+  "triggers": ["aws private link", "vpc endpoint service"],
+  "opening": "PrivateLink provides private access to services.",
+  "anchors": ["interface endpoints", "private ip", "no igw", "isolation"],
+  "closing": "It reduces public exposure."
+},
+{
+  "id": "Q300",
+  "intent": "vpc endpoints",
+  "level": "L1",
+  "domain": "aws-networking-private",
+  "triggers": ["vpc endpoints", "gateway vs interface endpoint"],
+  "opening": "VPC endpoints connect privately to AWS services.",
+  "anchors": ["gateway endpoint", "interface endpoint", "routing", "security"],
+  "closing": "Endpoints keep traffic private."
+},
+{
+  "id": "Q301",
+  "intent": "endpoint security considerations",
+  "level": "L2",
+  "domain": "aws-networking-private",
+  "triggers": ["endpoint security", "secure vpc endpoints"],
+  "opening": "Endpoints still require identity and policy controls.",
+  "anchors": ["iam policies", "endpoint policies", "dns", "monitoring"],
+  "closing": "Private does not mean unrestricted."
+},
+{
+  "id": "Q302",
+  "intent": "aws dns route53",
+  "level": "L1",
+  "domain": "aws-networking-dns",
+  "triggers": ["route 53", "aws dns"],
+  "opening": "Route 53 provides DNS and traffic management.",
+  "anchors": ["public dns", "private hosted zones", "health checks", "routing policies"],
+  "closing": "DNS underpins connectivity."
+},
+{
+  "id": "Q303",
+  "intent": "private hosted zones",
+  "level": "L2",
+  "domain": "aws-networking-dns",
+  "triggers": ["private hosted zone", "route53 private dns"],
+  "opening": "Private hosted zones enable internal name resolution.",
+  "anchors": ["vpc association", "isolation", "automation", "hybrid"],
+  "closing": "They support private architectures."
+},
+{
+  "id": "Q304",
+  "intent": "egress control strategies",
+  "level": "L2",
+  "domain": "aws-networking-security",
+  "triggers": ["egress control aws", "outbound filtering"],
+  "opening": "Egress control limits outbound destinations.",
+  "anchors": ["nat", "firewall", "prefix lists", "logging"],
+  "closing": "Outbound control reduces exfiltration."
+},
+{
+  "id": "Q305",
+  "intent": "network firewall",
+  "level": "L1",
+  "domain": "aws-networking-security",
+  "triggers": ["aws network firewall", "managed firewall aws"],
+  "opening": "AWS Network Firewall provides managed traffic inspection.",
+  "anchors": ["stateful inspection", "rules", "logging", "central control"],
+  "closing": "It adds deep packet inspection."
+},
+{
+  "id": "Q306",
+  "intent": "hub and spoke aws",
+  "level": "L2",
+  "domain": "aws-networking-architecture",
+  "triggers": ["hub and spoke aws", "centralized networking"],
+  "opening": "Hub-and-spoke centralizes shared services.",
+  "anchors": ["tgw", "firewalls", "shared services", "governance"],
+  "closing": "It scales securely."
+},
+{
+  "id": "Q307",
+  "intent": "network observability aws",
+  "level": "L2",
+  "domain": "aws-networking-monitoring",
+  "triggers": ["network observability aws", "observe vpc traffic"],
+  "opening": "Observability combines logs, metrics, and context.",
+  "anchors": ["flow logs", "firewall logs", "correlation", "alerts"],
+  "closing": "Visibility enables response."
+},
+{
+  "id": "Q308",
+  "intent": "network anti patterns aws",
+  "level": "L2",
+  "domain": "aws-networking-security",
+  "triggers": ["aws networking anti patterns", "bad vpc design"],
+  "opening": "Anti-patterns create systemic risk.",
+  "anchors": ["flat networks", "open sgs", "no egress control", "no logging"],
+  "closing": "Mistakes scale quickly."
+},
+{
+  "id": "Q309",
+  "intent": "network scale limits aws",
+  "level": "L2",
+  "domain": "aws-networking",
+  "triggers": ["vpc limits", "aws networking limits"],
+  "opening": "AWS networking has documented limits.",
+  "anchors": ["routes", "endpoints", "peerings", "planning"],
+  "closing": "Limits should be planned early."
+},
+{
+  "id": "Q310",
+  "intent": "secure hybrid routing aws",
+  "level": "L2",
+  "domain": "aws-networking",
+  "triggers": ["secure hybrid routing aws", "hybrid routing security"],
+  "opening": "Hybrid routing must be explicit and monitored.",
+  "anchors": ["route tables", "inspection", "segmentation", "logging"],
+  "closing": "Implicit routing creates risk."
+},
+{
+  "id": "Q311",
+  "intent": "network change management aws",
+  "level": "L2",
+  "domain": "aws-networking-operations",
+  "triggers": ["network change management aws", "manage network changes"],
+  "opening": "Network changes require controlled processes.",
+  "anchors": ["review", "testing", "rollback", "documentation"],
+  "closing": "Changes can have wide impact."
+},
+{
+  "id": "Q312",
+  "intent": "future of aws networking",
+  "level": "L3",
+  "domain": "aws-networking",
+  "triggers": ["future of aws networking", "aws networking trends"],
+  "opening": "AWS networking is shifting toward private, identity-aware access.",
+  "anchors": ["privatelink", "zero trust", "automation", "observability"],
+  "closing": "Identity increasingly defines connectivity."
+}
+
+,
+{
+  "id": "Q313",
+  "intent": "s3 overview",
+  "level": "L1",
+  "domain": "aws-storage",
+  "triggers": ["what is s3", "s3 overview"],
+  "opening": "Amazon S3 is an object storage service designed for durability and scale.",
+  "anchors": ["object storage", "buckets", "global namespace", "durability"],
+  "closing": "S3 is foundational to AWS data storage."
+},
+{
+  "id": "Q314",
+  "intent": "s3 bucket design",
+  "level": "L1",
+  "domain": "aws-storage",
+  "triggers": ["s3 bucket design", "design s3 buckets"],
+  "opening": "S3 bucket design impacts security, cost, and performance.",
+  "anchors": ["naming", "prefixing", "region choice", "ownership"],
+  "closing": "Good design prevents rework."
+},
+{
+  "id": "Q315",
+  "intent": "s3 consistency model",
+  "level": "L1",
+  "domain": "aws-storage",
+  "triggers": ["s3 consistency", "strong consistency s3"],
+  "opening": "S3 provides strong read-after-write consistency.",
+  "anchors": ["new objects", "overwrites", "deletes", "predictability"],
+  "closing": "Consistency simplifies application logic."
+},
+{
+  "id": "Q316",
+  "intent": "s3 access control mechanisms",
+  "level": "L1",
+  "domain": "aws-storage-security",
+  "triggers": ["s3 access control", "s3 permissions"],
+  "opening": "S3 access is controlled using multiple mechanisms.",
+  "anchors": ["iam policies", "bucket policies", "acl (legacy)", "evaluation logic"],
+  "closing": "Policies should be least-privilege."
+},
+{
+  "id": "Q317",
+  "intent": "s3 block public access",
+  "level": "L1",
+  "domain": "aws-storage-security",
+  "triggers": ["block public access s3", "disable public s3"],
+  "opening": "Block Public Access prevents accidental public exposure.",
+  "anchors": ["account level", "bucket level", "guardrail", "misconfiguration"],
+  "closing": "It should be enabled by default."
+},
+{
+  "id": "Q318",
+  "intent": "s3 bucket policy patterns",
+  "level": "L2",
+  "domain": "aws-storage-security",
+  "triggers": ["s3 bucket policy patterns", "secure bucket policy"],
+  "opening": "Bucket policies enforce resource-level access control.",
+  "anchors": ["resource based", "conditions", "vpc endpoints", "cross account"],
+  "closing": "They complement IAM policies."
+},
+{
+  "id": "Q319",
+  "intent": "s3 encryption options",
+  "level": "L1",
+  "domain": "aws-crypto",
+  "triggers": ["s3 encryption", "encrypt s3 data"],
+  "opening": "S3 supports server-side and client-side encryption.",
+  "anchors": ["sse-s3", "sse-kms", "sse-c", "client side"],
+  "closing": "Encryption is a baseline control."
+},
+{
+  "id": "Q320",
+  "intent": "sse s3 vs sse kms",
+  "level": "L1",
+  "domain": "aws-crypto",
+  "triggers": ["sse s3 vs sse kms", "s3 kms encryption"],
+  "opening": "SSE-S3 uses AWS-managed keys; SSE-KMS uses customer-managed keys.",
+  "anchors": ["key control", "audit", "cost", "compliance"],
+  "closing": "KMS offers stronger governance."
+},
+{
+  "id": "Q321",
+  "intent": "kms permissions for s3",
+  "level": "L2",
+  "domain": "aws-crypto",
+  "triggers": ["kms permissions s3", "s3 kms access"],
+  "opening": "S3 access requires both bucket and KMS permissions.",
+  "anchors": ["dual authorization", "key policy", "iam policy", "least privilege"],
+  "closing": "Missing key access causes failures."
+},
+{
+  "id": "Q322",
+  "intent": "s3 versioning",
+  "level": "L1",
+  "domain": "aws-storage",
+  "triggers": ["s3 versioning", "object versioning"],
+  "opening": "Versioning preserves object history.",
+  "anchors": ["delete markers", "rollback", "ransomware recovery", "immutability"],
+  "closing": "Versioning adds resilience."
+},
+{
+  "id": "Q323",
+  "intent": "s3 lifecycle policies",
+  "level": "L1",
+  "domain": "aws-storage",
+  "triggers": ["s3 lifecycle", "lifecycle rules s3"],
+  "opening": "Lifecycle rules automate data transitions and expiration.",
+  "anchors": ["transition", "expiration", "cost optimization", "automation"],
+  "closing": "Automation reduces storage cost."
+},
+{
+  "id": "Q324",
+  "intent": "s3 storage classes",
+  "level": "L1",
+  "domain": "aws-storage",
+  "triggers": ["s3 storage classes", "standard ia glacier"],
+  "opening": "S3 offers multiple storage classes.",
+  "anchors": ["standard", "intelligent tiering", "infrequent access", "glacier"],
+  "closing": "Classes balance cost and access."
+},
+{
+  "id": "Q325",
+  "intent": "s3 object lock",
+  "level": "L2",
+  "domain": "aws-storage-security",
+  "triggers": ["s3 object lock", "worm s3"],
+  "opening": "Object Lock enforces write-once-read-many protection.",
+  "anchors": ["compliance mode", "governance mode", "retention", "legal hold"],
+  "closing": "It supports regulatory requirements."
+},
+{
+  "id": "Q326",
+  "intent": "s3 access logging",
+  "level": "L1",
+  "domain": "aws-storage-monitoring",
+  "triggers": ["s3 access logs", "log s3 access"],
+  "opening": "Access logs record requests to S3 buckets.",
+  "anchors": ["audit", "forensics", "visibility", "storage costs"],
+  "closing": "Logs support investigations."
+},
+{
+  "id": "Q327",
+  "intent": "s3 data exfiltration risks",
+  "level": "L2",
+  "domain": "aws-storage-security",
+  "triggers": ["s3 data exfiltration", "prevent s3 leaks"],
+  "opening": "Exfiltration risk comes from misconfiguration and credentials.",
+  "anchors": ["public access", "over permissive policies", "monitoring", "guardrails"],
+  "closing": "Exposure is the main threat."
+},
+{
+  "id": "Q328",
+  "intent": "s3 vpc endpoints",
+  "level": "L1",
+  "domain": "aws-networking-private",
+  "triggers": ["s3 vpc endpoint", "gateway endpoint s3"],
+  "opening": "VPC endpoints allow private access to S3.",
+  "anchors": ["gateway endpoint", "private routing", "no igw", "policy control"],
+  "closing": "Endpoints keep traffic private."
+},
+{
+  "id": "Q329",
+  "intent": "s3 replication",
+  "level": "L1",
+  "domain": "aws-storage",
+  "triggers": ["s3 replication", "cross region replication"],
+  "opening": "Replication copies objects across buckets or regions.",
+  "anchors": ["crr", "srr", "resilience", "compliance"],
+  "closing": "Replication supports durability goals."
+},
+{
+  "id": "Q330",
+  "intent": "backup strategies aws",
+  "level": "L1",
+  "domain": "aws-backup",
+  "triggers": ["aws backup", "backup strategy aws"],
+  "opening": "AWS Backup centralizes backup management.",
+  "anchors": ["policies", "vaults", "retention", "compliance"],
+  "closing": "Centralization simplifies governance."
+},
+{
+  "id": "Q331",
+  "intent": "ebs overview",
+  "level": "L1",
+  "domain": "aws-compute-storage",
+  "triggers": ["ebs overview", "elastic block store"],
+  "opening": "EBS provides persistent block storage for EC2.",
+  "anchors": ["volumes", "snapshots", "durability", "performance"],
+  "closing": "EBS underpins EC2 storage."
+},
+{
+  "id": "Q332",
+  "intent": "ebs volume types",
+  "level": "L1",
+  "domain": "aws-compute-storage",
+  "triggers": ["ebs volume types", "gp3 io1 st1"],
+  "opening": "EBS offers multiple volume types for different workloads.",
+  "anchors": ["gp3", "io1/io2", "st1", "sc1"],
+  "closing": "Volume choice impacts cost and performance."
+},
+{
+  "id": "Q333",
+  "intent": "ebs snapshots",
+  "level": "L1",
+  "domain": "aws-compute-storage",
+  "triggers": ["ebs snapshots", "snapshot backup"],
+  "opening": "Snapshots provide point-in-time backups of EBS volumes.",
+  "anchors": ["incremental", "s3 backed", "automation", "recovery"],
+  "closing": "Snapshots support recovery."
+},
+{
+  "id": "Q334",
+  "intent": "snapshot security",
+  "level": "L2",
+  "domain": "aws-crypto",
+  "triggers": ["snapshot security", "secure ebs snapshots"],
+  "opening": "Snapshots inherit encryption from the source volume.",
+  "anchors": ["kms keys", "sharing controls", "cross account", "governance"],
+  "closing": "Snapshot sharing must be controlled."
+},
+{
+  "id": "Q335",
+  "intent": "backup immutability",
+  "level": "L2",
+  "domain": "aws-backup",
+  "triggers": ["backup immutability", "immutable backups aws"],
+  "opening": "Immutability protects backups from deletion or tampering.",
+  "anchors": ["vault lock", "retention enforcement", "ransomware protection", "compliance"],
+  "closing": "Immutability is critical for recovery."
+},
+{
+  "id": "Q336",
+  "intent": "ransomware protection storage",
+  "level": "L2",
+  "domain": "aws-storage-security",
+  "triggers": ["ransomware protection aws storage", "protect backups ransomware"],
+  "opening": "Storage protection reduces ransomware impact.",
+  "anchors": ["versioning", "immutability", "least privilege", "monitoring"],
+  "closing": "Prevention and recovery go together."
+},
+{
+  "id": "Q337",
+  "intent": "storage monitoring aws",
+  "level": "L1",
+  "domain": "aws-storage-monitoring",
+  "triggers": ["monitor storage aws", "storage metrics"],
+  "opening": "Monitoring storage focuses on access and usage.",
+  "anchors": ["cloudwatch", "events", "alerts", "visibility"],
+  "closing": "Monitoring detects misuse."
+},
+{
+  "id": "Q338",
+  "intent": "storage cost optimization",
+  "level": "L1",
+  "domain": "aws-storage",
+  "triggers": ["storage cost optimization aws", "reduce s3 cost"],
+  "opening": "Cost optimization aligns storage class with access patterns.",
+  "anchors": ["lifecycle", "tiering", "monitoring", "cleanup"],
+  "closing": "Cold data should be cheaper."
+},
+{
+  "id": "Q339",
+  "intent": "cross account storage access",
+  "level": "L2",
+  "domain": "aws-storage-security",
+  "triggers": ["cross account s3 access", "share s3 bucket"],
+  "opening": "Cross-account access uses resource policies.",
+  "anchors": ["bucket policy", "kms permissions", "trust", "audit"],
+  "closing": "Cross-account access increases blast radius."
+},
+{
+  "id": "Q340",
+  "intent": "data residency considerations",
+  "level": "L2",
+  "domain": "aws-storage-compliance",
+  "triggers": ["data residency aws", "storage compliance"],
+  "opening": "Data residency controls where data is stored.",
+  "anchors": ["regions", "replication", "regulations", "governance"],
+  "closing": "Location affects compliance."
+},
+{
+  "id": "Q341",
+  "intent": "storage governance",
+  "level": "L2",
+  "domain": "aws-storage-governance",
+  "triggers": ["storage governance", "govern s3 usage"],
+  "opening": "Governance enforces standards for storage usage.",
+  "anchors": ["policies", "guardrails", "monitoring", "automation"],
+  "closing": "Governance prevents sprawl."
+},
+{
+  "id": "Q342",
+  "intent": "storage anti patterns",
+  "level": "L2",
+  "domain": "aws-storage-security",
+  "triggers": ["storage anti patterns aws", "s3 mistakes"],
+  "opening": "Storage anti-patterns increase exposure.",
+  "anchors": ["public buckets", "no encryption", "no logging", "wide access"],
+  "closing": "Mistakes scale quickly."
+},
+{
+  "id": "Q343",
+  "intent": "future of aws storage",
+  "level": "L3",
+  "domain": "aws-storage",
+  "triggers": ["future of aws storage", "storage trends aws"],
+  "opening": "AWS storage is evolving toward automation and intelligent tiering.",
+  "anchors": ["policy driven", "immutability", "analytics", "cost efficiency"],
+  "closing": "Storage becomes more autonomous."
+}
+
+,
+{
+  "id": "Q344",
+  "intent": "iam evaluation logic",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["iam evaluation logic", "how aws evaluates permissions"],
+  "opening": "IAM evaluates requests using explicit denies before allows.",
+  "anchors": ["explicit deny", "allow", "implicit deny", "policy types"],
+  "closing": "Explicit deny always wins."
+},
+{
+  "id": "Q345",
+  "intent": "resource vs identity policies",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["resource vs identity policy", "bucket policy vs iam"],
+  "opening": "AWS supports identity-based and resource-based policies.",
+  "anchors": ["identity policies", "resource policies", "evaluation order", "use cases"],
+  "closing": "Both can grant access."
+},
+{
+  "id": "Q346",
+  "intent": "iam conditions deep dive",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["iam conditions", "policy conditions aws"],
+  "opening": "Conditions restrict when policies apply.",
+  "anchors": ["ip address", "mfa present", "tags", "time based"],
+  "closing": "Conditions refine least privilege."
+},
+{
+  "id": "Q347",
+  "intent": "policy size limits",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["iam policy limits", "policy size limits"],
+  "opening": "IAM policies have size and complexity limits.",
+  "anchors": ["json size", "statements", "maintainability", "modularization"],
+  "closing": "Smaller policies are safer."
+},
+{
+  "id": "Q348",
+  "intent": "sts assume role flow",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["assume role flow", "sts assume role"],
+  "opening": "AssumeRole exchanges identity for temporary credentials.",
+  "anchors": ["trust policy", "sts", "temporary creds", "session"],
+  "closing": "Trust policies define who can assume roles."
+},
+{
+  "id": "Q349",
+  "intent": "cross account access patterns",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["cross account access", "aws cross account roles"],
+  "opening": "Cross-account access relies on IAM roles and trust policies.",
+  "anchors": ["trust relationship", "least privilege", "audit", "blast radius"],
+  "closing": "Cross-account access increases risk surface."
+},
+{
+  "id": "Q350",
+  "intent": "federation patterns",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["aws federation patterns", "saml oidc federation"],
+  "opening": "Federation allows external identity providers to access AWS.",
+  "anchors": ["saml", "oidc", "sts", "temporary access"],
+  "closing": "Federation avoids long-lived users."
+},
+{
+  "id": "Q351",
+  "intent": "iam role chaining",
+  "level": "L3",
+  "domain": "aws-identity",
+  "triggers": ["role chaining", "assume role chaining"],
+  "opening": "Role chaining allows sequential role assumptions.",
+  "anchors": ["sts limits", "session duration", "complexity", "risk"],
+  "closing": "Chaining increases operational complexity."
+},
+{
+  "id": "Q352",
+  "intent": "iam access analyzer",
+  "level": "L1",
+  "domain": "aws-identity-monitoring",
+  "triggers": ["iam access analyzer", "access analyzer aws"],
+  "opening": "Access Analyzer identifies unintended external access.",
+  "anchors": ["resource policies", "cross account", "visibility", "findings"],
+  "closing": "It highlights exposure risks."
+},
+{
+  "id": "Q353",
+  "intent": "access analyzer use cases",
+  "level": "L2",
+  "domain": "aws-identity-monitoring",
+  "triggers": ["access analyzer use cases", "analyze permissions aws"],
+  "opening": "Access Analyzer helps detect overly permissive access.",
+  "anchors": ["s3 buckets", "kms keys", "iam roles", "policy validation"],
+  "closing": "Analyzer supports least privilege."
+},
+{
+  "id": "Q354",
+  "intent": "iam credential report",
+  "level": "L1",
+  "domain": "aws-identity-monitoring",
+  "triggers": ["iam credential report", "credential hygiene aws"],
+  "opening": "Credential reports show credential age and usage.",
+  "anchors": ["password age", "access keys", "rotation", "risk"],
+  "closing": "Stale credentials increase risk."
+},
+{
+  "id": "Q355",
+  "intent": "iam access advisor",
+  "level": "L1",
+  "domain": "aws-identity-monitoring",
+  "triggers": ["iam access advisor", "used permissions"],
+  "opening": "Access Advisor shows which services an identity actually uses.",
+  "anchors": ["last accessed", "pruning", "least privilege", "optimization"],
+  "closing": "Unused permissions should be removed."
+},
+{
+  "id": "Q356",
+  "intent": "service linked roles",
+  "level": "L1",
+  "domain": "aws-identity",
+  "triggers": ["service linked roles", "slr aws"],
+  "opening": "Service-linked roles allow AWS services to act on your behalf.",
+  "anchors": ["managed by aws", "restricted scope", "automation", "trust"],
+  "closing": "They simplify service integration."
+},
+{
+  "id": "Q357",
+  "intent": "iam permissions boundaries advanced",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["permissions boundaries advanced", "delegate iam safely"],
+  "opening": "Permission boundaries cap maximum privileges.",
+  "anchors": ["delegation", "guardrails", "developer access", "safety"],
+  "closing": "Boundaries prevent privilege escalation."
+},
+{
+  "id": "Q358",
+  "intent": "iam tags for access control",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["iam tags", "attribute based access control"],
+  "opening": "Tags enable attribute-based access control.",
+  "anchors": ["abac", "conditions", "scalability", "automation"],
+  "closing": "Tags scale access management."
+},
+{
+  "id": "Q359",
+  "intent": "abac vs rbac",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["abac vs rbac", "attribute based access"],
+  "opening": "ABAC uses attributes, RBAC uses roles.",
+  "anchors": ["flexibility", "scale", "complexity", "governance"],
+  "closing": "ABAC scales better in large environments."
+},
+{
+  "id": "Q360",
+  "intent": "iam blast radius",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["iam blast radius", "limit identity impact"],
+  "opening": "Blast radius reflects scope of compromised permissions.",
+  "anchors": ["role scope", "session duration", "segmentation", "least privilege"],
+  "closing": "Smaller scopes reduce damage."
+},
+{
+  "id": "Q361",
+  "intent": "iam anti patterns",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["iam anti patterns", "common iam mistakes"],
+  "opening": "IAM anti-patterns create systemic risk.",
+  "anchors": ["wildcard policies", "shared users", "no mfa", "long lived keys"],
+  "closing": "Mistakes compound quickly."
+},
+{
+  "id": "Q362",
+  "intent": "identity governance aws",
+  "level": "L2",
+  "domain": "aws-identity-governance",
+  "triggers": ["identity governance aws", "access reviews"],
+  "opening": "Governance ensures access remains appropriate over time.",
+  "anchors": ["reviews", "rotation", "automation", "audit"],
+  "closing": "Access should expire."
+},
+{
+  "id": "Q363",
+  "intent": "iam logging strategy",
+  "level": "L1",
+  "domain": "aws-identity-monitoring",
+  "triggers": ["iam logging", "log identity activity aws"],
+  "opening": "Identity activity is logged via CloudTrail.",
+  "anchors": ["auth events", "assume role", "api calls", "forensics"],
+  "closing": "Identity logs explain incidents."
+},
+{
+  "id": "Q364",
+  "intent": "detect credential compromise",
+  "level": "L2",
+  "domain": "aws-identity-security",
+  "triggers": ["detect compromised credentials", "iam credential leak"],
+  "opening": "Compromise detection relies on behavior and telemetry.",
+  "anchors": ["cloudtrail", "guardduty", "anomaly detection", "alerts"],
+  "closing": "Detection complements prevention."
+},
+{
+  "id": "Q365",
+  "intent": "break glass aws",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["break glass aws", "emergency access aws"],
+  "opening": "Break-glass access provides emergency recovery.",
+  "anchors": ["root protection", "mfa", "offline storage", "monitoring"],
+  "closing": "Use only in emergencies."
+},
+{
+  "id": "Q366",
+  "intent": "federation security risks",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["federation security risks", "federated access risks"],
+  "opening": "Federation introduces dependency on external IdPs.",
+  "anchors": ["trust drift", "misconfiguration", "monitoring", "governance"],
+  "closing": "Federation must be governed."
+},
+{
+  "id": "Q367",
+  "intent": "session duration tradeoffs",
+  "level": "L2",
+  "domain": "aws-identity",
+  "triggers": ["session duration", "sts session length"],
+  "opening": "Session duration balances usability and security.",
+  "anchors": ["short sessions", "reauthentication", "risk", "blast radius"],
+  "closing": "Shorter sessions reduce exposure."
+},
+{
+  "id": "Q368",
+  "intent": "iam automation",
+  "level": "L1",
+  "domain": "aws-identity-automation",
+  "triggers": ["iam automation", "automate iam"],
+  "opening": "Automation enforces consistent IAM configuration.",
+  "anchors": ["iac", "pipelines", "policy as code", "validation"],
+  "closing": "Automation reduces errors."
+},
+{
+  "id": "Q369",
+  "intent": "iam change management",
+  "level": "L2",
+  "domain": "aws-identity-operations",
+  "triggers": ["iam change management", "manage iam changes"],
+  "opening": "IAM changes require strict review.",
+  "anchors": ["approval", "testing", "rollback", "audit"],
+  "closing": "Identity changes have high impact."
+},
+{
+  "id": "Q370",
+  "intent": "future of aws identity",
+  "level": "L3",
+  "domain": "aws-identity",
+  "triggers": ["future of aws identity", "identity trends aws"],
+  "opening": "AWS identity is moving toward short-lived, automated access.",
+  "anchors": ["passwordless", "abac", "zero trust", "automation"],
+  "closing": "Identity becomes more dynamic."
+}
+
