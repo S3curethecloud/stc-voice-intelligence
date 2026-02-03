@@ -1,5 +1,6 @@
 from stc_voice_intelligence.engine.stt import transcribe
 from stc_voice_intelligence.engine.dataset_matcher import match_intent
+from stc_voice_intelligence.ui.hud import render
 
 
 def run():
@@ -19,18 +20,8 @@ def run():
             print("❌ No intent matched.\n")
             continue
 
-        print(f"\n🎯 Intent matched ({match['_confidence'] * 100:.0f}% confidence):")
-        print("→", match["question"])
-        print("📌 Anchors:")
-        for a in match["anchors"]:
-            print(" -", a)
-
-        if match.get("_alternatives"):
-            print("\n🔁 Alternatives:")
-            for alt in match["_alternatives"]:
-                print(f"   • {alt['question']} ({alt['confidence'] * 100:.0f}%)")
-
-        print()
+        # 🔗 HUD is now the single rendering authority
+        render(match)
 
 
 # 🔑 THIS IS THE MISSING PIECE
