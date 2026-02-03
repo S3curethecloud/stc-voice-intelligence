@@ -16,6 +16,81 @@
         "reviews"
       ],
       "closing": "Excess access is latent risk."
+    },
+    {
+      "id": "Q002",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "Explain the shared responsibility model",
+      "opening": "Security responsibilities are split between the provider and the customer.",
+      "anchors": [
+        "provider secures the cloud",
+        "customer secures workloads",
+        "service dependent",
+        "clear ownership"
+      ],
+      "closing": "Most security gaps come from misunderstanding ownership."
+    },
+    {
+      "id": "Q003",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "What is blast radius and why does it matter?",
+      "opening": "Blast radius describes how much damage a single failure can cause.",
+      "anchors": [
+        "account isolation",
+        "segmentation",
+        "containment",
+        "fault domains"
+      ],
+      "closing": "Reducing blast radius limits impact."
+    },
+    {
+      "id": "Q004",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "What security controls must exist on day one?",
+      "opening": "Certain controls must be present before any workloads launch.",
+      "anchors": [
+        "identity baseline",
+        "logging",
+        "encryption",
+        "monitoring"
+      ],
+      "closing": "Everything else builds on these."
+    },
+    {
+      "id": "Q005",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "What are common cloud security mistakes?",
+      "opening": "Most failures start with identity and visibility gaps.",
+      "anchors": [
+        "over-permissive access",
+        "no audit logs",
+        "manual secrets",
+        "shared accounts"
+      ],
+      "closing": "These mistakes scale fast."
+    },
+    {
+      "id": "Q006",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "How do you approach cloud security architecture?",
+      "opening": "I start with identity and guardrails, not infrastructure.",
+      "anchors": [
+        "least privilege",
+        "policy as code",
+        "automation",
+        "default deny"
+      ],
+      "closing": "Identity decisions shape everything."
     }
   ]
 }
