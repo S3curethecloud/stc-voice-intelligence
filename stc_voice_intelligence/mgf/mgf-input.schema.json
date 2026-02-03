@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "STC Voice Intelligence Input",
+  "type": "object",
+  "properties": {
+    "transcript": {
+      "type": "string",
+      "description": "Live interviewer question or spoken input"
+    },
+    "context": {
+      "type": "object",
+      "description": "Optional session or interview context",
+      "additionalProperties": true
+    }
+  },
+  "required": ["transcript"]
+}

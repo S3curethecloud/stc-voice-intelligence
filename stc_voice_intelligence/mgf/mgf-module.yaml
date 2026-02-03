@@ -1,0 +1,42 @@
+mgf_version: "1.0"
+
+module:
+  name: stc-voice-intelligence
+  display_name: STC Voice Intelligence
+  type: intelligence-module
+  status: active
+  version: "1.0.0"
+
+description: >
+  Deterministic interview copilot that converts live interviewer input
+  into intent-matched anchor cues for secure, real-time recall.
+  Designed for cloud security and leadership interviews.
+
+capabilities:
+  - voice_to_text
+  - intent_matching
+  - paraphrase_resolution
+  - anchor_recall
+  - confidence_scoring
+  - terminal_hud
+
+inputs:
+  - interview_questions_dataset
+  - live_transcript
+
+outputs:
+  - matched_question
+  - anchor_list
+  - confidence_score
+
+integration:
+  stc_ai:
+    ingest: true
+    dataset_path: stc_voice_intelligence/datasets/interview_questions.json
+    runtime: optional
+    mode: advisory
+
+ownership:
+  org: SecureTheCloud
+  maintainer: stc-ai
+  repo: stc-voice-intelligence
