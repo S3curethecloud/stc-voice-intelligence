@@ -17,17 +17,18 @@
   {
     "id": "Q002",
     "level": "L2",
-    "domain": "cloud-security-foundations",
+    "domain": "identity",
     "cloud": "agnostic",
-    "question": "How do you design for least privilege?",
-    "opening": "Access should match tasks, not broad roles.",
+    "question": "How do you design for least privilege access?",
+    "opening": "Least privilege means granting only the access required to perform a task.",
     "anchors": [
+      "least privilege",
       "role-based access",
       "scoped permissions",
       "time-bound access",
       "regular reviews"
     ],
-    "closing": "Excess access is latent risk."
+    "closing": "Effective least privilege reduces blast radius while preserving productivity."
   },
   {
     "id": "Q003",
@@ -35,14 +36,14 @@
     "domain": "cloud-security-foundations",
     "cloud": "agnostic",
     "question": "Explain the shared responsibility model.",
-    "opening": "Security responsibilities are split between the provider and the customer.",
+    "opening": "Security responsibilities are split between the cloud provider and the customer.",
     "anchors": [
       "provider secures the cloud",
       "customer secures workloads",
       "service dependent",
       "clear ownership"
     ],
-    "closing": "Most security gaps come from misunderstanding ownership."
+    "closing": "Most cloud security gaps come from misunderstanding ownership."
   },
   {
     "id": "Q004",
@@ -50,14 +51,14 @@
     "domain": "cloud-security-foundations",
     "cloud": "agnostic",
     "question": "What is blast radius and why does it matter?",
-    "opening": "Blast radius describes how much damage a single failure can cause.",
+    "opening": "Blast radius describes how much damage a single failure or compromise can cause.",
     "anchors": [
       "account isolation",
       "segmentation",
       "containment",
       "fault domains"
     ],
-    "closing": "Reducing blast radius limits impact."
+    "closing": "Reducing blast radius limits impact and accelerates recovery."
   },
   {
     "id": "Q005",
@@ -65,14 +66,14 @@
     "domain": "cloud-security-foundations",
     "cloud": "agnostic",
     "question": "What security controls must exist on day one?",
-    "opening": "Certain controls must be present before any workloads launch.",
+    "opening": "Certain foundational controls must exist before any workloads are deployed.",
     "anchors": [
       "identity baseline",
       "centralized logging",
       "encryption",
       "monitoring"
     ],
-    "closing": "Everything else builds on these foundations."
+    "closing": "Every mature security program is built on these controls."
   },
   {
     "id": "Q006",
@@ -80,14 +81,14 @@
     "domain": "cloud-security-foundations",
     "cloud": "agnostic",
     "question": "What are common cloud security mistakes?",
-    "opening": "Most failures start with identity and visibility gaps.",
+    "opening": "Most cloud security failures begin with identity and visibility gaps.",
     "anchors": [
       "over-permissive access",
       "missing audit logs",
       "manual secrets",
       "shared accounts"
     ],
-    "closing": "These mistakes scale faster than expected."
+    "closing": "These mistakes compound quickly at cloud scale."
   },
   {
     "id": "Q007",
@@ -95,14 +96,14 @@
     "domain": "cloud-security-foundations",
     "cloud": "agnostic",
     "question": "How do you approach cloud security architecture?",
-    "opening": "I start with identity and guardrails, not infrastructure.",
+    "opening": "I start with identity and guardrails before focusing on infrastructure.",
     "anchors": [
       "least privilege",
       "policy as code",
       "automation",
       "default deny"
     ],
-    "closing": "Identity decisions shape everything."
+    "closing": "Strong identity architecture shapes the entire security posture."
   },
   {
     "id": "Q008",
@@ -110,7 +111,7 @@
     "domain": "behavioral",
     "cloud": "agnostic",
     "question": "Tell me about a security incident you handled.",
-    "opening": "I focus on containment, clarity, and learning.",
+    "opening": "I prioritize containment, clarity, and long-term improvement.",
     "anchors": [
       "triage",
       "containment",
@@ -118,7 +119,7 @@
       "communication",
       "postmortem"
     ],
-    "closing": "Incidents improve systems when handled transparently."
+    "closing": "Well-managed incidents lead to stronger systems."
   },
   {
     "id": "Q009",
@@ -126,7 +127,7 @@
     "domain": "behavioral",
     "cloud": "agnostic",
     "question": "How do you handle disagreements with engineering teams?",
-    "opening": "I align on risk, outcomes, and tradeoffs.",
+    "opening": "I focus on shared goals, risk clarity, and practical tradeoffs.",
     "anchors": [
       "shared goals",
       "risk framing",
@@ -134,7 +135,7 @@
       "data-driven discussion",
       "partnership"
     ],
-    "closing": "Security works best as a partner, not a blocker."
+    "closing": "Security succeeds when it operates as a trusted partner."
   },
   {
     "id": "Q010",
@@ -142,7 +143,7 @@
     "domain": "leadership",
     "cloud": "agnostic",
     "question": "How do you influence without authority?",
-    "opening": "By earning trust through clarity and delivery.",
+    "opening": "By building credibility through clarity, consistency, and delivery.",
     "anchors": [
       "credibility",
       "empathy",
@@ -150,7 +151,7 @@
       "quick wins",
       "consistency"
     ],
-    "closing": "Influence follows trust."
+    "closing": "Influence is earned through trust, not titles."
   },
   {
     "id": "Q011",
@@ -158,7 +159,7 @@
     "domain": "zero-trust",
     "cloud": "agnostic",
     "question": "How does identity fit into a zero trust security model?",
-    "opening": "Zero trust treats identity as the primary control plane.",
+    "opening": "Zero trust treats identity as the primary control plane rather than network location.",
     "anchors": [
       "identity-centric security",
       "continuous verification",
@@ -173,10 +174,10 @@
     "domain": "behavioral",
     "cloud": "agnostic",
     "question": "How do human behaviors increase identity-related security risk?",
-    "opening": "Human behavior often bypasses technical safeguards.",
+    "opening": "Human behavior often introduces weaknesses that technical controls alone cannot mitigate.",
     "anchors": [
       "credential reuse",
-      "phishing susceptibility",
+      "phishing",
       "social engineering",
       "privilege creep"
     ],
@@ -188,7 +189,7 @@
     "domain": "leadership",
     "cloud": "agnostic",
     "question": "How do you explain identity risk to executive leadership?",
-    "opening": "Identity risk must be framed in terms of business exposure.",
+    "opening": "Identity risk should be framed in terms of business impact and exposure.",
     "anchors": [
       "likelihood",
       "business impact",
@@ -196,6 +197,6 @@
       "decision options",
       "recommendation"
     ],
-    "closing": "Executives need clarity, not technical depth."
+    "closing": "Executives need clear decisions, not technical detail."
   }
 ]
