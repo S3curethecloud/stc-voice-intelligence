@@ -1,329 +1,201 @@
-{
-  "version": "2026.02",
-  "source": "INTERVIEW ANCHOR.txt",
-  "questions": [
-    {
-      "id": "Q001",
-      "level": "L2",
-      "domain": "cloud-security-foundations",
-      "cloud": "agnostic",
-      "question": "How do you design for least privilege?",
-      "opening": "Access should match tasks, not roles.",
-      "anchors": [
-        "role-based access",
-        "scoped permissions",
-        "time-bound",
-        "reviews"
-      ],
-      "closing": "Excess access is latent risk."
-    },
-    {
-      "id": "Q002",
-      "level": "L2",
-      "domain": "cloud-security-foundations",
-      "cloud": "agnostic",
-      "question": "Explain the shared responsibility model",
-      "opening": "Security responsibilities are split between the provider and the customer.",
-      "anchors": [
-        "provider secures the cloud",
-        "customer secures workloads",
-        "service dependent",
-        "clear ownership"
-      ],
-      "closing": "Most security gaps come from misunderstanding ownership."
-    },
-    {
-      "id": "Q003",
-      "level": "L2",
-      "domain": "cloud-security-foundations",
-      "cloud": "agnostic",
-      "question": "What is blast radius and why does it matter?",
-      "opening": "Blast radius describes how much damage a single failure can cause.",
-      "anchors": [
-        "account isolation",
-        "segmentation",
-        "containment",
-        "fault domains"
-      ],
-      "closing": "Reducing blast radius limits impact."
-    },
-    {
-      "id": "Q004",
-      "level": "L2",
-      "domain": "cloud-security-foundations",
-      "cloud": "agnostic",
-      "question": "What security controls must exist on day one?",
-      "opening": "Certain controls must be present before any workloads launch.",
-      "anchors": [
-        "identity baseline",
-        "logging",
-        "encryption",
-        "monitoring"
-      ],
-      "closing": "Everything else builds on these."
-    },
-    {
-      "id": "Q005",
-      "level": "L2",
-      "domain": "cloud-security-foundations",
-      "cloud": "agnostic",
-      "question": "What are common cloud security mistakes?",
-      "opening": "Most failures start with identity and visibility gaps.",
-      "anchors": [
-        "over-permissive access",
-        "no audit logs",
-        "manual secrets",
-        "shared accounts"
-      ],
-      "closing": "These mistakes scale fast."
-    },
-    {
-      "id": "Q006",
-      "level": "L2",
-      "domain": "cloud-security-foundations",
-      "cloud": "agnostic",
-      "question": "How do you approach cloud security architecture?",
-      "opening": "I start with identity and guardrails, not infrastructure.",
-      "anchors": [
-        "least privilege",
-        "policy as code",
-        "automation",
-        "default deny"
-      ],
-      "closing": "Identity decisions shape everything."
-    },
-    {
-      "id": "Q007",
-      "level": "L2",
-      "domain": "behavioral",
-      "cloud": "agnostic",
-      "question": "Tell me about a security incident you handled",
-      "opening": "I focus on containment, clarity, and learning.",
-      "anchors": [
-        "triage",
-        "containment",
-        "root cause",
-        "communication",
-        "postmortem"
-      ],
-      "closing": "Incidents improve systems when handled transparently."
-    },
-    {
-      "id": "Q008",
-      "level": "L2",
-      "domain": "behavioral",
-      "cloud": "agnostic",
-      "question": "How do you handle disagreements with engineering teams?",
-      "opening": "I align on risk, outcomes, and tradeoffs.",
-      "anchors": [
-        "shared goals",
-        "risk framing",
-        "tradeoffs",
-        "data driven",
-        "partnership"
-      ],
-      "closing": "Security works best as a partner."
-    },
-    {
-      "id": "Q009",
-      "level": "L2",
-      "domain": "leadership",
-      "cloud": "agnostic",
-      "question": "How do you influence without authority?",
-      "opening": "By earning trust through clarity and delivery.",
-      "anchors": [
-        "credibility",
-        "empathy",
-        "clear framing",
-        "quick wins",
-        "consistency"
-      ],
-      "closing": "Influence follows trust."
-    },
-    {
-      "id": "Q010",
-      "level": "L2",
-      "domain": "leadership",
-      "cloud": "agnostic",
-      "question": "Describe a time you had to make a difficult security tradeoff",
-      "opening": "I balance risk reduction with business impact.",
-      "anchors": [
-        "risk assessment",
-        "business context",
-        "mitigations",
-        "decision ownership"
-      ],
-      "closing": "Perfect security is not practical."
-    },
-    {
-      "id": "Q011",
-      "level": "L2",
-      "domain": "leadership",
-      "cloud": "agnostic",
-      "question": "How do you communicate security risk to executives?",
-      "intent_aliases": [
-        "explain security risk to leadership",
-        "communicate security risk to management",
-        "present security risk to executives"
-      ],
-      "opening": "I translate technical risk into business impact.",
-      "anchors": [
-        "likelihood",
-        "impact",
-        "options",
-        "recommendation"
-      ],
-      "closing": "Executives need clarity, not detail."
-    },
-    {
-      "id": "Q012",
-      "level": "L2",
-      "domain": "azure-identity",
-      "cloud": "azure",
-      "question": "What is Azure Entra ID and why is it critical to security?",
-      "opening": "Entra ID is Azure’s identity and access control plane.",
-      "anchors": [
-        "authentication",
-        "authorization",
-        "conditional access",
-        "identity control plane"
-      ],
-      "closing": "Identity is the foundation of Azure security."
-    },
-    {
-      "id": "Q013",
-      "level": "L2",
-      "domain": "azure-networking",
-      "cloud": "azure",
-      "question": "What is an Azure Virtual Network (VNet)?",
-      "opening": "A VNet is a logically isolated network in Azure.",
-      "anchors": [
-        "ip address space",
-        "subnets",
-        "isolation",
-        "routing"
-      ],
-      "closing": "VNets define network boundaries."
-    },
-    {
-      "id": "Q014",
-      "level": "L2",
-      "domain": "azure-networking",
-      "cloud": "azure",
-      "question": "How do Network Security Groups work?",
-      "opening": "NSGs control traffic using allow and deny rules.",
-      "anchors": [
-        "inbound rules",
-        "outbound rules",
-        "priority",
-        "stateful filtering"
-      ],
-      "closing": "NSGs enforce network segmentation."
-    },
-    {
-      "id": "Q015",
-      "level": "L2",
-      "domain": "azure-networking",
-      "cloud": "azure",
-      "question": "What problem do Azure Private Endpoints solve?",
-      "opening": "Private Endpoints remove public exposure of services.",
-      "anchors": [
-        "private ip",
-        "no public endpoint",
-        "service isolation",
-        "data exfiltration reduction"
-      ],
-      "closing": "They are key to zero trust networking."
-    },
-    {
-      "id": "Q016",
-      "level": "L2",
-      "domain": "azure-governance",
-      "cloud": "azure",
-      "question": "What is Azure Policy used for?",
-      "opening": "Azure Policy enforces configuration standards.",
-      "anchors": [
-        "deny",
-        "audit",
-        "deploy if not exists",
-        "governance"
-      ],
-      "closing": "Policy prevents drift at scale."
-    },
-    {
-      "id": "Q017",
-      "level": "L2",
-      "domain": "aws-identity",
-      "cloud": "aws",
-      "question": "What is AWS IAM and why is it critical to security?",
-      "opening": "IAM controls authentication and authorization in AWS.",
-      "anchors": [
-        "users and roles",
-        "policies",
-        "least privilege",
-        "identity control plane"
-      ],
-      "closing": "IAM decisions shape the entire security posture."
-    },
-    {
-      "id": "Q018",
-      "level": "L2",
-      "domain": "aws-networking",
-      "cloud": "aws",
-      "question": "What is an Amazon VPC?",
-      "opening": "A VPC is a logically isolated network in AWS.",
-      "anchors": [
-        "cidr range",
-        "subnets",
-        "route tables",
-        "isolation"
-      ],
-      "closing": "VPCs define AWS network boundaries."
-    },
-    {
-      "id": "Q019",
-      "level": "L2",
-      "domain": "aws-networking",
-      "cloud": "aws",
-      "question": "How do Security Groups work in AWS?",
-      "opening": "Security Groups act as virtual firewalls for resources.",
-      "anchors": [
-        "stateful rules",
-        "inbound allow",
-        "implicit deny",
-        "resource attachment"
-      ],
-      "closing": "They enforce instance-level segmentation."
-    },
-    {
-      "id": "Q020",
-      "level": "L2",
-      "domain": "aws-networking",
-      "cloud": "aws",
-      "question": "What problem does AWS PrivateLink solve?",
-      "opening": "PrivateLink enables private access to services over AWS’s network.",
-      "anchors": [
-        "no public internet",
-        "interface endpoints",
-        "service exposure control",
-        "exfiltration reduction"
-      ],
-      "closing": "PrivateLink is key to private service access."
-    },
-    {
-      "id": "Q021",
-      "level": "L2",
-      "domain": "aws-governance",
-      "cloud": "aws",
-      "question": "What are AWS Organizations and Service Control Policies?",
-      "opening": "Organizations manage accounts and enforce guardrails.",
-      "anchors": [
-        "account hierarchy",
-        "scp guardrails",
-        "deny by default",
-        "blast radius control"
-      ],
-      "closing": "SCPs set the maximum allowed permissions."
-    }
-  ]
-}
+[
+  {
+    "id": "Q001",
+    "level": "L1",
+    "domain": "identity",
+    "cloud": "agnostic",
+    "question": "What is identity in the context of cloud security?",
+    "opening": "Identity is the foundation of access control in cloud environments.",
+    "anchors": [
+      "authentication",
+      "authorization",
+      "principal",
+      "access control"
+    ],
+    "closing": "In cloud security, identity defines who or what can access a resource."
+  },
+  {
+    "id": "Q002",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "How do you design for least privilege?",
+    "opening": "Access should match tasks, not broad roles.",
+    "anchors": [
+      "role-based access",
+      "scoped permissions",
+      "time-bound access",
+      "regular reviews"
+    ],
+    "closing": "Excess access is latent risk."
+  },
+  {
+    "id": "Q003",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "Explain the shared responsibility model.",
+    "opening": "Security responsibilities are split between the provider and the customer.",
+    "anchors": [
+      "provider secures the cloud",
+      "customer secures workloads",
+      "service dependent",
+      "clear ownership"
+    ],
+    "closing": "Most security gaps come from misunderstanding ownership."
+  },
+  {
+    "id": "Q004",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "What is blast radius and why does it matter?",
+    "opening": "Blast radius describes how much damage a single failure can cause.",
+    "anchors": [
+      "account isolation",
+      "segmentation",
+      "containment",
+      "fault domains"
+    ],
+    "closing": "Reducing blast radius limits impact."
+  },
+  {
+    "id": "Q005",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "What security controls must exist on day one?",
+    "opening": "Certain controls must be present before any workloads launch.",
+    "anchors": [
+      "identity baseline",
+      "centralized logging",
+      "encryption",
+      "monitoring"
+    ],
+    "closing": "Everything else builds on these foundations."
+  },
+  {
+    "id": "Q006",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "What are common cloud security mistakes?",
+    "opening": "Most failures start with identity and visibility gaps.",
+    "anchors": [
+      "over-permissive access",
+      "missing audit logs",
+      "manual secrets",
+      "shared accounts"
+    ],
+    "closing": "These mistakes scale faster than expected."
+  },
+  {
+    "id": "Q007",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "How do you approach cloud security architecture?",
+    "opening": "I start with identity and guardrails, not infrastructure.",
+    "anchors": [
+      "least privilege",
+      "policy as code",
+      "automation",
+      "default deny"
+    ],
+    "closing": "Identity decisions shape everything."
+  },
+  {
+    "id": "Q008",
+    "level": "L2",
+    "domain": "behavioral",
+    "cloud": "agnostic",
+    "question": "Tell me about a security incident you handled.",
+    "opening": "I focus on containment, clarity, and learning.",
+    "anchors": [
+      "triage",
+      "containment",
+      "root cause analysis",
+      "communication",
+      "postmortem"
+    ],
+    "closing": "Incidents improve systems when handled transparently."
+  },
+  {
+    "id": "Q009",
+    "level": "L2",
+    "domain": "behavioral",
+    "cloud": "agnostic",
+    "question": "How do you handle disagreements with engineering teams?",
+    "opening": "I align on risk, outcomes, and tradeoffs.",
+    "anchors": [
+      "shared goals",
+      "risk framing",
+      "tradeoffs",
+      "data-driven discussion",
+      "partnership"
+    ],
+    "closing": "Security works best as a partner, not a blocker."
+  },
+  {
+    "id": "Q010",
+    "level": "L2",
+    "domain": "leadership",
+    "cloud": "agnostic",
+    "question": "How do you influence without authority?",
+    "opening": "By earning trust through clarity and delivery.",
+    "anchors": [
+      "credibility",
+      "empathy",
+      "clear framing",
+      "quick wins",
+      "consistency"
+    ],
+    "closing": "Influence follows trust."
+  },
+  {
+    "id": "Q011",
+    "level": "L3",
+    "domain": "zero-trust",
+    "cloud": "agnostic",
+    "question": "How does identity fit into a zero trust security model?",
+    "opening": "Zero trust treats identity as the primary control plane.",
+    "anchors": [
+      "identity-centric security",
+      "continuous verification",
+      "context-aware access",
+      "policy-driven decisions"
+    ],
+    "closing": "Zero trust fails without strong identity governance."
+  },
+  {
+    "id": "Q012",
+    "level": "L3",
+    "domain": "behavioral",
+    "cloud": "agnostic",
+    "question": "How do human behaviors increase identity-related security risk?",
+    "opening": "Human behavior often bypasses technical safeguards.",
+    "anchors": [
+      "credential reuse",
+      "phishing susceptibility",
+      "social engineering",
+      "privilege creep"
+    ],
+    "closing": "Human risk must be addressed alongside technical controls."
+  },
+  {
+    "id": "Q013",
+    "level": "L4",
+    "domain": "leadership",
+    "cloud": "agnostic",
+    "question": "How do you explain identity risk to executive leadership?",
+    "opening": "Identity risk must be framed in terms of business exposure.",
+    "anchors": [
+      "likelihood",
+      "business impact",
+      "risk scenarios",
+      "decision options",
+      "recommendation"
+    ],
+    "closing": "Executives need clarity, not technical depth."
+  }
+]
