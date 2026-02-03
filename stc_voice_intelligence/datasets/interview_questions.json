@@ -91,6 +91,84 @@
         "default deny"
       ],
       "closing": "Identity decisions shape everything."
+    },
+    {
+      "id": "Q007",
+      "level": "L2",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "Tell me about a security incident you handled",
+      "opening": "I focus on containment, clarity, and learning.",
+      "anchors": [
+        "triage",
+        "containment",
+        "root cause",
+        "communication",
+        "postmortem"
+      ],
+      "closing": "Incidents improve systems when handled transparently."
+    },
+    {
+      "id": "Q008",
+      "level": "L2",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "How do you handle disagreements with engineering teams?",
+      "opening": "I align on risk, outcomes, and tradeoffs.",
+      "anchors": [
+        "shared goals",
+        "risk framing",
+        "tradeoffs",
+        "data driven",
+        "partnership"
+      ],
+      "closing": "Security works best as a partner."
+    },
+    {
+      "id": "Q009",
+      "level": "L2",
+      "domain": "leadership",
+      "cloud": "agnostic",
+      "question": "How do you influence without authority?",
+      "opening": "By earning trust through clarity and delivery.",
+      "anchors": [
+        "credibility",
+        "empathy",
+        "clear framing",
+        "quick wins",
+        "consistency"
+      ],
+      "closing": "Influence follows trust."
+    },
+    {
+      "id": "Q010",
+      "level": "L2",
+      "domain": "leadership",
+      "cloud": "agnostic",
+      "question": "Describe a time you had to make a difficult security tradeoff",
+      "opening": "I balance risk reduction with business impact.",
+      "anchors": [
+        "risk assessment",
+        "business context",
+        "mitigations",
+        "decision ownership"
+      ],
+      "closing": "Perfect security is not practical."
+    },
+    {
+      "id": "Q011",
+      "level": "L2",
+      "domain": "leadership",
+      "cloud": "agnostic",
+      "question": "How do you communicate security risk to executives?",
+      "opening": "I translate technical risk into business impact.",
+      "anchors": [
+        "likelihood",
+        "impact",
+        "options",
+        "recommendation"
+      ],
+      "closing": "Executives need clarity, not detail."
     }
   ]
 }
