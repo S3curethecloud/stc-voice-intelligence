@@ -6265,3 +6265,27 @@
   ]
 }
 
+=======
+{
+  "version": "2026.02",
+  "source": "INTERVIEW ANCHOR.txt",
+  "questions": [
+    {
+      "id": "Q001",
+      "level": "L1",
+      "domain": "general",
+      "cloud": "agnostic",
+      "question": "Tell me about yourself",
+      "opening": "I’m a multi-cloud security architect focused on scalable, identity-first design.",
+      "anchors": [
+        "networking background",
+        "cloud transition",
+        "security focus",
+        "AWS / Azure / GCP",
+        "architecture + hands-on"
+      ],
+      "closing": "I specialize in turning security strategy into deployable platforms."
+    }
+  ]
+}
+

@@ -1,0 +1,21 @@
+{
+  "dataset": "stc-voice-intelligence",
+  "source_file": "INTERVIEW ANCHOR.txt",
+  "generated_on": "2026-02-02",
+  "levels": ["L1", "L2", "L3", "L4"],
+  "clouds": ["agnostic", "azure", "aws", "gcp"],
+  "domains": [
+    "identity",
+    "zero-trust",
+    "logging",
+    "detection",
+    "incident-response",
+    "compute",
+    "storage",
+    "networking",
+    "leadership"
+  ],
+  "voice_optimized": true,
+  "mgf_compatible": true,
+  "lock_intent": "post-generation"
+}
