@@ -14,15 +14,23 @@ def normalize(text: str) -> str:
     return text.lower().strip()
 
 
+def tokenize(text: str):
+    stopwords = {"how", "do", "you", "to", "the", "is", "and", "a", "of"}
+    return {
+        w for w in normalize(text).replace("?", "").split()
+        if w not in stopwords and len(w) > 3
+    }
+
+
 def score_question(transcript: str, q: dict) -> float:
     transcript_n = normalize(transcript)
     score = 0.0
 
-    # 1️⃣ Question text match (strong signal)
+    # 1️⃣ Exact question match
     if normalize(q["question"]) in transcript_n:
         score += 0.6
 
-    # 2️⃣ Anchor hits (semantic hints)
+    # 2️⃣ Anchor hits
     anchor_hits = 0
     for a in q.get("anchors", []):
         if normalize(a) in transcript_n:
@@ -31,15 +39,19 @@ def score_question(transcript: str, q: dict) -> float:
     if anchor_hits:
         score += min(0.3, anchor_hits * 0.1)
 
-    # 3️⃣ Domain / cloud hints (tie-breaker)
-    for hint in [q.get("domain", ""), q.get("cloud", "")]:
-        if hint and hint in transcript_n:
-            score += 0.05
+    # 3️⃣ Keyword overlap (NEW)
+    q_tokens = tokenize(q["question"])
+    t_tokens = tokenize(transcript)
+
+    if q_tokens and t_tokens:
+        overlap = q_tokens.intersection(t_tokens)
+        if overlap:
+            score += min(0.25, len(overlap) * 0.08)
 
     return round(min(score, 1.0), 2)
 
 
-def match_intent(transcript: str, threshold: float = 0.35):
+def match_intent(transcript: str, threshold: float = 0.30):
     questions = load_dataset()
     scored = []
 
