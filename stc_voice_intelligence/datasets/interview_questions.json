@@ -273,5 +273,80 @@
       "executive reporting"
     ],
     "closing": "Meaningful metrics help leaders understand identity as a business control."
+  },
+  {
+    "id": "Q024",
+    "level": "L1",
+    "domain": "zero-trust",
+    "cloud": "agnostic",
+    "question": "What does zero trust mean in practical terms?",
+    "opening": "Zero trust is a security model that assumes no implicit trust for any access request.",
+    "anchors": [
+      "zero trust",
+      "implicit trust",
+      "access verification",
+      "policy enforcement"
+    ],
+    "closing": "In practice, zero trust requires continuous verification for every access attempt."
+  },
+  {
+    "id": "Q025",
+    "level": "L2",
+    "domain": "identity",
+    "cloud": "agnostic",
+    "question": "How do you manage privileged access safely?",
+    "opening": "Privileged access must be tightly controlled due to its high impact.",
+    "anchors": [
+      "privileged access",
+      "elevated permissions",
+      "just in time access",
+      "access controls"
+    ],
+    "closing": "Reducing standing privilege lowers the risk of catastrophic compromise."
+  },
+  {
+    "id": "Q026",
+    "level": "L3",
+    "domain": "incident-response",
+    "cloud": "agnostic",
+    "question": "How do you contain an identity-based security incident?",
+    "opening": "Containment focuses on stopping active abuse while preserving evidence.",
+    "anchors": [
+      "incident containment",
+      "identity abuse",
+      "access revocation",
+      "forensic preservation"
+    ],
+    "closing": "Fast containment limits attacker movement and business impact."
+  },
+  {
+    "id": "Q027",
+    "level": "L3",
+    "domain": "governance",
+    "cloud": "agnostic",
+    "question": "How do you balance security controls with developer productivity?",
+    "opening": "Security controls must enable, not block, delivery.",
+    "anchors": [
+      "security tradeoffs",
+      "developer productivity",
+      "control friction",
+      "risk tolerance"
+    ],
+    "closing": "Well-designed controls reduce risk while keeping teams effective."
+  },
+  {
+    "id": "Q028",
+    "level": "L4",
+    "domain": "leadership",
+    "cloud": "agnostic",
+    "question": "How do you communicate identity incidents to executives and the board?",
+    "opening": "Executive communication should focus on impact, response, and risk reduction.",
+    "anchors": [
+      "executive communication",
+      "incident reporting",
+      "business impact",
+      "board visibility"
+    ],
+    "closing": "Clear communication builds trust and supports informed decision-making."
   }
 ]
