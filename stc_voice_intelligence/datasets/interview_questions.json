@@ -169,6 +169,81 @@
         "recommendation"
       ],
       "closing": "Executives need clarity, not detail."
+    },
+    {
+      "id": "Q012",
+      "level": "L2",
+      "domain": "azure-identity",
+      "cloud": "azure",
+      "question": "What is Azure Entra ID and why is it critical to security?",
+      "opening": "Entra ID is Azure’s identity and access control plane.",
+      "anchors": [
+        "authentication",
+        "authorization",
+        "conditional access",
+        "identity control plane"
+      ],
+      "closing": "Identity is the foundation of Azure security."
+    },
+    {
+      "id": "Q013",
+      "level": "L2",
+      "domain": "azure-networking",
+      "cloud": "azure",
+      "question": "What is an Azure Virtual Network (VNet)?",
+      "opening": "A VNet is a logically isolated network in Azure.",
+      "anchors": [
+        "ip address space",
+        "subnets",
+        "isolation",
+        "routing"
+      ],
+      "closing": "VNets define network boundaries."
+    },
+    {
+      "id": "Q014",
+      "level": "L2",
+      "domain": "azure-networking",
+      "cloud": "azure",
+      "question": "How do Network Security Groups work?",
+      "opening": "NSGs control traffic using allow and deny rules.",
+      "anchors": [
+        "inbound rules",
+        "outbound rules",
+        "priority",
+        "stateful filtering"
+      ],
+      "closing": "NSGs enforce network segmentation."
+    },
+    {
+      "id": "Q015",
+      "level": "L2",
+      "domain": "azure-networking",
+      "cloud": "azure",
+      "question": "What problem do Azure Private Endpoints solve?",
+      "opening": "Private Endpoints remove public exposure of services.",
+      "anchors": [
+        "private ip",
+        "no public endpoint",
+        "service isolation",
+        "data exfiltration reduction"
+      ],
+      "closing": "They are key to zero trust networking."
+    },
+    {
+      "id": "Q016",
+      "level": "L2",
+      "domain": "azure-governance",
+      "cloud": "azure",
+      "question": "What is Azure Policy used for?",
+      "opening": "Azure Policy enforces configuration standards.",
+      "anchors": [
+        "deny",
+        "audit",
+        "deploy if not exists",
+        "governance"
+      ],
+      "closing": "Policy prevents drift at scale."
     }
   ]
 }
