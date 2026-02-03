@@ -2,7 +2,6 @@ from stc_voice_intelligence.engine.stt import transcribe
 from stc_voice_intelligence.engine.dataset_matcher import match_intent
 
 
-
 def run():
     print("🧠 STC Voice Intelligence — Live Mode")
     print("Type interviewer question and press Enter.\n")
@@ -11,6 +10,7 @@ def run():
         transcript = transcribe()
 
         if transcript.lower() in ["exit", "quit"]:
+            print("👋 Exiting.")
             break
 
         match = match_intent(transcript)
@@ -24,3 +24,8 @@ def run():
         for a in match["anchors"]:
             print(" -", a)
         print()
+
+
+# 🔑 THIS IS THE MISSING PIECE
+if __name__ == "__main__":
+    run()
