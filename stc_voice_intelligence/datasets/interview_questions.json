@@ -161,6 +161,11 @@
       "domain": "leadership",
       "cloud": "agnostic",
       "question": "How do you communicate security risk to executives?",
+      "intent_aliases": [
+        "explain security risk to leadership",
+        "communicate security risk to management",
+        "present security risk to executives"
+      ],
       "opening": "I translate technical risk into business impact.",
       "anchors": [
         "likelihood",
