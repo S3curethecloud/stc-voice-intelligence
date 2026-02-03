@@ -1,0 +1,11 @@
+{
+  "name": "stc-voice-intelligence",
+  "type": "intelligence-module",
+  "version": "1.0.0",
+  "repo": "https://github.com/S3curethecloud/stc-voice-intelligence",
+  "mgf_module": "stc_voice_intelligence/mgf/mgf-module.yaml",
+  "datasets": [
+    "stc_voice_intelligence/datasets/interview_questions.json"
+  ],
+  "status": "active"
+}
