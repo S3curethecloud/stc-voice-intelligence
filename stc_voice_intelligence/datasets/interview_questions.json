@@ -198,5 +198,80 @@
       "recommendation"
     ],
     "closing": "Executives need clear decisions, not technical detail."
+  },
+  {
+    "id": "Q019",
+    "level": "L1",
+    "domain": "governance",
+    "cloud": "agnostic",
+    "question": "What is identity governance?",
+    "opening": "Identity governance focuses on managing and reviewing access over time.",
+    "anchors": [
+      "identity governance",
+      "access lifecycle",
+      "policy enforcement",
+      "visibility"
+    ],
+    "closing": "Strong identity governance ensures access remains appropriate as environments change."
+  },
+  {
+    "id": "Q020",
+    "level": "L2",
+    "domain": "governance",
+    "cloud": "agnostic",
+    "question": "How do access reviews reduce identity risk?",
+    "opening": "Access reviews validate that users and systems still need their assigned permissions.",
+    "anchors": [
+      "access reviews",
+      "entitlement validation",
+      "risk reduction",
+      "oversight"
+    ],
+    "closing": "Regular reviews help eliminate excess access before it becomes exploitable."
+  },
+  {
+    "id": "Q021",
+    "level": "L3",
+    "domain": "detection",
+    "cloud": "agnostic",
+    "question": "How do you detect identity-based attacks?",
+    "opening": "Identity-based attacks are detected by monitoring authentication and access patterns.",
+    "anchors": [
+      "identity telemetry",
+      "authentication logs",
+      "anomaly detection",
+      "behavior analysis"
+    ],
+    "closing": "Effective detection relies on correlating identity signals across systems."
+  },
+  {
+    "id": "Q022",
+    "level": "L3",
+    "domain": "incident-response",
+    "cloud": "agnostic",
+    "question": "What is your response strategy for compromised credentials?",
+    "opening": "Credential compromise requires immediate containment and investigation.",
+    "anchors": [
+      "credential compromise",
+      "containment",
+      "access revocation",
+      "incident response"
+    ],
+    "closing": "Fast response limits attacker dwell time and prevents lateral movement."
+  },
+  {
+    "id": "Q023",
+    "level": "L4",
+    "domain": "leadership",
+    "cloud": "agnostic",
+    "question": "How do you measure the effectiveness of an identity program?",
+    "opening": "Identity effectiveness should be measured using risk, coverage, and outcomes.",
+    "anchors": [
+      "identity metrics",
+      "risk indicators",
+      "program maturity",
+      "executive reporting"
+    ],
+    "closing": "Meaningful metrics help leaders understand identity as a business control."
   }
 ]
