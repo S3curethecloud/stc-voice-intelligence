@@ -4,16 +4,6 @@ from pathlib import Path
 DATASET_PATH = Path(__file__).parent.parent / "datasets" / "interview_questions.json"
 
 
-# ✅ Authoritative, interview-focused synonym map
-SYNONYMS = {
-    "communicate": {"explain", "present", "articulate"},
-    "explain": {"communicate", "describe"},
-    "executives": {"leadership", "execs", "management"},
-    "leadership": {"executives", "management"},
-    "risk": {"threat", "exposure"},
-}
-
-
 def load_dataset():
     with open(DATASET_PATH, "r") as f:
         data = json.load(f)
@@ -32,9 +22,6 @@ def tokenize(text: str):
         if w in stopwords or len(w) <= 3:
             continue
         tokens.add(w)
-        # add synonyms
-        if w in SYNONYMS:
-            tokens.update(SYNONYMS[w])
 
     return tokens
 
@@ -47,6 +34,12 @@ def score_question(transcript: str, q: dict) -> float:
     if normalize(q["question"]) in transcript_n:
         score += 0.6
 
+    # 1️⃣b Intent alias match (STRONG)
+    for alias in q.get("intent_aliases", []):
+        alias_n = normalize(alias)
+        if alias_n in transcript_n:
+            score += 0.7  # deliberately strong
+
     # 2️⃣ Anchor hits
     anchor_hits = 0
     for a in q.get("anchors", []):
@@ -56,14 +49,13 @@ def score_question(transcript: str, q: dict) -> float:
     if anchor_hits:
         score += min(0.3, anchor_hits * 0.1)
 
-    # 3️⃣ Keyword + synonym overlap
+    # 3️⃣ Keyword overlap
     q_tokens = tokenize(q["question"])
     t_tokens = tokenize(transcript)
 
-    if q_tokens and t_tokens:
-        overlap = q_tokens.intersection(t_tokens)
-        if overlap:
-            score += min(0.25, len(overlap) * 0.08)
+    overlap = q_tokens.intersection(t_tokens)
+    if overlap:
+        score += min(0.25, len(overlap) * 0.08)
 
     return round(min(score, 1.0), 2)
 
@@ -80,7 +72,6 @@ def match_intent(transcript: str, threshold: float = 0.30):
     if not scored:
         return None
 
-    # Sort by score descending
     scored.sort(key=lambda x: x[0], reverse=True)
 
     best_score, best_match = scored[0]
@@ -88,7 +79,6 @@ def match_intent(transcript: str, threshold: float = 0.30):
     if best_score < threshold:
         return None
 
-    # Attach score for display
     best_match["_confidence"] = best_score
     best_match["_alternatives"] = [
         {"question": q["question"], "confidence": s}
