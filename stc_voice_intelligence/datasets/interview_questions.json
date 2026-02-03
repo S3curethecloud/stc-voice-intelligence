@@ -244,6 +244,81 @@
         "governance"
       ],
       "closing": "Policy prevents drift at scale."
+    },
+    {
+      "id": "Q017",
+      "level": "L2",
+      "domain": "aws-identity",
+      "cloud": "aws",
+      "question": "What is AWS IAM and why is it critical to security?",
+      "opening": "IAM controls authentication and authorization in AWS.",
+      "anchors": [
+        "users and roles",
+        "policies",
+        "least privilege",
+        "identity control plane"
+      ],
+      "closing": "IAM decisions shape the entire security posture."
+    },
+    {
+      "id": "Q018",
+      "level": "L2",
+      "domain": "aws-networking",
+      "cloud": "aws",
+      "question": "What is an Amazon VPC?",
+      "opening": "A VPC is a logically isolated network in AWS.",
+      "anchors": [
+        "cidr range",
+        "subnets",
+        "route tables",
+        "isolation"
+      ],
+      "closing": "VPCs define AWS network boundaries."
+    },
+    {
+      "id": "Q019",
+      "level": "L2",
+      "domain": "aws-networking",
+      "cloud": "aws",
+      "question": "How do Security Groups work in AWS?",
+      "opening": "Security Groups act as virtual firewalls for resources.",
+      "anchors": [
+        "stateful rules",
+        "inbound allow",
+        "implicit deny",
+        "resource attachment"
+      ],
+      "closing": "They enforce instance-level segmentation."
+    },
+    {
+      "id": "Q020",
+      "level": "L2",
+      "domain": "aws-networking",
+      "cloud": "aws",
+      "question": "What problem does AWS PrivateLink solve?",
+      "opening": "PrivateLink enables private access to services over AWS’s network.",
+      "anchors": [
+        "no public internet",
+        "interface endpoints",
+        "service exposure control",
+        "exfiltration reduction"
+      ],
+      "closing": "PrivateLink is key to private service access."
+    },
+    {
+      "id": "Q021",
+      "level": "L2",
+      "domain": "aws-governance",
+      "cloud": "aws",
+      "question": "What are AWS Organizations and Service Control Policies?",
+      "opening": "Organizations manage accounts and enforce guardrails.",
+      "anchors": [
+        "account hierarchy",
+        "scp guardrails",
+        "deny by default",
+        "blast radius control"
+      ],
+      "closing": "SCPs set the maximum allowed permissions."
     }
   ]
 }
