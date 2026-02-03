@@ -6273,7 +6273,7 @@
     {
       "id": "Q001",
       "level": "L1",
-      "domain": "general",
+      "domain": "behavioral",
       "cloud": "agnostic",
       "question": "Tell me about yourself",
       "opening": "I’m a multi-cloud security architect focused on scalable, identity-first design.",
@@ -6285,6 +6285,233 @@
         "architecture + hands-on"
       ],
       "closing": "I specialize in turning security strategy into deployable platforms."
+    },
+    {
+      "id": "Q002",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "Walk me through your resume",
+      "opening": "My resume reflects a steady progression toward cloud security architecture.",
+      "anchors": [
+        "early infrastructure",
+        "cloud adoption",
+        "security specialization",
+        "increasing scope",
+        "platform mindset"
+      ],
+      "closing": "Each role built toward operating at architectural scale."
+    },
+    {
+      "id": "Q003",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "Why did you move into cloud security?",
+      "opening": "Cloud security sits at the intersection of scale and risk.",
+      "anchors": [
+        "complexity growth",
+        "identity challenges",
+        "shared responsibility",
+        "automation need"
+      ],
+      "closing": "Security became the layer that unified everything."
+    },
+    {
+      "id": "Q004",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "What kind of roles are you looking for?",
+      "opening": "Roles where security is embedded early, not added later.",
+      "anchors": [
+        "platform security",
+        "identity leadership",
+        "architectural ownership",
+        "cross-team impact"
+      ],
+      "closing": "I’m most effective where security enables velocity."
+    },
+    {
+      "id": "Q005",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "What differentiates you from other candidates?",
+      "opening": "I combine architectural thinking with real operational depth.",
+      "anchors": [
+        "multi-cloud experience",
+        "identity expertise",
+        "incident awareness",
+        "teaching mindset"
+      ],
+      "closing": "I design security teams can actually run."
+    },
+    {
+      "id": "Q006",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "What are your strongest technical skills?",
+      "opening": "Identity and access architecture across cloud platforms.",
+      "anchors": [
+        "IAM design",
+        "federation",
+        "least privilege",
+        "Zero Trust",
+        "logging strategy"
+      ],
+      "closing": "Identity is where I deliver the most leverage."
+    },
+    {
+      "id": "Q007",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "What are your weaknesses?",
+      "opening": "I tend to go deep unless I actively summarize.",
+      "anchors": [
+        "depth bias",
+        "self-correction",
+        "executive framing",
+        "structured communication"
+      ],
+      "closing": "I’ve learned to lead with clarity, then expand."
+    },
+    {
+      "id": "Q008",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "Why should we hire you?",
+      "opening": "I reduce security risk without slowing teams down.",
+      "anchors": [
+        "guardrails",
+        "automation",
+        "architecture patterns",
+        "cross-cloud consistency"
+      ],
+      "closing": "I help teams move fast safely."
+    },
+    {
+      "id": "Q009",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "How do you stay current in security?",
+      "opening": "By building, breaking, and teaching continuously.",
+      "anchors": [
+        "labs",
+        "certifications",
+        "tooling experiments",
+        "threat trends"
+      ],
+      "closing": "Hands-on work keeps theory honest."
+    },
+    {
+      "id": "Q010",
+      "level": "L1",
+      "domain": "behavioral",
+      "cloud": "agnostic",
+      "question": "What motivates you professionally?",
+      "opening": "Solving complex problems at meaningful scale.",
+      "anchors": [
+        "impact",
+        "clarity",
+        "resilience",
+        "learning"
+      ],
+      "closing": "I’m motivated by systems that last."
+    },
+    {
+      "id": "Q011",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "How do you approach cloud security architecture?",
+      "opening": "I start with identity, not infrastructure.",
+      "anchors": [
+        "least privilege",
+        "guardrails",
+        "shared responsibility",
+        "automation"
+      ],
+      "closing": "Identity decisions shape everything else."
+    },
+    {
+      "id": "Q012",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "Explain the shared responsibility model",
+      "opening": "Security is split between provider and customer.",
+      "anchors": [
+        "provider secures cloud",
+        "customer secures workloads",
+        "service-dependent",
+        "clarity required"
+      ],
+      "closing": "Misunderstanding this causes most gaps."
+    },
+    {
+      "id": "Q013",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "Common cloud security mistakes?",
+      "opening": "Over-permissive identity is the most common.",
+      "anchors": [
+        "admin sprawl",
+        "weak logging",
+        "poor visibility",
+        "manual access"
+      ],
+      "closing": "Identity mistakes scale quickly."
+    },
+    {
+      "id": "Q014",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "How do you design for least privilege?",
+      "opening": "Access should match tasks, not roles.",
+      "anchors": [
+        "role-based access",
+        "scoped permissions",
+        "time-bound",
+        "reviews"
+      ],
+      "closing": "Excess access is latent risk."
+    },
+    {
+      "id": "Q015",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "What is blast radius and why does it matter?",
+      "opening": "Blast radius defines how much damage a failure can cause.",
+      "anchors": [
+        "account separation",
+        "segmentation",
+        "isolation",
+        "containment"
+      ],
+      "closing": "Containment is as important as prevention."
+    },
+    {
+      "id": "Q016",
+      "level": "L2",
+      "domain": "cloud-security-foundations",
+      "cloud": "agnostic",
+      "question": "What security controls must exist on day one?",
+      "opening": "Identity, logging, and encryption.",
+      "anchors": [
+        "IAM baseline",
+        "audit logs",
+        "key management",
+        "monitoring"
+      ],
+      "closing": "Everything else builds on these."
     }
   ]
 }

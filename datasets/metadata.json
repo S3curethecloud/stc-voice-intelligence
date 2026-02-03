@@ -2,20 +2,14 @@
   "dataset": "stc-voice-intelligence",
   "source_file": "INTERVIEW ANCHOR.txt",
   "generated_on": "2026-02-02",
-  "levels": ["L1", "L2", "L3", "L4"],
-  "clouds": ["agnostic", "azure", "aws", "gcp"],
+  "levels": ["L1", "L2"],
+  "clouds": ["agnostic"],
   "domains": [
-    "identity",
-    "zero-trust",
-    "logging",
-    "detection",
-    "incident-response",
-    "compute",
-    "storage",
-    "networking",
-    "leadership"
+    "behavioral",
+    "cloud-security-foundations"
   ],
+  "question_count": 16,
   "voice_optimized": true,
   "mgf_compatible": true,
-  "lock_intent": "post-generation"
+  "lock_intent": "canonical-reset"
 }
