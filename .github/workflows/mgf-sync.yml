@@ -1,0 +1,92 @@
+name: MGF Sync — Voice Intelligence
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "labs/**/mgf-metadata.json"
+      - ".github/workflows/mgf-sync.yml"
+  workflow_dispatch:
+
+jobs:
+  mgf-sync:
+    name: Validate & Sync MGF Metadata
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install MGF tooling
+        run: |
+          pip install --upgrade pip
+          pip install jsonschema pyyaml
+
+      - name: Validate mgf-metadata.json files
+        run: |
+          echo "🔍 Validating MGF metadata files..."
+          for file in $(find labs -name mgf-metadata.json); do
+            echo "• Validating $file"
+            python - <<'EOF'
+import json, sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+data = json.loads(path.read_text())
+
+required = [
+  "mgf_version",
+  "artifact_type",
+  "artifact_id",
+  "title",
+  "domain",
+  "category",
+  "authoritative_source",
+  "status"
+]
+
+missing = [k for k in required if k not in data]
+if missing:
+    raise SystemExit(f"❌ {path} missing keys: {missing}")
+
+print(f"✅ {path} OK")
+EOF
+          done
+
+      - name: Generate MGF sync manifest
+        run: |
+          echo "📦 Generating mgf-sync.lab.json"
+          python - <<'EOF'
+import json
+from pathlib import Path
+
+labs = []
+
+for path in Path("labs").rglob("mgf-metadata.json"):
+    data = json.loads(path.read_text())
+    data["_path"] = str(path.parent)
+    labs.append(data)
+
+out = {
+    "source": "stc-voice-intelligence",
+    "authority": "MGF-AUTHORITY-ALL",
+    "artifact_type": "lab",
+    "count": len(labs),
+    "artifacts": labs
+}
+
+Path("mgf-sync.lab.json").write_text(json.dumps(out, indent=2))
+print(f"✅ Generated mgf-sync.lab.json with {len(labs)} labs")
+EOF
+
+      - name: Upload MGF sync artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mgf-sync-labs
+          path: mgf-sync.lab.json

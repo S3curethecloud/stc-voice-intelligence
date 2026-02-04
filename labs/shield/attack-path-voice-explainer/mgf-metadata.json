@@ -1,0 +1,36 @@
+{
+  "mgf_version": "1.0",
+  "artifact_type": "lab",
+  "artifact_id": "shield-attack-path-voice-explainer",
+  "title": "Shield Attack Path Voice Explainer",
+  "description": "Explains Shield attack paths using natural voice narration tied to MITRE and risk.",
+  "domain": "attack-path",
+  "category": "voice-intelligence",
+  "tags": [
+    "shield",
+    "attack-path",
+    "voice",
+    "mitre",
+    "risk"
+  ],
+  "difficulty": "intermediate",
+  "audience": [
+    "SOC Analyst",
+    "Cloud Security Architect"
+  ],
+  "cloud": "agnostic",
+  "inputs": [
+    "attack_path",
+    "mitre_mapping",
+    "preventive_controls"
+  ],
+  "outputs": [
+    "voice_attack_path_explanation"
+  ],
+  "integrations": [
+    "stc-shield",
+    "stc-copilot"
+  ],
+  "authoritative_source": "stc-voice-intelligence",
+  "status": "active"
+}

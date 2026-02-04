@@ -1,0 +1,37 @@
+{
+  "mgf_version": "1.0",
+  "artifact_type": "lab",
+  "artifact_id": "executive-incident-voice-briefing",
+  "title": "Executive Incident Voice Briefing",
+  "description": "Generates concise executive-level voice explanations for security incidents.",
+  "domain": "siem",
+  "category": "voice-intelligence",
+  "tags": [
+    "executive",
+    "voice",
+    "incident",
+    "risk",
+    "board-briefing"
+  ],
+  "difficulty": "beginner",
+  "audience": [
+    "CISO",
+    "Executive",
+    "Board"
+  ],
+  "cloud": "agnostic",
+  "inputs": [
+    "incident_summary",
+    "risk_score",
+    "impact"
+  ],
+  "outputs": [
+    "executive_voice_summary"
+  ],
+  "integrations": [
+    "stc-copilot",
+    "stc-shield"
+  ],
+  "authoritative_source": "stc-voice-intelligence",
+  "status": "active"
+}

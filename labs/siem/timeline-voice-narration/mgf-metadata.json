@@ -1,0 +1,40 @@
+{
+  "mgf_version": "1.0",
+  "artifact_type": "lab",
+  "artifact_id": "siem-timeline-voice-narration",
+  "title": "SIEM Timeline Voice Narration",
+  "description": "Narrates a SIEM incident timeline using executive and analyst voice modes.",
+  "domain": "siem",
+  "category": "voice-intelligence",
+  "tags": [
+    "siem",
+    "timeline",
+    "voice",
+    "incident-response",
+    "executive-briefing"
+  ],
+  "difficulty": "intermediate",
+  "audience": [
+    "SOC Analyst",
+    "Security Engineer",
+    "CISO"
+  ],
+  "cloud": "agnostic",
+  "inputs": [
+    "siem_incident",
+    "timeline_events",
+    "severity"
+  ],
+  "outputs": [
+    "voice_narration",
+    "timeline_summary",
+    "executive_explanation"
+  ],
+  "integrations": [
+    "stc-copilot",
+    "stc-shield",
+    "voice-engine"
+  ],
+  "authoritative_source": "stc-voice-intelligence",
+  "status": "active"
+}

@@ -1,0 +1,34 @@
+{
+  "mgf_version": "1.0",
+  "artifact_type": "lab",
+  "artifact_id": "risk-score-voice-breakdown",
+  "title": "Risk Score Voice Breakdown",
+  "description": "Explains how a risk score was calculated using factor-level voice narration.",
+  "domain": "risk",
+  "category": "voice-intelligence",
+  "tags": [
+    "risk",
+    "voice",
+    "explainability",
+    "trust"
+  ],
+  "difficulty": "intermediate",
+  "audience": [
+    "CISO",
+    "Security Engineer"
+  ],
+  "cloud": "agnostic",
+  "inputs": [
+    "risk_score",
+    "risk_factors"
+  ],
+  "outputs": [
+    "voice_risk_explanation"
+  ],
+  "integrations": [
+    "stc-shield",
+    "stc-copilot"
+  ],
+  "authoritative_source": "stc-voice-intelligence",
+  "status": "active"
+}
