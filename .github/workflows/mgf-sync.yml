@@ -2,8 +2,7 @@ name: MGF Sync — Voice Intelligence
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - "labs/**/mgf-metadata.json"
       - ".github/workflows/mgf-sync.yml"
@@ -11,7 +10,6 @@ on:
 
 jobs:
   mgf-sync:
-    name: Validate & Sync MGF Metadata
     runs-on: ubuntu-latest
 
     steps:
@@ -23,67 +21,67 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install MGF tooling
-        run: |
-          pip install --upgrade pip
-          pip install jsonschema pyyaml
-
       - name: Validate mgf-metadata.json files
         run: |
-          echo "🔍 Validating MGF metadata files..."
-          for file in $(find labs -name mgf-metadata.json); do
-            echo "• Validating $file"
-            python - <<'EOF'
-import json, sys
-from pathlib import Path
+          python << 'EOF'
+          import json
+          from pathlib import Path
+          import sys
 
-path = Path(sys.argv[1])
-data = json.loads(path.read_text())
+          required = {
+              "mgf_version",
+              "artifact_type",
+              "artifact_id",
+              "title",
+              "domain",
+              "category",
+              "authoritative_source",
+              "status"
+          }
 
-required = [
-  "mgf_version",
-  "artifact_type",
-  "artifact_id",
-  "title",
-  "domain",
-  "category",
-  "authoritative_source",
-  "status"
-]
+          errors = 0
 
-missing = [k for k in required if k not in data]
-if missing:
-    raise SystemExit(f"❌ {path} missing keys: {missing}")
+          for path in Path("labs").rglob("mgf-metadata.json"):
+              try:
+                  data = json.loads(path.read_text())
+                  missing = required - data.keys()
+                  if missing:
+                      print(f"❌ {path} missing keys: {missing}")
+                      errors += 1
+                  else:
+                      print(f"✅ {path}")
+              except Exception as e:
+                  print(f"❌ {path} invalid JSON: {e}")
+                  errors += 1
 
-print(f"✅ {path} OK")
-EOF
-          done
+          if errors:
+              sys.exit(1)
+          EOF
 
-      - name: Generate MGF sync manifest
+      - name: Generate mgf-sync.lab.json
         run: |
-          echo "📦 Generating mgf-sync.lab.json"
-          python - <<'EOF'
-import json
-from pathlib import Path
+          python << 'EOF'
+          import json
+          from pathlib import Path
 
-labs = []
+          labs = []
 
-for path in Path("labs").rglob("mgf-metadata.json"):
-    data = json.loads(path.read_text())
-    data["_path"] = str(path.parent)
-    labs.append(data)
+          for path in Path("labs").rglob("mgf-metadata.json"):
+              data = json.loads(path.read_text())
+              data["_path"] = str(path.parent)
+              labs.append(data)
 
-out = {
-    "source": "stc-voice-intelligence",
-    "authority": "MGF-AUTHORITY-ALL",
-    "artifact_type": "lab",
-    "count": len(labs),
-    "artifacts": labs
-}
+          out = {
+              "source": "stc-voice-intelligence",
+              "authority": "MGF-AUTHORITY-ALL",
+              "artifact_type": "lab",
+              "count": len(labs),
+              "artifacts": labs
+          }
 
-Path("mgf-sync.lab.json").write_text(json.dumps(out, indent=2))
-print(f"✅ Generated mgf-sync.lab.json with {len(labs)} labs")
-EOF
+          Path("mgf-sync.lab.json").write_text(json.dumps(out, indent=2))
+          print(f"✅ Generated mgf-sync.lab.json with {len(labs)} labs")
+          EOF
 
       - name: Upload MGF sync artifact
         uses: actions/upload-artifact@v4
