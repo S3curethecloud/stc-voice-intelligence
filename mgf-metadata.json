@@ -1,0 +1,32 @@
+{
+  "id": "LAB-VOICE-SIEM-001",
+  "type": "lab",
+  "title": "SIEM Incident Timeline Voice Narration",
+  "domain": "siem-detection",
+  "subcategory": "incident-timeline",
+  "difficulty": "intermediate",
+  "description": "Use STC Voice Intelligence to narrate a SIEM incident timeline with executive and analyst modes.",
+  "tags": [
+    "siem",
+    "timeline",
+    "voice",
+    "incident-response",
+    "executive-briefing"
+  ],
+  "persona_modes": [
+    "SOC Analyst",
+    "Executive / CISO",
+    "Academy / Teaching"
+  ],
+  "inputs": [
+    "siem-event",
+    "timeline"
+  ],
+  "outputs": [
+    "voice-narration",
+    "executive-summary"
+  ],
+  "source": "SecureTheCloud Voice Intelligence",
+  "authoritative": true,
+  "version": "1.0"
+}

@@ -348,5 +348,80 @@
       "board visibility"
     ],
     "closing": "Clear communication builds trust and supports informed decision-making."
+  },
+  {
+    "id": "Q029",
+    "level": "L1",
+    "domain": "identity",
+    "cloud": "agnostic",
+    "question": "What is the identity lifecycle?",
+    "opening": "The identity lifecycle describes how access is created, changed, and removed.",
+    "anchors": [
+      "identity lifecycle",
+      "provisioning",
+      "deprovisioning",
+      "access changes"
+    ],
+    "closing": "Managing the full lifecycle prevents stale access and reduces long-term risk."
+  },
+  {
+    "id": "Q030",
+    "level": "L2",
+    "domain": "logging",
+    "cloud": "agnostic",
+    "question": "What identity events should be logged and monitored?",
+    "opening": "Identity events provide critical signals for detecting misuse and compromise.",
+    "anchors": [
+      "identity logs",
+      "authentication events",
+      "authorization changes",
+      "audit trails"
+    ],
+    "closing": "Comprehensive logging enables visibility into access and identity behavior."
+  },
+  {
+    "id": "Q031",
+    "level": "L3",
+    "domain": "detection",
+    "cloud": "agnostic",
+    "question": "How do you detect anomalous identity behavior?",
+    "opening": "Anomalous behavior is identified by deviations from normal access patterns.",
+    "anchors": [
+      "behavior baselines",
+      "anomaly detection",
+      "access patterns",
+      "identity analytics"
+    ],
+    "closing": "Detecting anomalies helps uncover misuse before damage occurs."
+  },
+  {
+    "id": "Q032",
+    "level": "L3",
+    "domain": "zero-trust",
+    "cloud": "agnostic",
+    "question": "How do you enforce zero trust continuously after authentication?",
+    "opening": "Zero trust enforcement continues beyond initial authentication.",
+    "anchors": [
+      "continuous authorization",
+      "session evaluation",
+      "policy reevaluation",
+      "risk signals"
+    ],
+    "closing": "Continuous enforcement adapts access as risk conditions change."
+  },
+  {
+    "id": "Q033",
+    "level": "L4",
+    "domain": "leadership",
+    "cloud": "agnostic",
+    "question": "How do you balance identity security investments against business priorities?",
+    "opening": "Identity investments must be aligned with business risk and growth goals.",
+    "anchors": [
+      "security investment",
+      "business alignment",
+      "risk tradeoffs",
+      "executive prioritization"
+    ],
+    "closing": "Effective leaders align identity strategy with measurable business outcomes."
   }
 ]
