@@ -130,203 +130,53 @@
     "closing": "Executives need clear decisions, not technical detail."
   },
   {
-    "id": "Q019",
+    "id": "Q039",
     "level": "L1",
-    "domain": "governance",
-    "cloud": "agnostic",
-    "question": "What is identity governance?",
-    "opening": "Identity governance focuses on managing and reviewing access over time.",
-    "anchors": ["identity governance", "access lifecycle", "policy enforcement", "visibility"],
-    "closing": "Strong identity governance ensures access remains appropriate as environments change."
+    "domain": "identity",
+    "cloud": "aws",
+    "question": "What is AWS IAM and what problem does it solve?",
+    "opening": "AWS IAM is the identity and access management service for AWS resources.",
+    "anchors": ["aws iam", "identity management", "access control", "aws principals"],
+    "closing": "IAM enables secure access to AWS resources without sharing credentials."
   },
   {
-    "id": "Q020",
-    "level": "L2",
-    "domain": "governance",
-    "cloud": "agnostic",
-    "question": "How do access reviews reduce identity risk?",
-    "opening": "Access reviews validate that users and systems still need their assigned permissions.",
-    "anchors": ["access reviews", "entitlement validation", "risk reduction", "oversight"],
-    "closing": "Regular reviews help eliminate excess access before it becomes exploitable."
-  },
-  {
-    "id": "Q021",
-    "level": "L3",
-    "domain": "detection",
-    "cloud": "agnostic",
-    "question": "How do you detect identity-based attacks?",
-    "opening": "Identity-based attacks are detected by monitoring authentication and access patterns.",
-    "anchors": ["identity telemetry", "authentication logs", "anomaly detection", "behavior analysis"],
-    "closing": "Effective detection relies on correlating identity signals across systems."
-  },
-  {
-    "id": "Q022",
-    "level": "L3",
-    "domain": "incident-response",
-    "cloud": "agnostic",
-    "question": "What is your response strategy for compromised credentials?",
-    "opening": "Credential compromise requires immediate containment and investigation.",
-    "anchors": ["credential compromise", "containment", "access revocation", "incident response"],
-    "closing": "Fast response limits attacker dwell time and prevents lateral movement."
-  },
-  {
-    "id": "Q023",
-    "level": "L4",
-    "domain": "leadership",
-    "cloud": "agnostic",
-    "question": "How do you measure the effectiveness of an identity program?",
-    "opening": "Identity effectiveness should be measured using risk, coverage, and outcomes.",
-    "anchors": ["identity metrics", "risk indicators", "program maturity", "executive reporting"],
-    "closing": "Meaningful metrics help leaders understand identity as a business control."
-  },
-  {
-    "id": "Q024",
-    "level": "L1",
-    "domain": "zero-trust",
-    "cloud": "agnostic",
-    "question": "What does zero trust mean in practical terms?",
-    "opening": "Zero trust is a security model that assumes no implicit trust for any access request.",
-    "anchors": ["zero trust", "implicit trust", "access verification", "policy enforcement"],
-    "closing": "In practice, zero trust requires continuous verification for every access attempt."
-  },
-  {
-    "id": "Q025",
+    "id": "Q040",
     "level": "L2",
     "domain": "identity",
-    "cloud": "agnostic",
-    "question": "How do you manage privileged access safely?",
-    "opening": "Privileged access must be tightly controlled due to its high impact.",
-    "anchors": ["privileged access", "elevated permissions", "just in time access", "access controls"],
-    "closing": "Reducing standing privilege lowers the risk of catastrophic compromise."
+    "cloud": "aws",
+    "question": "What is the difference between IAM users and IAM roles?",
+    "opening": "IAM users and roles represent different identity models in AWS.",
+    "anchors": ["iam users", "iam roles", "long term credentials", "temporary credentials"],
+    "closing": "Roles are preferred for scalable and secure access through temporary credentials."
   },
   {
-    "id": "Q026",
-    "level": "L3",
-    "domain": "incident-response",
-    "cloud": "agnostic",
-    "question": "How do you contain an identity-based security incident?",
-    "opening": "Containment focuses on stopping active abuse while preserving evidence.",
-    "anchors": ["incident containment", "identity abuse", "access revocation", "forensic preservation"],
-    "closing": "Fast containment limits attacker movement and business impact."
+    "id": "Q041",
+    "level": "L2",
+    "domain": "identity",
+    "cloud": "aws",
+    "question": "How does AWS STS enable temporary access?",
+    "opening": "AWS STS issues short-lived credentials for trusted identities.",
+    "anchors": ["aws sts", "temporary credentials", "assume role", "token service"],
+    "closing": "Temporary credentials reduce risk by limiting credential lifetime."
   },
   {
-    "id": "Q027",
+    "id": "Q042",
     "level": "L3",
     "domain": "governance",
-    "cloud": "agnostic",
-    "question": "How do you balance security controls with developer productivity?",
-    "opening": "Security controls must enable, not block, delivery.",
-    "anchors": ["security tradeoffs", "developer productivity", "control friction", "risk tolerance"],
-    "closing": "Well-designed controls reduce risk while keeping teams effective."
+    "cloud": "aws",
+    "question": "How do service control policies affect IAM permissions?",
+    "opening": "Service control policies define maximum allowable permissions in AWS Organizations.",
+    "anchors": ["service control policies", "aws organizations", "permission boundaries", "governance controls"],
+    "closing": "SCPs enforce guardrails by restricting what permissions can be granted."
   },
   {
-    "id": "Q028",
+    "id": "Q043",
     "level": "L4",
     "domain": "leadership",
-    "cloud": "agnostic",
-    "question": "How do you communicate identity incidents to executives and the board?",
-    "opening": "Executive communication should focus on impact, response, and risk reduction.",
-    "anchors": ["executive communication", "incident reporting", "business impact", "board visibility"],
-    "closing": "Clear communication builds trust and supports informed decision-making."
-  },
-  {
-    "id": "Q029",
-    "level": "L1",
-    "domain": "identity",
-    "cloud": "agnostic",
-    "question": "What is the identity lifecycle?",
-    "opening": "The identity lifecycle describes how access is created, changed, and removed.",
-    "anchors": ["identity lifecycle", "provisioning", "deprovisioning", "access changes"],
-    "closing": "Managing the full lifecycle prevents stale access and reduces long-term risk."
-  },
-  {
-    "id": "Q030",
-    "level": "L2",
-    "domain": "logging",
-    "cloud": "agnostic",
-    "question": "What identity events should be logged and monitored?",
-    "opening": "Identity events provide critical signals for detecting misuse and compromise.",
-    "anchors": ["identity logs", "authentication events", "authorization changes", "audit trails"],
-    "closing": "Comprehensive logging enables visibility into access and identity behavior."
-  },
-  {
-    "id": "Q031",
-    "level": "L3",
-    "domain": "detection",
-    "cloud": "agnostic",
-    "question": "How do you detect anomalous identity behavior?",
-    "opening": "Anomalous behavior is identified by deviations from normal access patterns.",
-    "anchors": ["behavior baselines", "anomaly detection", "access patterns", "identity analytics"],
-    "closing": "Detecting anomalies helps uncover misuse before damage occurs."
-  },
-  {
-    "id": "Q032",
-    "level": "L3",
-    "domain": "zero-trust",
-    "cloud": "agnostic",
-    "question": "How do you enforce zero trust continuously after authentication?",
-    "opening": "Zero trust enforcement continues beyond initial authentication.",
-    "anchors": ["continuous authorization", "session evaluation", "policy reevaluation", "risk signals"],
-    "closing": "Continuous enforcement adapts access as risk conditions change."
-  },
-  {
-    "id": "Q033",
-    "level": "L4",
-    "domain": "leadership",
-    "cloud": "agnostic",
-    "question": "How do you balance identity security investments against business priorities?",
-    "opening": "Identity investments must be aligned with business risk and growth goals.",
-    "anchors": ["security investment", "business alignment", "risk tradeoffs", "executive prioritization"],
-    "closing": "Effective leaders align identity strategy with measurable business outcomes."
-  },
-  {
-    "id": "Q034",
-    "level": "L1",
-    "domain": "identity",
-    "cloud": "agnostic",
-    "question": "What is the difference between authentication and authorization?",
-    "opening": "Authentication and authorization address different parts of access control.",
-    "anchors": ["authentication", "authorization", "identity verification", "access decisions"],
-    "closing": "Authentication verifies identity, while authorization determines permitted actions."
-  },
-  {
-    "id": "Q035",
-    "level": "L2",
-    "domain": "identity",
-    "cloud": "agnostic",
-    "question": "How do you reduce the risk of credential compromise?",
-    "opening": "Credential compromise is a leading cause of security incidents.",
-    "anchors": ["credential security", "multi factor authentication", "credential hygiene", "attack prevention"],
-    "closing": "Reducing credential risk requires layered controls and user awareness."
-  },
-  {
-    "id": "Q036",
-    "level": "L3",
-    "domain": "zero-trust",
-    "cloud": "agnostic",
-    "question": "How does device posture influence identity-based access decisions?",
-    "opening": "Access decisions increasingly account for device trust and posture.",
-    "anchors": ["device posture", "endpoint security", "conditional access", "risk evaluation"],
-    "closing": "Incorporating device signals strengthens identity-driven access control."
-  },
-  {
-    "id": "Q037",
-    "level": "L3",
-    "domain": "behavioral",
-    "cloud": "agnostic",
-    "question": "Why is user behavior a critical factor in identity security?",
-    "opening": "Technology alone cannot fully mitigate identity risk.",
-    "anchors": ["user behavior", "security awareness", "phishing susceptibility", "human risk"],
-    "closing": "Addressing human behavior reduces exposure to identity-driven attacks."
-  },
-  {
-    "id": "Q038",
-    "level": "L4",
-    "domain": "leadership",
-    "cloud": "agnostic",
-    "question": "What are the biggest identity security risks organizations underestimate?",
-    "opening": "Identity risks are often underestimated due to familiarity and complexity.",
-    "anchors": ["identity risk blind spots", "organizational assumptions", "legacy access", "risk awareness"],
-    "closing": "Recognizing overlooked risks is key to strengthening identity strategy."
+    "cloud": "aws",
+    "question": "How do you design an AWS IAM strategy for a multi-account environment?",
+    "opening": "A multi-account strategy requires consistent identity and governance patterns.",
+    "anchors": ["multi account strategy", "aws organizations", "centralized identity", "access delegation"],
+    "closing": "A strong IAM strategy balances security, scalability, and operational efficiency."
   }
 ]

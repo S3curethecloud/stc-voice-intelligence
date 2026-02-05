@@ -3,11 +3,19 @@ from pathlib import Path
 
 DATASET_PATH = Path(__file__).parent.parent / "datasets" / "interview_questions.json"
 
-
 def load_dataset():
-    with open(DATASET_PATH, "r") as f:
+    with open(DATASET_PATH) as f:
         data = json.load(f)
-    return data["questions"]
+
+    # Dataset is a pure list (E6 normalized)
+    if isinstance(data, list):
+        return data
+
+    # Backward compatibility (legacy wrapped format)
+    if isinstance(data, dict) and "questions" in data:
+        return data["questions"]
+
+    raise ValueError("Unsupported dataset format")
 
 
 def normalize(text: str) -> str:
