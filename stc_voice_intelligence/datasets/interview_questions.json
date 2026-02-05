@@ -6,12 +6,7 @@
     "cloud": "agnostic",
     "question": "What is identity in the context of cloud security?",
     "opening": "Identity is the foundation of access control in cloud environments.",
-    "anchors": [
-      "authentication",
-      "authorization",
-      "principal",
-      "access control"
-    ],
+    "anchors": ["authentication", "authorization", "principal", "access control"],
     "closing": "In cloud security, identity defines who or what can access a resource."
   },
   {
@@ -21,13 +16,7 @@
     "cloud": "agnostic",
     "question": "How do you design for least privilege access?",
     "opening": "Least privilege means granting only the access required to perform a task.",
-    "anchors": [
-      "least privilege",
-      "role-based access",
-      "scoped permissions",
-      "time-bound access",
-      "regular reviews"
-    ],
+    "anchors": ["least privilege", "role-based access", "scoped permissions", "time-bound access", "regular reviews"],
     "closing": "Effective least privilege reduces blast radius while preserving productivity."
   },
   {
@@ -37,12 +26,7 @@
     "cloud": "agnostic",
     "question": "Explain the shared responsibility model.",
     "opening": "Security responsibilities are split between the cloud provider and the customer.",
-    "anchors": [
-      "provider secures the cloud",
-      "customer secures workloads",
-      "service dependent",
-      "clear ownership"
-    ],
+    "anchors": ["provider secures the cloud", "customer secures workloads", "service dependent", "clear ownership"],
     "closing": "Most cloud security gaps come from misunderstanding ownership."
   },
   {
@@ -52,12 +36,7 @@
     "cloud": "agnostic",
     "question": "What is blast radius and why does it matter?",
     "opening": "Blast radius describes how much damage a single failure or compromise can cause.",
-    "anchors": [
-      "account isolation",
-      "segmentation",
-      "containment",
-      "fault domains"
-    ],
+    "anchors": ["account isolation", "segmentation", "containment", "fault domains"],
     "closing": "Reducing blast radius limits impact and accelerates recovery."
   },
   {
@@ -67,12 +46,7 @@
     "cloud": "agnostic",
     "question": "What security controls must exist on day one?",
     "opening": "Certain foundational controls must exist before any workloads are deployed.",
-    "anchors": [
-      "identity baseline",
-      "centralized logging",
-      "encryption",
-      "monitoring"
-    ],
+    "anchors": ["identity baseline", "centralized logging", "encryption", "monitoring"],
     "closing": "Every mature security program is built on these controls."
   },
   {
@@ -82,12 +56,7 @@
     "cloud": "agnostic",
     "question": "What are common cloud security mistakes?",
     "opening": "Most cloud security failures begin with identity and visibility gaps.",
-    "anchors": [
-      "over-permissive access",
-      "missing audit logs",
-      "manual secrets",
-      "shared accounts"
-    ],
+    "anchors": ["over-permissive access", "missing audit logs", "manual secrets", "shared accounts"],
     "closing": "These mistakes compound quickly at cloud scale."
   },
   {
@@ -97,12 +66,7 @@
     "cloud": "agnostic",
     "question": "How do you approach cloud security architecture?",
     "opening": "I start with identity and guardrails before focusing on infrastructure.",
-    "anchors": [
-      "least privilege",
-      "policy as code",
-      "automation",
-      "default deny"
-    ],
+    "anchors": ["least privilege", "policy as code", "automation", "default deny"],
     "closing": "Strong identity architecture shapes the entire security posture."
   },
   {
@@ -112,13 +76,7 @@
     "cloud": "agnostic",
     "question": "Tell me about a security incident you handled.",
     "opening": "I prioritize containment, clarity, and long-term improvement.",
-    "anchors": [
-      "triage",
-      "containment",
-      "root cause analysis",
-      "communication",
-      "postmortem"
-    ],
+    "anchors": ["triage", "containment", "root cause analysis", "communication", "postmortem"],
     "closing": "Well-managed incidents lead to stronger systems."
   },
   {
@@ -128,13 +86,7 @@
     "cloud": "agnostic",
     "question": "How do you handle disagreements with engineering teams?",
     "opening": "I focus on shared goals, risk clarity, and practical tradeoffs.",
-    "anchors": [
-      "shared goals",
-      "risk framing",
-      "tradeoffs",
-      "data-driven discussion",
-      "partnership"
-    ],
+    "anchors": ["shared goals", "risk framing", "tradeoffs", "data-driven discussion", "partnership"],
     "closing": "Security succeeds when it operates as a trusted partner."
   },
   {
@@ -144,13 +96,7 @@
     "cloud": "agnostic",
     "question": "How do you influence without authority?",
     "opening": "By building credibility through clarity, consistency, and delivery.",
-    "anchors": [
-      "credibility",
-      "empathy",
-      "clear framing",
-      "quick wins",
-      "consistency"
-    ],
+    "anchors": ["credibility", "empathy", "clear framing", "quick wins", "consistency"],
     "closing": "Influence is earned through trust, not titles."
   },
   {
@@ -160,12 +106,7 @@
     "cloud": "agnostic",
     "question": "How does identity fit into a zero trust security model?",
     "opening": "Zero trust treats identity as the primary control plane rather than network location.",
-    "anchors": [
-      "identity-centric security",
-      "continuous verification",
-      "context-aware access",
-      "policy-driven decisions"
-    ],
+    "anchors": ["identity-centric security", "continuous verification", "context-aware access", "policy-driven decisions"],
     "closing": "Zero trust fails without strong identity governance."
   },
   {
@@ -175,12 +116,7 @@
     "cloud": "agnostic",
     "question": "How do human behaviors increase identity-related security risk?",
     "opening": "Human behavior often introduces weaknesses that technical controls alone cannot mitigate.",
-    "anchors": [
-      "credential reuse",
-      "phishing",
-      "social engineering",
-      "privilege creep"
-    ],
+    "anchors": ["credential reuse", "phishing", "social engineering", "privilege creep"],
     "closing": "Human risk must be addressed alongside technical controls."
   },
   {
@@ -190,13 +126,7 @@
     "cloud": "agnostic",
     "question": "How do you explain identity risk to executive leadership?",
     "opening": "Identity risk should be framed in terms of business impact and exposure.",
-    "anchors": [
-      "likelihood",
-      "business impact",
-      "risk scenarios",
-      "decision options",
-      "recommendation"
-    ],
+    "anchors": ["likelihood", "business impact", "risk scenarios", "decision options", "recommendation"],
     "closing": "Executives need clear decisions, not technical detail."
   },
   {
@@ -206,12 +136,7 @@
     "cloud": "agnostic",
     "question": "What is identity governance?",
     "opening": "Identity governance focuses on managing and reviewing access over time.",
-    "anchors": [
-      "identity governance",
-      "access lifecycle",
-      "policy enforcement",
-      "visibility"
-    ],
+    "anchors": ["identity governance", "access lifecycle", "policy enforcement", "visibility"],
     "closing": "Strong identity governance ensures access remains appropriate as environments change."
   },
   {
@@ -221,12 +146,7 @@
     "cloud": "agnostic",
     "question": "How do access reviews reduce identity risk?",
     "opening": "Access reviews validate that users and systems still need their assigned permissions.",
-    "anchors": [
-      "access reviews",
-      "entitlement validation",
-      "risk reduction",
-      "oversight"
-    ],
+    "anchors": ["access reviews", "entitlement validation", "risk reduction", "oversight"],
     "closing": "Regular reviews help eliminate excess access before it becomes exploitable."
   },
   {
@@ -236,12 +156,7 @@
     "cloud": "agnostic",
     "question": "How do you detect identity-based attacks?",
     "opening": "Identity-based attacks are detected by monitoring authentication and access patterns.",
-    "anchors": [
-      "identity telemetry",
-      "authentication logs",
-      "anomaly detection",
-      "behavior analysis"
-    ],
+    "anchors": ["identity telemetry", "authentication logs", "anomaly detection", "behavior analysis"],
     "closing": "Effective detection relies on correlating identity signals across systems."
   },
   {
@@ -251,12 +166,7 @@
     "cloud": "agnostic",
     "question": "What is your response strategy for compromised credentials?",
     "opening": "Credential compromise requires immediate containment and investigation.",
-    "anchors": [
-      "credential compromise",
-      "containment",
-      "access revocation",
-      "incident response"
-    ],
+    "anchors": ["credential compromise", "containment", "access revocation", "incident response"],
     "closing": "Fast response limits attacker dwell time and prevents lateral movement."
   },
   {
@@ -266,12 +176,7 @@
     "cloud": "agnostic",
     "question": "How do you measure the effectiveness of an identity program?",
     "opening": "Identity effectiveness should be measured using risk, coverage, and outcomes.",
-    "anchors": [
-      "identity metrics",
-      "risk indicators",
-      "program maturity",
-      "executive reporting"
-    ],
+    "anchors": ["identity metrics", "risk indicators", "program maturity", "executive reporting"],
     "closing": "Meaningful metrics help leaders understand identity as a business control."
   },
   {
@@ -281,12 +186,7 @@
     "cloud": "agnostic",
     "question": "What does zero trust mean in practical terms?",
     "opening": "Zero trust is a security model that assumes no implicit trust for any access request.",
-    "anchors": [
-      "zero trust",
-      "implicit trust",
-      "access verification",
-      "policy enforcement"
-    ],
+    "anchors": ["zero trust", "implicit trust", "access verification", "policy enforcement"],
     "closing": "In practice, zero trust requires continuous verification for every access attempt."
   },
   {
@@ -296,12 +196,7 @@
     "cloud": "agnostic",
     "question": "How do you manage privileged access safely?",
     "opening": "Privileged access must be tightly controlled due to its high impact.",
-    "anchors": [
-      "privileged access",
-      "elevated permissions",
-      "just in time access",
-      "access controls"
-    ],
+    "anchors": ["privileged access", "elevated permissions", "just in time access", "access controls"],
     "closing": "Reducing standing privilege lowers the risk of catastrophic compromise."
   },
   {
@@ -311,12 +206,7 @@
     "cloud": "agnostic",
     "question": "How do you contain an identity-based security incident?",
     "opening": "Containment focuses on stopping active abuse while preserving evidence.",
-    "anchors": [
-      "incident containment",
-      "identity abuse",
-      "access revocation",
-      "forensic preservation"
-    ],
+    "anchors": ["incident containment", "identity abuse", "access revocation", "forensic preservation"],
     "closing": "Fast containment limits attacker movement and business impact."
   },
   {
@@ -326,12 +216,7 @@
     "cloud": "agnostic",
     "question": "How do you balance security controls with developer productivity?",
     "opening": "Security controls must enable, not block, delivery.",
-    "anchors": [
-      "security tradeoffs",
-      "developer productivity",
-      "control friction",
-      "risk tolerance"
-    ],
+    "anchors": ["security tradeoffs", "developer productivity", "control friction", "risk tolerance"],
     "closing": "Well-designed controls reduce risk while keeping teams effective."
   },
   {
@@ -341,12 +226,7 @@
     "cloud": "agnostic",
     "question": "How do you communicate identity incidents to executives and the board?",
     "opening": "Executive communication should focus on impact, response, and risk reduction.",
-    "anchors": [
-      "executive communication",
-      "incident reporting",
-      "business impact",
-      "board visibility"
-    ],
+    "anchors": ["executive communication", "incident reporting", "business impact", "board visibility"],
     "closing": "Clear communication builds trust and supports informed decision-making."
   },
   {
@@ -356,12 +236,7 @@
     "cloud": "agnostic",
     "question": "What is the identity lifecycle?",
     "opening": "The identity lifecycle describes how access is created, changed, and removed.",
-    "anchors": [
-      "identity lifecycle",
-      "provisioning",
-      "deprovisioning",
-      "access changes"
-    ],
+    "anchors": ["identity lifecycle", "provisioning", "deprovisioning", "access changes"],
     "closing": "Managing the full lifecycle prevents stale access and reduces long-term risk."
   },
   {
@@ -371,12 +246,7 @@
     "cloud": "agnostic",
     "question": "What identity events should be logged and monitored?",
     "opening": "Identity events provide critical signals for detecting misuse and compromise.",
-    "anchors": [
-      "identity logs",
-      "authentication events",
-      "authorization changes",
-      "audit trails"
-    ],
+    "anchors": ["identity logs", "authentication events", "authorization changes", "audit trails"],
     "closing": "Comprehensive logging enables visibility into access and identity behavior."
   },
   {
@@ -386,12 +256,7 @@
     "cloud": "agnostic",
     "question": "How do you detect anomalous identity behavior?",
     "opening": "Anomalous behavior is identified by deviations from normal access patterns.",
-    "anchors": [
-      "behavior baselines",
-      "anomaly detection",
-      "access patterns",
-      "identity analytics"
-    ],
+    "anchors": ["behavior baselines", "anomaly detection", "access patterns", "identity analytics"],
     "closing": "Detecting anomalies helps uncover misuse before damage occurs."
   },
   {
@@ -401,12 +266,7 @@
     "cloud": "agnostic",
     "question": "How do you enforce zero trust continuously after authentication?",
     "opening": "Zero trust enforcement continues beyond initial authentication.",
-    "anchors": [
-      "continuous authorization",
-      "session evaluation",
-      "policy reevaluation",
-      "risk signals"
-    ],
+    "anchors": ["continuous authorization", "session evaluation", "policy reevaluation", "risk signals"],
     "closing": "Continuous enforcement adapts access as risk conditions change."
   },
   {
@@ -416,12 +276,57 @@
     "cloud": "agnostic",
     "question": "How do you balance identity security investments against business priorities?",
     "opening": "Identity investments must be aligned with business risk and growth goals.",
-    "anchors": [
-      "security investment",
-      "business alignment",
-      "risk tradeoffs",
-      "executive prioritization"
-    ],
+    "anchors": ["security investment", "business alignment", "risk tradeoffs", "executive prioritization"],
     "closing": "Effective leaders align identity strategy with measurable business outcomes."
+  },
+  {
+    "id": "Q034",
+    "level": "L1",
+    "domain": "identity",
+    "cloud": "agnostic",
+    "question": "What is the difference between authentication and authorization?",
+    "opening": "Authentication and authorization address different parts of access control.",
+    "anchors": ["authentication", "authorization", "identity verification", "access decisions"],
+    "closing": "Authentication verifies identity, while authorization determines permitted actions."
+  },
+  {
+    "id": "Q035",
+    "level": "L2",
+    "domain": "identity",
+    "cloud": "agnostic",
+    "question": "How do you reduce the risk of credential compromise?",
+    "opening": "Credential compromise is a leading cause of security incidents.",
+    "anchors": ["credential security", "multi factor authentication", "credential hygiene", "attack prevention"],
+    "closing": "Reducing credential risk requires layered controls and user awareness."
+  },
+  {
+    "id": "Q036",
+    "level": "L3",
+    "domain": "zero-trust",
+    "cloud": "agnostic",
+    "question": "How does device posture influence identity-based access decisions?",
+    "opening": "Access decisions increasingly account for device trust and posture.",
+    "anchors": ["device posture", "endpoint security", "conditional access", "risk evaluation"],
+    "closing": "Incorporating device signals strengthens identity-driven access control."
+  },
+  {
+    "id": "Q037",
+    "level": "L3",
+    "domain": "behavioral",
+    "cloud": "agnostic",
+    "question": "Why is user behavior a critical factor in identity security?",
+    "opening": "Technology alone cannot fully mitigate identity risk.",
+    "anchors": ["user behavior", "security awareness", "phishing susceptibility", "human risk"],
+    "closing": "Addressing human behavior reduces exposure to identity-driven attacks."
+  },
+  {
+    "id": "Q038",
+    "level": "L4",
+    "domain": "leadership",
+    "cloud": "agnostic",
+    "question": "What are the biggest identity security risks organizations underestimate?",
+    "opening": "Identity risks are often underestimated due to familiarity and complexity.",
+    "anchors": ["identity risk blind spots", "organizational assumptions", "legacy access", "risk awareness"],
+    "closing": "Recognizing overlooked risks is key to strengthening identity strategy."
   }
 ]
