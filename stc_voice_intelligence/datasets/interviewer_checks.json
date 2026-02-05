@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ICC-001",
+    "test_question": "How do you explain security risk to leadership?",
+    "expected_intent": "How do you explain identity risk to executive leadership?",
+    "confidence_range": "20-40%",
+    "anchors": [
+      "likelihood",
+      "business impact",
+      "risk scenarios",
+      "decision options",
+      "recommendation"
+    ],
+    "purpose": "interviewer consistency validation"
+  },
+  {
+    "id": "ICC-002",
+    "test_question": "Earlier you mentioned zero trust. How does that influence incident response decisions?",
+    "expected_intent": "How do you contain an identity-based security incident?",
+    "confidence_range": "40-60%",
+    "anchors": [
+      "containment",
+      "access revocation",
+      "blast radius",
+      "response sequencing"
+    ],
+    "purpose": "cross-domain reasoning validation"
+  },
+  {
+    "id": "ICC-003",
+    "test_question": "How do you balance developer productivity with security controls?",
+    "expected_intent": "How do you balance security controls with developer productivity?",
+    "confidence_range": "60-80%",
+    "anchors": [
+      "control friction",
+      "developer velocity",
+      "risk tolerance",
+      "guardrails"
+    ],
+    "purpose": "tradeoff reasoning validation"
+  },
+  {
+    "id": "ICC-004",
+    "test_question": "What usually causes identity programs to fail at scale?",
+    "expected_intent": "What are the biggest identity security risks organizations underestimate?",
+    "confidence_range": "30-50%",
+    "anchors": [
+      "process gaps",
+      "legacy access",
+      "organizational assumptions",
+      "visibility"
+    ],
+    "purpose": "failure-mode reasoning validation"
+  },
+  {
+    "id": "ICC-005",
+    "test_question": "If budgets were cut in half, what identity controls would you protect first?",
+    "expected_intent": "How do you prioritize identity initiatives under limited budget?",
+    "confidence_range": "50-70%",
+    "anchors": [
+      "risk reduction",
+      "control prioritization",
+      "business impact",
+      "executive tradeoffs"
+    ],
+    "purpose": "executive prioritization validation"
+  }
+]
