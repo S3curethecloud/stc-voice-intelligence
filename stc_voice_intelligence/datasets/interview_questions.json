@@ -129,6 +129,7 @@
     "anchors": ["likelihood", "business impact", "risk scenarios", "decision options", "recommendation"],
     "closing": "Executives need clear decisions, not technical detail."
   },
+
   {
     "id": "Q039",
     "level": "L1",
@@ -178,5 +179,16 @@
     "opening": "A multi-account strategy requires consistent identity and governance patterns.",
     "anchors": ["multi account strategy", "aws organizations", "centralized identity", "access delegation"],
     "closing": "A strong IAM strategy balances security, scalability, and operational efficiency."
+  },
+
+  {
+    "id": "Q044",
+    "level": "L2",
+    "domain": "governance",
+    "cloud": "agnostic",
+    "question": "What are common governance-related cloud security mistakes?",
+    "opening": "Many cloud security incidents result from basic governance and access control failures.",
+    "anchors": ["over permissive access", "missing audit logs", "manual secrets", "shared accounts"],
+    "closing": "Addressing these common mistakes significantly reduces the likelihood of cloud breaches."
   }
 ]
