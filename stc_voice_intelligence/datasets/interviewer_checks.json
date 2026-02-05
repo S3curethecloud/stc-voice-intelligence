@@ -1,68 +1,234 @@
 [
   {
-    "id": "ICC-001",
-    "test_question": "How do you explain security risk to leadership?",
-    "expected_intent": "How do you explain identity risk to executive leadership?",
-    "confidence_range": "20-40%",
-    "anchors": [
-      "likelihood",
-      "business impact",
-      "risk scenarios",
-      "decision options",
-      "recommendation"
-    ],
-    "purpose": "interviewer consistency validation"
+    "id": "Q001",
+    "level": "L1",
+    "domain": "identity",
+    "cloud": "agnostic",
+    "question": "What is identity in the context of cloud security?",
+    "opening": "Identity is the foundation of access control in cloud environments.",
+    "anchors": ["authentication", "authorization", "principal", "access control"],
+    "closing": "In cloud security, identity defines who or what can access a resource."
   },
   {
-    "id": "ICC-002",
-    "test_question": "Earlier you mentioned zero trust. How does that influence incident response decisions?",
-    "expected_intent": "How do you contain an identity-based security incident?",
-    "confidence_range": "40-60%",
-    "anchors": [
-      "containment",
-      "access revocation",
-      "blast radius",
-      "response sequencing"
-    ],
-    "purpose": "cross-domain reasoning validation"
+    "id": "Q002",
+    "level": "L2",
+    "domain": "identity",
+    "cloud": "agnostic",
+    "question": "How do you design for least privilege access?",
+    "opening": "Least privilege means granting only the access required to perform a task.",
+    "anchors": ["least privilege", "role-based access", "scoped permissions", "time-bound access", "regular reviews"],
+    "closing": "Effective least privilege reduces blast radius while preserving productivity."
   },
   {
-    "id": "ICC-003",
-    "test_question": "How do you balance developer productivity with security controls?",
-    "expected_intent": "How do you balance security controls with developer productivity?",
-    "confidence_range": "60-80%",
-    "anchors": [
-      "control friction",
-      "developer velocity",
-      "risk tolerance",
-      "guardrails"
-    ],
-    "purpose": "tradeoff reasoning validation"
+    "id": "Q003",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "Explain the shared responsibility model.",
+    "opening": "Security responsibilities are split between the cloud provider and the customer.",
+    "anchors": ["provider secures the cloud", "customer secures workloads", "service dependent", "clear ownership"],
+    "closing": "Most cloud security gaps come from misunderstanding ownership."
   },
   {
-    "id": "ICC-004",
-    "test_question": "What usually causes identity programs to fail at scale?",
-    "expected_intent": "What are the biggest identity security risks organizations underestimate?",
-    "confidence_range": "30-50%",
-    "anchors": [
-      "process gaps",
-      "legacy access",
-      "organizational assumptions",
-      "visibility"
-    ],
-    "purpose": "failure-mode reasoning validation"
+    "id": "Q004",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "What is blast radius and why does it matter?",
+    "opening": "Blast radius describes how much damage a single failure or compromise can cause.",
+    "anchors": ["account isolation", "segmentation", "containment", "fault domains"],
+    "closing": "Reducing blast radius limits impact and accelerates recovery."
   },
   {
-    "id": "ICC-005",
-    "test_question": "If budgets were cut in half, what identity controls would you protect first?",
-    "expected_intent": "How do you prioritize identity initiatives under limited budget?",
-    "confidence_range": "50-70%",
-    "anchors": [
-      "risk reduction",
-      "control prioritization",
-      "business impact",
-      "executive tradeoffs"
-    ],
-    "purpose": "executive prioritization validation"
+    "id": "Q005",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "What security controls must exist on day one?",
+    "opening": "Certain foundational controls must exist before any workloads are deployed.",
+    "anchors": ["identity baseline", "centralized logging", "encryption", "monitoring"],
+    "closing": "Every mature security program is built on these controls."
+  },
+  {
+    "id": "Q006",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "What are common cloud security mistakes?",
+    "opening": "Most cloud security failures begin with identity and visibility gaps.",
+    "anchors": ["over-permissive access", "missing audit logs", "manual secrets", "shared accounts"],
+    "closing": "These mistakes compound quickly at cloud scale."
+  },
+  {
+    "id": "Q007",
+    "level": "L2",
+    "domain": "cloud-security-foundations",
+    "cloud": "agnostic",
+    "question": "How do you approach cloud security architecture?",
+    "opening": "I start with identity and guardrails before focusing on infrastructure.",
+    "anchors": ["least privilege", "policy as code", "automation", "default deny"],
+    "closing": "Strong identity architecture shapes the entire security posture."
+  },
+  {
+    "id": "Q008",
+    "level": "L2",
+    "domain": "behavioral",
+    "cloud": "agnostic",
+    "question": "Tell me about a security incident you handled.",
+    "opening": "I prioritize containment, clarity, and long-term improvement.",
+    "anchors": ["triage", "containment", "root cause analysis", "communication", "postmortem"],
+    "closing": "Well-managed incidents lead to stronger systems."
+  },
+  {
+    "id": "Q009",
+    "level": "L2",
+    "domain": "behavioral",
+    "cloud": "agnostic",
+    "question": "How do you handle disagreements with engineering teams?",
+    "opening": "I focus on shared goals, risk clarity, and practical tradeoffs.",
+    "anchors": ["shared goals", "risk framing", "tradeoffs", "data-driven discussion", "partnership"],
+    "closing": "Security succeeds when it operates as a trusted partner."
+  },
+  {
+    "id": "Q010",
+    "level": "L2",
+    "domain": "leadership",
+    "cloud": "agnostic",
+    "question": "How do you influence without authority?",
+    "opening": "By building credibility through clarity, consistency, and delivery.",
+    "anchors": ["credibility", "empathy", "clear framing", "quick wins", "consistency"],
+    "closing": "Influence is earned through trust, not titles."
+  },
+  {
+    "id": "Q011",
+    "level": "L3",
+    "domain": "zero-trust",
+    "cloud": "agnostic",
+    "question": "How does identity fit into a zero trust security model?",
+    "opening": "Zero trust treats identity as the primary control plane rather than network location.",
+    "anchors": ["identity-centric security", "continuous verification", "context-aware access", "policy-driven decisions"],
+    "closing": "Zero trust fails without strong identity governance."
+  },
+  {
+    "id": "Q012",
+    "level": "L3",
+    "domain": "behavioral",
+    "cloud": "agnostic",
+    "question": "How do human behaviors increase identity-related security risk?",
+    "opening": "Human behavior often introduces weaknesses that technical controls alone cannot mitigate.",
+    "anchors": ["credential reuse", "phishing", "social engineering", "privilege creep"],
+    "closing": "Human risk must be addressed alongside technical controls."
+  },
+  {
+    "id": "Q013",
+    "level": "L4",
+    "domain": "leadership",
+    "cloud": "agnostic",
+    "question": "How do you explain identity risk to executive leadership?",
+    "opening": "Identity risk should be framed in terms of business impact and exposure.",
+    "anchors": ["likelihood", "business impact", "risk scenarios", "decision options", "recommendation"],
+    "closing": "Executives need clear decisions, not technical detail."
+  },
+
+  {
+    "id": "Q039",
+    "level": "L1",
+    "domain": "identity",
+    "cloud": "aws",
+    "question": "What is AWS IAM and what problem does it solve?",
+    "opening": "AWS IAM is the identity and access management service for AWS resources.",
+    "anchors": ["aws iam", "identity management", "access control", "aws principals"],
+    "closing": "IAM enables secure access to AWS resources without sharing credentials."
+  },
+  {
+    "id": "Q040",
+    "level": "L2",
+    "domain": "identity",
+    "cloud": "aws",
+    "question": "What is the difference between IAM users and IAM roles?",
+    "opening": "IAM users and roles represent different identity models in AWS.",
+    "anchors": ["iam users", "iam roles", "long term credentials", "temporary credentials"],
+    "closing": "Roles are preferred for scalable and secure access through temporary credentials."
+  },
+  {
+    "id": "Q041",
+    "level": "L2",
+    "domain": "identity",
+    "cloud": "aws",
+    "question": "How does AWS STS enable temporary access?",
+    "opening": "AWS STS issues short-lived credentials for trusted identities.",
+    "anchors": ["aws sts", "temporary credentials", "assume role", "token service"],
+    "closing": "Temporary credentials reduce risk by limiting credential lifetime."
+  },
+  {
+    "id": "Q042",
+    "level": "L3",
+    "domain": "governance",
+    "cloud": "aws",
+    "question": "How do service control policies affect IAM permissions?",
+    "opening": "Service control policies define maximum allowable permissions in AWS Organizations.",
+    "anchors": ["service control policies", "aws organizations", "permission boundaries", "governance controls"],
+    "closing": "SCPs enforce guardrails by restricting what permissions can be granted."
+  },
+  {
+    "id": "Q043",
+    "level": "L4",
+    "domain": "leadership",
+    "cloud": "aws",
+    "question": "How do you design an AWS IAM strategy for a multi-account environment?",
+    "opening": "A multi-account strategy requires consistent identity and governance patterns.",
+    "anchors": ["multi account strategy", "aws organizations", "centralized identity", "access delegation"],
+    "closing": "A strong IAM strategy balances security, scalability, and operational efficiency."
+  },
+
+  {
+    "id": "Q044",
+    "level": "L1",
+    "domain": "identity",
+    "cloud": "aws",
+    "question": "What is AWS IAM?",
+    "opening": "AWS IAM is the service used to manage identities and access in AWS.",
+    "anchors": ["aws iam", "identities", "access management", "permissions"],
+    "closing": "IAM controls who can access AWS resources and what actions they can perform."
+  },
+  {
+    "id": "Q045",
+    "level": "L2",
+    "domain": "identity",
+    "cloud": "aws",
+    "question": "How do IAM users, roles, and policies work together?",
+    "opening": "IAM access is defined by attaching policies to users or roles.",
+    "anchors": ["iam users", "iam roles", "iam policies", "policy attachment"],
+    "closing": "Understanding how these components interact is key to designing secure access."
+  },
+  {
+    "id": "Q046",
+    "level": "L2",
+    "domain": "identity",
+    "cloud": "aws",
+    "question": "Why are IAM roles preferred over long-lived access keys?",
+    "opening": "Long-lived credentials increase the risk of compromise.",
+    "anchors": ["iam roles", "temporary credentials", "access keys", "credential rotation"],
+    "closing": "Roles reduce credential exposure by issuing short-lived, automatically rotated access."
+  },
+  {
+    "id": "Q047",
+    "level": "L3",
+    "domain": "governance",
+    "cloud": "aws",
+    "question": "How do you design IAM policies to enforce least privilege in AWS?",
+    "opening": "Least privilege policies grant only the permissions required for a task.",
+    "anchors": ["least privilege", "policy scope", "resource constraints", "permission boundaries"],
+    "closing": "Well-scoped policies reduce blast radius while maintaining functionality."
+  },
+  {
+    "id": "Q048",
+    "level": "L4",
+    "domain": "leadership",
+    "cloud": "aws",
+    "question": "What are the common IAM failure patterns you see in AWS environments?",
+    "opening": "IAM failures often stem from over-permission and poor governance.",
+    "anchors": ["iam failures", "over-permission", "shared roles", "governance gaps"],
+    "closing": "Recognizing these patterns helps leaders prioritize identity remediation efforts."
   }
 ]
