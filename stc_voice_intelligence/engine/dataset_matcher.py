@@ -3,6 +3,7 @@ from pathlib import Path
 
 DATASET_PATH = Path(__file__).parent.parent / "datasets" / "interview_questions.json"
 
+
 def load_dataset():
     with open(DATASET_PATH) as f:
         data = json.load(f)
@@ -68,14 +69,13 @@ def score_question(transcript: str, q: dict) -> float:
     return round(min(score, 1.0), 2)
 
 
-def match_intent(transcript: str, threshold: float = 0.30):
+def match_intent(transcript, threshold=0.7):
     questions = load_dataset()
     scored = []
 
     for q in questions:
-        s = score_question(transcript, q)
-        if s > 0:
-            scored.append((s, q))
+        score = score_question(transcript, q)
+        scored.append((score, q))
 
     if not scored:
         return None
@@ -84,9 +84,17 @@ def match_intent(transcript: str, threshold: float = 0.30):
 
     best_score, best_match = scored[0]
 
+    # 🔒 Fallback: closest intent (read-only, no execution)
     if best_score < threshold:
-        return None
+        return {
+            "_mode": "closest_intent",
+            "_confidence": best_score,
+            "question": best_match["question"],
+            "anchors": best_match.get("anchors", []),
+            "_note": "No exact intent matched; showing closest governed intent"
+        }
 
+    # ✅ Exact match
     best_match["_confidence"] = best_score
     best_match["_alternatives"] = [
         {"question": q["question"], "confidence": s}
